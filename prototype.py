@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
+import csv
 import json
 import os
 import pymysql
+import time
 
 from pprint import pprint
 from boltons.strutils import slugify
@@ -93,3 +95,56 @@ details = get_all_details(species)
 write_details(details, output_dir)
 write_index(details, output_dir)
 
+publications_path = 'publications.csv'
+with open(publications_path, 'r') as publications_file:
+    publications_reader = csv.reader(publications_file)
+    genome_biology_pubs = [p for p  in publications_reader if 'genome bio' in
+                           p[7].lower()]
+genome_bio_urls = ['http://www.ncbi.nlm.nih.gov/pubmed/' + p[0] for p in genome_biology_pubs]
+
+def get_full_text_links(pubmed_url):
+    response = requests.get(pubmed_url)
+    if response.status_code != 200:
+        return []
+    soup = BeautifulSoup(response.text, 'html.parser')
+    links_span = soup.find('span', text='Full text links')
+    if not links_span:
+        return []
+    parent_portlet = [div for div in links_span.find_parents('div') if
+                      'portlet' in div.get('class', [])][0]
+    links = parent_portlet.find_all('a')
+    return [(link['href'], link.img['title']) for link in links]
+
+def get_ena_references(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        return []
+    soup = BeautifulSoup(response.text, 'html.parser')
+    text = soup.body.text.lower()
+    text = re.sub(r'[^a-zA-Z0-9]+', ' ', text)
+    patterns = [
+        r'\bera[0-9]{4,}\b',
+        r'\berp[0-9]{4,}\b',
+        r'\berr[0-9]{4,}\b',
+        r'\bers[0-9]{4,}\b',
+        r'\berx[0-9]{4,}\b'
+    ]
+    refs = []
+    for pattern in patterns:
+        refs += re.findall(pattern, text)
+    return refs
+
+ref_map = {}
+for url in genome_bio_urls:
+    time.sleep(2)
+    links = get_full_text_links(url)
+    try:
+        (link, text) = links[-1]
+        print("Looking for references in %s" % link)
+    except:
+        print("Found %s links for %s" % (len(links), url))
+        continue
+    time.sleep(2)
+    refs = get_ena_references(link)
+    print("Found %s for %s" % (refs, url))
+    ref_map[url] = refs
