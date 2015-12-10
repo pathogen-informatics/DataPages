@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
     <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+    .scrollable-dropdown {
+        height: auto;
+        max-height: 200px;
+        overflow-x: hidden;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,15 +26,69 @@
                 <h2 class="media-heading">Wellcome Trust Sanger Institute<br>Pathogen Data</h2>
             </div>
         </div>
-        <div id='species_selector' class="row">
+        <div class="row">
             <div class="col-md-4">
-                <h3>Pick a pathogen</h3>
-                <ul>
-                {% for name, url in (species_urls.items() | sort) %}
-                    <li><a href='{{ url }}'>{{ name }}</a></li>
-                {% endfor %}
-                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="species_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Pick your pathogen
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="data-list" class="dropdown-menu scrollable-dropdown" aria-labelledby="species_selector">
+                    {% for name, url in (species_urls.items() | sort) %}
+                        <li><a href='{{ url }}'>{{ name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
             </div>
+            <div id="current_species" class="col-md-8"></div>
+        </div>
+        <div id="wait-div" class="row" style="display: none;">
+          <div class="col-md-12">
+              <h4><i class="fa fa-spinner fa-pulse"></i> Please wait while we load your data</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div id="data-div" class="col-md-12">
+              <table id="data-table" class="display">
+                  <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Sample Name</th>
+                            <th>Lane ID</th>
+                            <th>Lane Accession</th>
+                            <th>Project ID</th>
+                            <th>Accession</th>
+                            <th>Study ID</th>
+                            <th>Species Name</th>
+                        </tr>
+                    </thead>
+              </table>
+          </div>
         </div>
     </div>
+    <script>
+      var table;
+      function update_from_link(table, link) {
+          $('#data-div').hide();
+          $('#wait-div').show();
+          url = $(link).attr('href');
+          species = $(link).text();
+          $('#current_species').html('<h5>'+species+'</h5>');
+          table.ajax.url(url).load(function () {
+              $('#data-div').show();
+              $('#wait-div').hide();
+          });
+      }
+      $(document).ready( function() {
+        var first_link=$('#data-list a').first();
+        var url = first_link.attr('href');
+        var species = first_link.text();
+        $('#current_species').html('<h5>'+species+'</h5>');
+        table = $("#data-table").DataTable({ajax: url});
+        $('#data-list a').click(function (event){
+          event.preventDefault();
+          update_from_link(table, this);
+        })
+      })
+    </script>
 <body>

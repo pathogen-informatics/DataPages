@@ -81,7 +81,7 @@ def write_details(details, output_dir):
     for name, sub_details in details.items():
         outpath = output_filepath(name, output_dir)
         with open(outpath, 'w') as outfile:
-            json.dump({name: sub_details}, outfile)
+            json.dump({'data': sub_details}, outfile)
 
 def get_template():
     script_dir = os.path.dirname(os.path.realpath(__file__))
