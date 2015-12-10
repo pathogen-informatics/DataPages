@@ -39,6 +39,14 @@ WHERE           latest_lane.library_id = library.library_id AND
 output_dir = 'site/'
 
 def get_all_details(species_list):
+    # TODO: Remove the DB caching from this function
+    try:
+        with open('details.cache', 'r') as cache_file:
+            details = json.load(cache_file)
+            print("Reading cache")
+            return details
+    except:
+        print("Cache miss, going to DB")
     connection = pymysql.connect(
         host=db_host,
         port=db_port,
@@ -52,7 +60,11 @@ def get_all_details(species_list):
     for detail in details_list:
         species_name = detail[7].lower()
         details_lookup.setdefault(species_name, []).append(detail)
-    return {species: details_lookup.get(species.lower(), []) for species in species_list}
+    details = {species: details_lookup.get(species.lower(), []) for species in species_list}
+    with open('details.cache', 'w') as cache_file:
+        print("Writing cache")
+        json.dump(details, cache_file)
+    return details
 
 def get_species_names(path):
     with open(path, 'r') as species_file:
