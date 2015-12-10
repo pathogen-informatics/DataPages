@@ -2,3 +2,4 @@ i*.pyc
 *~
 *.swp
 venv
+site/*.json
