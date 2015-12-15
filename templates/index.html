@@ -40,7 +40,6 @@
                     </ul>
                 </div>
             </div>
-            <div id="current_species" class="col-md-8"></div>
         </div>
         <div id="wait-div" class="row" style="display: none;">
           <div class="col-md-12">
@@ -73,7 +72,7 @@
           $('#wait-div').show();
           url = $(link).attr('href');
           species = $(link).text();
-          $('#current_species').html('<h5>'+species+'</h5>');
+          $('#species_selector').text(species);
           table.ajax.url(url).load(function () {
               $('#data-div').show();
               $('#wait-div').hide();
@@ -83,8 +82,7 @@
         var first_link=$('#data-list a').first();
         var url = first_link.attr('href');
         var species = first_link.text();
-        $('#current_species').html('<h5>'+species+'</h5>');
-        table = $("#data-table").DataTable({ajax: url});
+        table = $("#data-table").DataTable();
         $('#data-list a').click(function (event){
           event.preventDefault();
           update_from_link(table, this);
