@@ -76,22 +76,21 @@
         </div>
     </div>
     <script>
-      var table;
-      function update_table_from_link(table, link) {
+      function update_table_for_species(table, species, project) {
           $('#data-div').hide();
           $('#wait-div').show();
-          url = $(link).attr('href');
-          species = $(link).text();
+          url = get_species_urls()[species];
           $('#species_selector').text(species);
           table.ajax.url(url).load(function () {
             $('#data-div').show();
             $('#wait-div').hide();
-            update_project_lists_from_table(table);
+            update_project_lists_from_table(table, project);
           });
       }
-      function update_project_lists_from_table(table) {
+
+      function update_project_lists_from_table(table, default_project) {
         table.column(0).search('').draw();
-        $('#project_selector').text("All Projects");
+        $('#project_selector').text(default_project);
         var projects = table.column(0).data().unique().sort();
         var project_list = $('#project_list');
         project_list.empty();
@@ -99,25 +98,54 @@
         projects.each ( function (d, j) {
           project_list.append('<li><a href="#'+j+'">' + d + '</a></li>');
         });
+        filter_by_project(table, default_project);
         $("#project_list a").click(function (event) {
-          event.preventDefault();
-          var project_name = $(this).text();
-          $('#project_selector').text(project_name);
-          if (project_name == 'All Projects') {
-            table.column(0).search('').draw();
-          } else {
-            table.column(0).search('^' + $.fn.dataTable.util.escapeRegex(project_name) + '$', true, false).draw();
-          }
+          var project = $(this).text();
+          console.log(encodeURIComponent(project));
+          $('#project_selector').text(project);
+          filter_by_project(table, project);
         });
       }
+
+      function filter_by_project(table, project) {
+        if (project == 'All Projects') {
+          table.column(0).search('').draw();
+        } else {
+          table.column(0).search('^' + $.fn.dataTable.util.escapeRegex(project) + '$', true, false).draw();
+        }
+      }
+
+      function get_url_params() {
+        var param_string = location.search.substring(1);
+        var key_value_pairs = param_string.split('&');
+        var key_values_list = key_value_pairs.map( function (kv) { return kv.split('=').map( decodeURIComponent ) } );
+        var params = {}
+        key_values_list.forEach( function ( key_value) { key = key_value[0]; value = key_value[1]; params[key] = value });
+        return params;
+      }
+
+      function get_species_urls() {
+        var links = {};
+        $('#species_list a').each( function () {
+          species = $(this).text();
+          url = $(this).attr('href');
+          links[species] = url;
+        });
+        return links;
+      }
+
       $(document).ready( function() {
-        var first_link=$('#species_list a').first();
-        var url = first_link.attr('href');
-        var species = first_link.text();
-        table = $("#data-table").DataTable();
+        var params = get_url_params()
+        var first_species=$('#species_list a').first().text();
+        var species = params['species'] || first_species
+        var project = params['project'] || 'All Projects';
+        var table = $("#data-table").DataTable();
+        update_table_for_species(table, species, project);
         $('#species_list a').click(function (event){
           event.preventDefault();
-          update_table_from_link(table, this);
+          species = $(this).text();
+          console.log(encodeURIComponent(species));
+          update_table_for_species(table, species, 'All Projects');
         })
       })
     </script>
