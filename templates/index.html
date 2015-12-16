@@ -81,11 +81,19 @@
           $('#wait-div').show();
           url = get_species_urls()[species];
           $('#species_selector').text(species);
-          table.ajax.url(url).load(function () {
+          if (url && table.ajax.url(url)) {
+            table.load(function (data) {
+              $('#data-div').show();
+              $('#wait-div').hide();
+              update_project_lists_from_table(table, project);
+            });
+          } else {
+            // There was an issue updating the table, maybe the species doesn't exist
+            table.clear();
             $('#data-div').show();
             $('#wait-div').hide();
-            update_project_lists_from_table(table, project);
-          });
+            update_project_lists_from_table(table, 'All Projects');
+          }
       }
 
       function update_project_lists_from_table(table, default_project) {
