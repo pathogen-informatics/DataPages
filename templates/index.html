@@ -33,10 +33,20 @@
                       Pick your pathogen
                       <span class="caret"></span>
                     </button>
-                    <ul id="data-list" class="dropdown-menu scrollable-dropdown" aria-labelledby="species_selector">
+                    <ul id="species_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="species_selector">
                     {% for name, url in (species_urls.items() | sort) %}
                         <li><a href='{{ url }}'>{{ name }}</a></li>
                     {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="project_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      All Projects
+                      <span class="caret"></span>
+                    </button>
+                    <ul id="project_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="project_selector">
                     </ul>
                 </div>
             </div>
@@ -67,25 +77,47 @@
     </div>
     <script>
       var table;
-      function update_from_link(table, link) {
+      function update_table_from_link(table, link) {
           $('#data-div').hide();
           $('#wait-div').show();
           url = $(link).attr('href');
           species = $(link).text();
           $('#species_selector').text(species);
           table.ajax.url(url).load(function () {
-              $('#data-div').show();
-              $('#wait-div').hide();
+            $('#data-div').show();
+            $('#wait-div').hide();
+            update_project_lists_from_table(table);
           });
       }
+      function update_project_lists_from_table(table) {
+        table.column(0).search('').draw();
+        $('#project_selector').text("All Projects");
+        var projects = table.column(0).data().unique().sort();
+        var project_list = $('#project_list');
+        project_list.empty();
+        project_list.append('<li><a href="#">All Projects</a></li>');
+        projects.each ( function (d, j) {
+          project_list.append('<li><a href="#'+j+'">' + d + '</a></li>');
+        });
+        $("#project_list a").click(function (event) {
+          event.preventDefault();
+          var project_name = $(this).text();
+          $('#project_selector').text(project_name);
+          if (project_name == 'All Projects') {
+            table.column(0).search('').draw();
+          } else {
+            table.column(0).search('^' + $.fn.dataTable.util.escapeRegex(project_name) + '$', true, false).draw();
+          }
+        });
+      }
       $(document).ready( function() {
-        var first_link=$('#data-list a').first();
+        var first_link=$('#species_list a').first();
         var url = first_link.attr('href');
         var species = first_link.text();
         table = $("#data-table").DataTable();
-        $('#data-list a').click(function (event){
+        $('#species_list a').click(function (event){
           event.preventDefault();
-          update_from_link(table, this);
+          update_table_from_link(table, this);
         })
       })
     </script>
