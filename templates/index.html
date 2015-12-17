@@ -79,39 +79,40 @@
       function update_table_for_species(table, species, project) {
           $('#data-div').hide();
           $('#wait-div').show();
-          url = get_species_urls()[species];
+          var data_url = get_species_urls()[species];
           $('#species_selector').text(species);
-          if (url && table.ajax.url(url)) {
-            table.load(function (data) {
+          if (data_url && table.ajax.url(data_url)) {
+            table.load(function () {
               $('#data-div').show();
               $('#wait-div').hide();
-              update_project_lists_from_table(table, project);
+              update_project_lists_from_table(table, species, project);
             });
           } else {
             // There was an issue updating the table, maybe the species doesn't exist
             table.clear();
             $('#data-div').show();
             $('#wait-div').hide();
-            update_project_lists_from_table(table, 'All Projects');
+            update_project_lists_from_table(table, species, 'All Projects');
           }
       }
 
-      function update_project_lists_from_table(table, default_project) {
+      function update_project_lists_from_table(table, species, default_project) {
         table.column(0).search('').draw();
         $('#project_selector').text(default_project);
         var projects = table.column(0).data().unique().sort();
         var project_list = $('#project_list');
         project_list.empty();
         project_list.append('<li><a href="#">All Projects</a></li>');
-        projects.each ( function (d, j) {
-          project_list.append('<li><a href="#'+j+'">' + d + '</a></li>');
+        projects.each ( function (d) {
+          project_list.append('<li><a href="#">' + d + '</a></li>');
         });
         filter_by_project(table, default_project);
         $("#project_list a").click(function (event) {
+          event.preventDefault();
           var project = $(this).text();
-          console.log(encodeURIComponent(project));
           $('#project_selector').text(project);
           filter_by_project(table, project);
+          update_url_params(species, project);
         });
       }
 
@@ -135,12 +136,34 @@
       function get_species_urls() {
         var links = {};
         $('#species_list a').each( function () {
-          species = $(this).text();
-          url = $(this).attr('href');
+          var species = $(this).text();
+          var url = $(this).attr('href');
           links[species] = url;
         });
         return links;
       }
+
+      function update_url_params(species, project) {
+        var param_string = '?species=' + encodeURIComponent(species);
+        if (project) {
+          param_string += '&project=' + encodeURIComponent(project);
+        }
+        var path = location.pathname + param_string
+        var state = {
+          'species': species,
+          'project': project
+        };
+        history.pushState(state, species, path);
+      }
+
+      window.onpopstate = function(event) {
+        var state = event.state;
+        var species = state['species'];
+        var project = state['project'];
+        var table = $("#data-table").DataTable();
+        console.log("Returning to (" + species + ", " + project + ")");
+        update_table_for_species(table, species, project);
+      };
 
       $(document).ready( function() {
         var params = get_url_params()
@@ -149,11 +172,12 @@
         var project = params['project'] || 'All Projects';
         var table = $("#data-table").DataTable();
         update_table_for_species(table, species, project);
+        update_url_params(species, project);
         $('#species_list a').click(function (event){
           event.preventDefault();
-          species = $(this).text();
-          console.log(encodeURIComponent(species));
+          var species = $(this).text();
           update_table_for_species(table, species, 'All Projects');
+          update_url_params(species, 'All Projects');
         })
       })
     </script>
