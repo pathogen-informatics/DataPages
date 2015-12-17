@@ -81,10 +81,16 @@
           $('#wait-div').show();
           var data_url = get_species_urls()[species];
           $('#species_selector').text(species);
-          if (data_url && table.ajax.url(data_url)) {
+          var current_species = $('#species_selector').data('species');
+          if (current_species && current_species == species) {
+            $('#data-div').show();
+            $('#wait-div').hide();
+            update_project_lists_from_table(table, species, project);
+          } else if (data_url && table.ajax.url(data_url)) {
             table.load(function () {
               $('#data-div').show();
               $('#wait-div').hide();
+              $('#species_selector').data('species', species);
               update_project_lists_from_table(table, species, project);
             });
           } else {
@@ -92,6 +98,7 @@
             table.clear();
             $('#data-div').show();
             $('#wait-div').hide();
+            $('#species_selector').data('species', species);
             update_project_lists_from_table(table, species, 'All Projects');
           }
       }
@@ -143,7 +150,7 @@
         return links;
       }
 
-      function update_url_params(species, project) {
+      function update_url_params(species, project, no_push) {
         var param_string = '?species=' + encodeURIComponent(species);
         if (project) {
           param_string += '&project=' + encodeURIComponent(project);
@@ -153,7 +160,11 @@
           'species': species,
           'project': project
         };
-        history.pushState(state, species, path);
+        if (no_push) {
+          history.replaceState(state, species, path);
+        } else {
+          history.pushState(state, species, path);
+        }
       }
 
       window.onpopstate = function(event) {
@@ -172,7 +183,7 @@
         var project = params['project'] || 'All Projects';
         var table = $("#data-table").DataTable();
         update_table_for_species(table, species, project);
-        update_url_params(species, project);
+        update_url_params(species, project, true);
         $('#species_list a').click(function (event){
           event.preventDefault();
           var species = $(this).text();
