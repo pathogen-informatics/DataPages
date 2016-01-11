@@ -14,14 +14,15 @@ db_user = os.environ['VRTRACK_RO_USER']
 db_db = 'pathogen_prok_track'
 
 query = """\
-SELECT DISTINCT latest_project.name,
-                latest_sample.name,
-                latest_lane.name,
-                latest_lane.acc,
-                latest_project.ssid,
-                individual.acc,
-                study.acc,
-                species.name
+SELECT DISTINCT latest_project.name as internal_project_name,
+                latest_sample.name as internal_sample_name,
+                latest_lane.name as lane_name,
+                latest_lane.acc as lane_accession,
+                latest_lane.withdrawn as withdrawn,
+                latest_project.ssid as project_ssid,
+                individual.acc as sample_accession,
+                study.acc as study_accession,
+                species.name as species_name
 FROM            species,
                 individual,
                 latest_sample,
@@ -96,9 +97,10 @@ def write_index(details, output_dir):
     with open(os.path.join(output_dir, 'index.html'), 'w') as index_file:
         print(get_template().render(species_urls=species_urls), file=index_file)
 
-#species = get_species_names('/nfs/pathogen/project_pages/Project_webpages_species_list_Prokaryotes.txt')
-species = get_species_names('Project_webpages_species_list_Prokaryotes.txt')
-details = get_all_details(species)
-write_details(details, output_dir)
-write_index(details, output_dir)
-
+if __name__ == '__main__':
+  # TODO: FIXME
+  #species = get_species_names('/nfs/pathogen/project_pages/Project_webpages_species_list_Prokaryotes.txt')
+  species = get_species_names('Project_webpages_species_list_Prokaryotes.txt')
+  details = get_all_details(species)
+  write_details(details, output_dir)
+  write_index(details, output_dir)
