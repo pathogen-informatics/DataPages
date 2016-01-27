@@ -104,10 +104,25 @@ def join_vrtrack_sequencescape(vrtrack, sequencescape):
     joint_data = data_joined_by_sample_accession.combine_first(data_joined_by_sample_name)
     return joint_data.reset_index(drop=True)
 
+def _get_default_columns(joint_data, column, default_columns, otherwise='Unknown'):
+    default_column = default_columns[0]
+    mask = joint_data[default_column].notnull() & (joint_data[default_column] != '')
+    joint_data.loc[mask, column] = joint_data.loc[mask, default_column].values
+    for default_column in default_columns[1:]:
+        done = joint_data[column].notnull() & (joint_data[column] != '')
+        mask = (done != True) & joint_data[default_column].notnull() & (joint_data[default_column] != '')
+        joint_data.loc[mask, column] = joint_data.loc[mask, default_column].values
+    done = joint_data[column].notnull() & (joint_data[column] != '')
+    unknown = (done == False)
+    joint_data.loc[unknown, column] = otherwise
+
 def add_canonical_data(joint_data):
-    joint_data['canonical_study_name'] = joint_data.apply(lambda row: row['study_title'] or row['study_name'] or row['internal_project_name'], axis=1)
-    joint_data['canonical_sample_name'] = joint_data.apply(lambda row: row['sample_public_name'] or row['sample_supplier_name'] or row['internal_sample_name'], axis=1)
-    joint_data['canonical_strain'] = joint_data.apply(lambda row: row['sample_strain'] or 'Unknown', axis=1)
+    _get_default_columns(joint_data, 'canonical_study_name',
+                         ['study_title', 'study_name', 'internal_project_name'])
+    _get_default_columns(joint_data, 'canonical_sample_name',
+                         ['sample_public_name', 'sample_supplier_name', 'internal_sample_name'])
+    _get_default_columns(joint_data, 'canonical_strain',
+                         ['sample_strain'])
 
 def merge_ena_status(joint_data, ena_details):
     run_ena_status = ena_details[['run_accession',]]
