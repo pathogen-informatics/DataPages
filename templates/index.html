@@ -76,6 +76,41 @@
         </div>
     </div>
     <script>
+      function add_ena_links(table) {
+        var column_indices = table.columns().eq(0);
+        var column_lookup = {}
+        column_indices.each(function (index) {
+          column_label = $(table.columns(index).header()).text();
+          column_lookup[column_label] = index;
+        });
+        var row_indices = table.rows().eq(0);
+        var study_idx = column_lookup['Study Accession']
+        var run_idx = column_lookup['Run Accession']
+        var sample_idx = column_lookup['Sample Accession']
+        row_indices.each(function (index) {
+          var study_node = $(table.row(index).nodes()[0]).children('td')[study_idx];
+          var study_accession = $(study_node).text();
+          if (study_accession != 'Unknown') {
+            var study_url = "http://www.ebi.ac.uk/ena/data/view/"+study_accession;
+            $(study_node).html('<td><a href="'+study_url+'">'+study_accession+'</a></td>');
+          }
+
+          var run_node = $(table.row(index).nodes()[0]).children('td')[run_idx];
+          var run_accession = $(run_node).text();
+          if (run_accession != 'Unknown') {
+            var run_url = "http://www.ebi.ac.uk/ena/data/view/"+run_accession;
+            $(run_node).html('<td><a href="'+run_url+'">'+run_accession+'</a></td>');
+          }
+
+          var sample_node = $(table.row(index).nodes()[0]).children('td')[sample_idx];
+          var sample_accession = $(sample_node).text();
+          if (sample_accession != 'Unknown') {
+            var sample_url = "http://www.ebi.ac.uk/ena/data/view/"+sample_accession;
+            $(sample_node).html('<td><a href="'+sample_url+'">'+sample_accession+'</a></td>');
+          }
+        });
+      }
+
       function update_table_for_species(table, species, project) {
         $('#data-div').hide();
         $('#wait-div').show();
