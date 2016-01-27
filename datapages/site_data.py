@@ -146,6 +146,7 @@ def merge_data(lane_details, ena_run_details, studies):
     return joint_data
 
 def build_relevant_data(joint_data, species_list):
+    now = datetime.now()
     column_name_map = collections.OrderedDict([
         ('species_name', 'Species'),
         ('canonical_study_name', 'Study Name'),
@@ -171,7 +172,8 @@ def build_relevant_data(joint_data, species_list):
             'columns': prefered_column_names,
             'data': species_data.values.tolist(),
             'species': species,
-            'count': len(species_data.index)
+            'count': len(species_data.index),
+            'updated': now.isoformat()
         })
 
 def _make_temp_dir(data_dir_temp):
