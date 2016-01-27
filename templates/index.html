@@ -71,40 +71,42 @@
                         </tr>
                     </thead>
               </table>
-	      <div id='data-updated'></div>
+              <div id='data-updated'></div>
           </div>
         </div>
     </div>
     <script>
       function update_table_for_species(table, species, project) {
-          $('#data-div').hide();
-          $('#wait-div').show();
-          var data_url = get_species_urls()[species];
-          $('#species_selector').text(species);
-          var current_species = $('#species_selector').data('species');
-          if (current_species && current_species == species) {
-            $('#data-div').show();
-            $('#wait-div').hide();
-            update_project_lists_from_table(table, species, project);
-          } else if (data_url && table.ajax.url(data_url)) {
-            table.load(function (data) {
-              var new_columns = data['columns'];
-	      new_columns.forEach((name, index) => $(table.columns(index).header()).text(name));
-	      var last_updated = new Date(data['updated']);
-	      $('#data-updated').text("Last updated: "+last_updated);
-              $('#data-div').show();
-              $('#wait-div').hide();
-              $('#species_selector').data('species', species);
-              update_project_lists_from_table(table, species, project);
-            });
-          } else {
-            // There was an issue updating the table, maybe the species doesn't exist
-            table.clear();
-            $('#data-div').show();
-            $('#wait-div').hide();
-            $('#species_selector').data('species', species);
-            update_project_lists_from_table(table, species, 'All Projects');
-          }
+        $('#data-div').hide();
+        $('#wait-div').show();
+        var data_url = get_species_urls()[species];
+        $('#species_selector').text(species);
+        var current_species = $('#species_selector').data('species');
+        if (current_species && current_species == species) {
+          $('#data-div').show();
+          $('#wait-div').hide();
+          update_project_lists_from_table(table, species, project);
+        } else if (data_url && table.ajax.url(data_url)) {
+          table.load(function (data) {
+            var new_columns = data['columns'];
+            var column_lookup = {};
+            new_columns.forEach((name, index) => $(table.columns(index).header()).text(name));
+            var last_updated = new Date(data['updated']);
+            $('#data-updated').text("Last updated: "+last_updated);
+                  $('#data-div').show();
+                  $('#wait-div').hide();
+                  $('#species_selector').data('species', species);
+                  update_project_lists_from_table(table, species, project);
+            add_ena_links(table);
+          });
+        } else {
+          // There was an issue updating the table, maybe the species doesn't exist
+          table.clear();
+          $('#data-div').show();
+          $('#wait-div').hide();
+          $('#species_selector').data('species', species);
+          update_project_lists_from_table(table, species, 'All Projects');
+        }
       }
 
       function update_project_lists_from_table(table, species, default_project) {
