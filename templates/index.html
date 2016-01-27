@@ -119,7 +119,7 @@
           var project = $(this).text();
           $('#project_selector').text(project);
           filter_by_project(table, project);
-          update_url_params(species, project);
+          update_url_params(species, project, true);
         });
       }
 
@@ -150,7 +150,7 @@
         return links;
       }
 
-      function update_url_params(species, project, no_push) {
+      function update_url_params(species, project, push_state) {
         var param_string = '?species=' + encodeURIComponent(species);
         if (project) {
           param_string += '&project=' + encodeURIComponent(project);
@@ -160,10 +160,10 @@
           'species': species,
           'project': project
         };
-        if (no_push) {
-          history.replaceState(state, species, path);
-        } else {
+        if (push_state) {
           history.pushState(state, species, path);
+        } else {
+          history.replaceState(state, species, path);
         }
       }
 
@@ -179,16 +179,16 @@
       $(document).ready( function() {
         var params = get_url_params()
         var first_species=$('#species_list a').first().text();
-        var species = params['species'] || first_species
+        var species = params['species'] || first_species;
         var project = params['project'] || 'All Projects';
         var table = $("#data-table").DataTable();
         update_table_for_species(table, species, project);
-        update_url_params(species, project, true);
+        update_url_params(species, project, false);
         $('#species_list a').click(function (event){
           event.preventDefault();
           var species = $(this).text();
           update_table_for_species(table, species, 'All Projects');
-          update_url_params(species, 'All Projects');
+          update_url_params(species, 'All Projects', true);
         })
       })
     </script>
