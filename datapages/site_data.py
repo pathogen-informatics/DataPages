@@ -256,5 +256,5 @@ if __name__ == '__main__':
     species_list_filename = "Project_webpages_species_list_Prokaryotes.txt"
     species_list = get_species_list(species_list_filename)
     relevant_data = build_relevant_data(joint_data, species_list)
-    output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'tmp_site')
+    output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
     write_site_data_files(relevant_data, output_dir)
