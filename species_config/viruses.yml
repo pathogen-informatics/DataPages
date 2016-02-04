@@ -1,0 +1,143 @@
+---
+databases:
+- pathogen_euk_track
+- pathogen_pacbio_track
+metadata:
+  description: |
+    This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
+  list_data: true
+  title: Virus genomes - data download
+species:
+  Herpesviridae Lymphocryptovirus:
+    description: |
+      The Herpesviridae are a large family of enveloped DNA viruses that cause disease in several animal species, including humans. Herpesviruses have large double-stranded linear DNA genomes of 120-220kb encoding 100-200 genes. The _Herpesviridae_ family can be subdivided into alpha, beta and gamma herpesviridae. 
+      
+      Lymphocryptoviruses are a subdivision of the gamma herpesviruses. This family includes human herpesvirus 4 (HHV-4, also known as Epstein-Barr virus, EBV) as the type species, as well as viruses that infect other primate species. These viruses predominantly infect B-lymphocytes and can be oncogenic. In humans HHV-4 is ubiquitous and is associated with infectious mononucleosis, the B-cell tumour Burkitt’s lymphoma and the epithelial tumour nasopharyngeal carcinoma (NPC). 
+      
+      Human herpesvirus 4 (HHV-4 or Epstein Barr virus, EBV) is an oncogenic herpesvirus that causes infectious mononucleosis and is associated with tumours including nasopharyngeal carcinoma and Burkitt’s lymphoma. We are currently sequencing the full genome of HHV-4 present in human saliva using both Roche 454 and Illumina sequencing technology. We also aim to determine the full genome sequence from both virus present in Burkitt's lymphoma and nasopharyngeal carcinoma.
+    published_data_description: |
+      NC_007605 Human herpesvirus 4 type 1, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/NC_007605.1)
+    aliases:
+    - Human herpesvirus 4
+
+  Herpesviridae Rhadinovirus:
+    description: |
+      The Herpesviridae are a large family of enveloped DNA viruses that cause disease in several animal species, including humans. Herpesviruses have large double-stranded linear DNA genomes of 120-220kb encoding 100-200 genes. The _Herpesviridae_ family can be subdivided into alpha, beta and gammaherpesviridae. 
+      
+      Rhadinoviruses are a genus of gammaherpesviruses that include Human herpesvirus 8 (HHV-8), also known as Kaposi's sarcoma-associated herpesvirus (KSHV). Rhadinoviruses generally infect B-lymphocytes, endothelial cells and fibroblasts and cause persistent lifelong infection. HHV-8 can cause tumours in immunosuppressed human hosts, such as in HIV-induced AIDS or following organ transplantation. 
+      
+      Human herpesvirus-8 (HHV-8 or Kaposi's sarcoma-associated herpesvirus) is a oncogenic gammaherpesvirus with a large dsDNA genome of approximately 165kb. HHV-8 is a causative agent in several human tumours including Kaposi's sarcoma, primary effusion lymphoma (PEL) and multicentric Castleman's disease. We are currently using both Roche 454 and Illumina technology to sequence the full genome of HHV-8 found in several different PEL cell lines from both the latent episomal genome present within the cell and the virus released from the cell during lytic replication. 
+      
+      We are also using the Illumina platform for RNA sequencing studies of PEL cell lines to examine changes in the transcriptome of both the virus and host cell as the virus is induced from latent infection into lytic replication. By examining the transcriptome of several different PEL cell lines we also aim to identify genomic rearrangements characteristic and/or causative of the PEL tumour phenotype. This project involves Professor Kellam’s research group based at the Department of Infection, University College London.
+    published_data_description: |
+      NC_009333 Human herpesvirus 8, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/NC_009333.1)
+    aliases:
+    - Human herpesvirus 8
+
+  Herpesviridae Simplexvirus:
+    description: |
+      The Herpesviridae are a large family of enveloped DNA viruses that cause disease in several animal species, including humans. Herpesviruses have large double-stranded linear DNA genomes of 120-220kb encoding 100-200 genes. The _Herpesviridae_ family can be subdivided into alpha, beta and gamma herpesviridae. 
+      
+      The simplex virus family is a subdivision of the alphaherpesviruses and mainly infect humans and non-human primates . These viruses are characterised by a much more rapid replication cycle than other herpesviruses. Human herpes virus 1 and 2 (HHV-1 and -2, also known as Herpes simplex virus (HSV) 1 and 2), are two members of this virus family that infect humans causing blisters in the skin or mucous membranes of the mouth, lips or genitals. HHV-1 and HHV-2 establish lifelong latent infection in nerve cells and can reactivate sporadically to cause recurring symptoms. 
+      
+      Human herpesvirus 1 (HHV-1 or Herpes simplex virus 1) is a neurotropic alphaherpesvirus which establishes latent infection in neuronal cells and causes recurrent oral blisters upon sporadic reactivation. HHV-1 has a large dsDNA genome of 152kb and encodes at least 75 viral genes. 
+      
+      In collaboration with Professor Tony Minson and Dr Helena Browne at the University of Cambridge we are currently involved in full genome sequencing of wild type laboratory strains of HHV-1 and viruses which are mutated in the glycoprotein H region, impeding virus entry into cells. This project aims to determine changes in the genomic DNA sequence responsible for observed phenotypic changes in the mutant viruses.
+    published_data_description: |
+      NC_001806 Human herpesvirus 1, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/9629378)
+    aliases:
+    - Human herpesvirus 1
+
+  Orthomyxoviridae Influenzavirus A:
+    description: |
+      The Orthomyxoviridae family of viruses are segmented (8 segments, in the case of influenza A virus), negative-sense, enveloped RNA viruses, which infect vertebrate hosts. (see [ICTVdB - The Universal Virus Database, version 4](http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/00.046.htm)). 
+      
+      Of the viruses belonging to the family Orthomyxoviridae, influenza A virus is the most predominant cause of morbidity and mortality in humans, in which it causes respiratory illness. The natural hosts of all influenza A subtypes are wild birds, primarily those belonging to the family Anatidae (ducks, geese, and swans). Transmission of numerous subtypes to humans and other animals have been documented, but establishment of persistent infection of new subtypes in humans is rare. Apart from waterfowl and humans, transmission of influenza A is known to persist in birds of the order Galliformes, pigs, horses, and dogs. 
+      
+      Influenza A viruses are classified into subtypes based on the antigenic relationships of their two major surface proteins: haemagglutinin (HA), which binds to sialic acid residues on surface proteins of host cells, and induces fusion of the virus membrane with that of the host cell; and neuraminidase (NA), which cleaves sialic acid residues from surface proteins, enabling release of virus particles from host cells. 
+      
+      Until recently, two influenza A subtypes - H1N1 and H3N2 - persisted in humans, and caused seasonal epidemics of influenza in temperate countries, and year-round infections in humans in tropical regions. In 2009, a new variant of H1N1, distantly related to seasonal H1N1, emerged in the human population, and caused the first influenza pandemic of the 21st century - this virus is now referred to as [pandemic (H1N1) 2009](http://www.who.int/csr/disease/swineflu/en/). 
+      
+      The Wellcome Trust Sanger Institute is committed to two facets of influenza A virus sequencing: whole genome sequencing; and deep amplicon sequencing. 
+      
+      Our influenza whole genome sequencing is funded by the [Wellcome Trust](http://www.wellcome.ac.uk), and involves collaboration with researchers at the Health Protection Agency (HPA), National Institute for Medical Research, London (NIMR), and the Veterinary Laboratories Agency (VLA). We have developed robust approaches to sequencing influenza A genomes using capillary, 454, and Illumina sequencing platforms. The role of these projects is to supplement the sequences of subgenomic genes/segments, which are rapidly generated by our collaborators, with whole genome consensus sequences. 
+      
+      Our deep amplicon sequencing projects are also funded by the [Wellcome Trust](http://www.wellcome.ac.uk), and involve collaborations with the Cambridge Infectious Disease Consortium (CIDC) and the Animal Health Trust, Newmarket (AHT). Rather than generating consensus sequence for the whole genome, these projects involve deep sequencing of some genes (usually HA1), to investigate changes in frequency of rare variants over time during infection, both within the period of infection of an individual and through chains of transmission.
+    published_data_description: |
+      [A/California/07/2009(H1N1)](http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=641809)
+    aliases:
+    - Influenza H1N1
+    - Influenza H3N2
+    - Influenza A virus
+    - Influenzavirus A
+    pubmed_ids:
+    - 19465683
+    - 19516283
+    - 16208317
+
+  Picornaviridae Enterovirus:
+    description: |
+      Members of this family have a linear single stranded, positive sense RNA genome of 7.1 to 8.9 kilobases, which is polyadenylated. Their genomes consist of a single open-reading frame, which encodes a polyprotein. This is then cleaved co- and post- translationally by viral proteases to give the viral structural and non-structural proteins. 
+      
+      There are 12 genera in the Picornaviridae: _Enterovirus_, _Cardiovirus_, _Aphthovirus_, _Hepatovirus_, _Parechovirus_, _Erbovirus_, _Kobuvirus_, _Teschovirus_, _Sapelovirus_, _Senecavirus_, _Tremovirus_ and _Avihepatovirus_. 
+      
+      We are currently involved in a project to sequence isolates of Human echovirus 30, a member of the _Enterovirus_ genus, which is associated with aseptic meningitis and encephalitis. 
+      
+      ## Genus: Enterovirus
+      
+      ## Species: Human enterovirus B
+      
+      Non-enveloped RNA virus, with a positive-sense RNA genome, which consists of approximately 7,500 nucleotides. This encodes a polyprotein which is cleaved to produce structural (capsid proteins VP1 to VP4) and nonstructural (2A to 3D) proteins. There are 36 serotypes of Human enterovirus B – Human coxsackievirus A9, Human coxsackievirus B1–B6, Human echovirus 1–7, 9, 11-21, 24-27, 29-33, Human enterovirus 69. Enteroviruses can readily infect humans and are spread by oral/faecal or respiratory routes. 
+      
+      Human Echovirus 30 – Associated with aseptic meningitis and encephalitis, although infection in immunocompetent individuals is often asymptomatic. 
+      
+      In collaboration with [Professor Peter Simmonds](http://www.virology.ed.ac.uk/research/Simmonds.htm) and Dr Carol Leitch (Centre for Infectious Diseases, University of Edinburgh) we are using Roche/454 technology to sequence the whole genomes of a group of Human echovirus 30 isolates. This project is funded by the Wellcome Trust.
+    published_data_description: |
+      Human echovirus 30 isolate 14916net87, complete genome, DQ534205 can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/106636122).
+    aliases:
+    - echovirus
+
+  Reoviridae Orbivirus:
+    description: |
+      Members of the Reoviridae have a genome composed of multiple (10, 11, or 12) segments of linear double-stranded RNA (dsRNA), which are contained within virus particles that have icosahedral symmetry. The family contains 12 different genera, with around 30 more ‘unassigned’ species reported to date. 
+      
+      The genera _Coltivirus_, _Orbivirus_ and _Seadornavirus_, contain viruses that are transmitted between animal hosts by insect vectors (arboviruses). The genera _Fijivirus_, _Oryzavirus_ and _Phytoreovirus_ contain plant arboviruses. Viruses belonging to the other genera (_Aquareovirus_, _Cypovirus_, _Idnoreovirus_, _Mycoreovirus_, _Orthoreovirus_ and _Rotavirus_) are thought to be transmitted horizontally or vertically between individual host organisms, often by an oral/faecal route. 
+      
+      We are currently involved in Bluetongue virus (BTV) sequencing projects, the causative agent of bluetongue disease which affects ruminants. 
+      
+      ## Genus: Orbivirus
+      
+      ## Species: Bluetongue virus
+      
+      Bluetongue virus has a dsRNA genome, consisting of 10 segments, totalling ~19200 base pairs. It is transmitted by biting _Culicoides_ midges and causes disease in ruminants. Clinical signs of the disease include fever, inflammation and ulceration of the mucous linings of the mouth and nose, and lameness. Mortality rates vary between outbreaks but can be up to 30% in susceptible animals. 
+      
+      There are currently 24 recognised serotypes of the virus, with a tentative 25th being detected in goats. Serotype is determined by the outer capsid protein VP2 and to a lesser extent VP5. Bluetongue virus is of economic importance, with worldwide farming losses due to the disease being several billion dollars per year. 
+      
+      In collaboration with Professor Peter Mertens and Dr Sushila Maan (Institute for Animal Health, Pirbright) we are working on whole genome sequencing of European isolates of BTV using Roche/454 technology. 
+      
+      We are also working with [Professor Massimo Palmarini](http://www.gla.ac.uk/faculties/vet/research/staff/researchinterests/?sid=140), and Dr Marco Caporale (Faculty of Veterinary Medicine, University of Glasgow) to sequence and compare whole genomes of wild type and vaccine strains of BTV. 
+      
+      These sequencing projects are funded by the Wellcome Trust.
+    aliases:
+    - Bluetongue virus
+
+  Retroviridae Lentivirus:
+    description: |
+      The family _Retroviridae_ comprises a large number of enveloped, spherical to pleomorphic viruses with a linear, positive-sense, single-stranded RNA genome of 7 – 11 kb and a size of 80 – 100 nm. These viruses are furthermore classified into 2 subfamilies and 7 genera. 
+      
+      Their common characteristic which is represented in the name of the family is the enzyme reverse transcriptase. It enables the virus to reverse the flow of the genetic information from RNA to DNA. During the replication cycle, the ssRNA(+) is copied into dsDNA which is integrated into the cell’s genome (=provirus). Retroviruses are known to cause a wide range of diseases in both humans and many animal species, especially immunodeficiencies and tumours. 
+      
+      We are currently involved in sequencing projects considering the _Human immunodeficiency virus_ (HIV), the causative agent of the ongoing acquired immune deficiency syndrome (AIDS) pandemic. 
+      
+      In collaboration with Myra McClure &amp; Jonathan Weber (Imperial College London), we are involved in the SPARTAC study (Short Pulse Anti Retroviral Therapy at HIV Seroconversion) funded by the Wellcome Trust. It is a randomised-controlled trial comparing three different strategies of intervention in patients recently infected with HIV, i.e. (i) Long Course combination Anti-Retroviral Therapy (LCART) for 48 weeks, (ii) Short Course combination Anti-Retroviral Therapy (SCART) for 12 weeks and (iii) No Anti-Retroviral Therapy. The main objective is to determine whether treatment at primary infection for a limited duration delays damage to the immune system and prolongs time to initiation of long-term anti-HIV therapy. The CD4 cell counts as well as disease progression and the development of AIDS events will be monitored. 
+      
+      At the Sanger Institute, we are performing deep sequencing of the highly variable V3 region of the envelope gene using Roche/454 technology. The obtained very deep coverage enables us to identify minor variants. We will compare the sequence diversity before and after treatment within each patient and between groups to investigate whether the intensity of selection has an impact on the viral genetic diversity. 
+      
+      More information about the study can be found [here](http://www1.imperial.ac.uk/medicine/about/divisions/departmentofmedicine/infectiousdiseases/infectious_diseases/hiv_trials/spartac/)
+      
+      We are also working with Deenan Pillay (University College London) to generate whole genome sequences of diverse HIV strains from the UK isolated from the 1980’s until today. Phylogenetic analysis will be conducted to estimate evolution rates and to measure the impact of selective pressures (e.g. highly active antiretroviral therapy, humane restriction factors) on the unprecedented genetic diversity of this virus.
+    published_data_description: |
+      The reference sequence for the _Human immunodeficiency virus 1_ can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/9629357)
+    aliases:
+    - Human immunodeficiency virus 1
+

@@ -1,0 +1,544 @@
+---
+databases:
+- pathogen_euk_track
+- pathogen_pacbio_track
+metadata:
+  description: |
+    This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
+  list_data: false
+  title: Protozoan genomes - data download
+species:
+  Babesia bigemina:
+    description: |
+      Members of the genus _Babesia_ are Apicomplexan parasites commonly referred to as the 'piroplasms'. They have a two-host life-cycle involving a tick and a mammal. In the mammalian host the organisms reproduces asexually. Out of at least six _Babesia_ species that have a considerable impact on livestock health and productivity, two species, _Babesia bovis_ and _Babesia bigemini_ have the greatest affect. Both are transmitted by Boophilus species as tick vectors. Tick-fever or cattle-fever (bovine babesiosis) is economically the most important tick-borne disease of cattle worldwide. Many hundreds of millions of cattle worldwide are at risk from these organisms. 
+      
+      _B. bigemina_ is distributed wherever Boophilus ticks are encountered, which includes North and South America, Southern Europe, Africa, Asia and Australia. In cattle disease caused by B. bigemina is also known as 'Texas cattle fever' or 'red-water fever'. 
+      
+      _B. bigemina_ is a large Babesia species that is pleomorphic but often occur in pairs within the infected red blood cells, hence the name 'bigemina'. In cattle, the parasite can cause massive destruction of the red blood cells leading to severe anaemia and hemoglobinuria. This result in red urine (due to haemoglobin in urine) and the disease can kill a cow within a week. In susceptible British-bred cattle (Bos taurus), high levels of mortality can occur on first exposure. 
+      
+      This is a Wellcome Trust-funded project to sequence the genome of an established virulent Australian isolate of B. bigemina obtained from The Tick Fever Research Centre of The Queensland Department of Primary Industries. The nuclear genome of _B. bigemina_ is estimated to be 10 Mb in size, distributed over 4 chromosomes, and a whole genome shotgun sequencing approach (to 8-fold coverage) is being used, followed by assembly and finishing. 
+      
+      This project is a collaboration with Drs Peter Willadsen and Louise Jackson of CSIRO Livestock Industries, Australia. 
+      
+      It is hoped that comparisons between these sequence data and those of the related species _Babesia bovis_ will provide insights into pathogenicity in bovine babesiosis. The _Babesia bovis_ genome is currently being sequenced at The Institute for Genomic Research in collaboration with Washington State University.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Babesia/bigemina/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bigemina
+      text: BLAST server
+
+  Babesia bovis:
+    description: |
+      _Babesia bovis_ is a tick-borne protozoan parasite that infects cattle in tropical and sub tropical regions, which can cause huge losses to livestock. Research into this disease is vital due to the great economic importance of cattle in developing countries where this parasite is prevalent. 
+      
+      Ten thousand reads from a cDNA library from Babesia bovis are being generated with the aim to identify genes expressed during infection. The project is carried out as part of a research programme at the Department of Infectious Diseases and Immunology of Utrecht University and is supported by the Netherland_s Foundation for the advancement of Tropical Research and the Dutch National Organisation for Scientific Research. So far 12565 B. bovis_ cDNA clones have been sequenced. A BLAST server now exists to allow easy searching of the _Babesia bovis_ sequence.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/babesia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bovis
+      text: BLAST server
+
+  Bodo saltans:
+    description: |
+      The Kinetoplastida (Euglenozoa) are unicellular flagellates that include the trypanosomatid parasites, most notably _Trypanosoma brucei_, _T. cruzi_ and _Leishmania spp._ These organisms cause substantial mortality and morbidity in humans and their livestock worldwide as the causative agents of African sleeping sickness, Chagas disease and leishmaniasis respectively. Draft genome sequences are available for several species of both _Trypanosoma_ and _Leishmania_, many of which are described elsewhere in these pages. _Bodo saltans_ is a free-living heterotroph found worldwide in freshwater and marine habitats. It is a kinetoplastid, but not a trypanosomatid, and possesses the diagnostic kinetoplastid features, such as flagella sited within a specialised flagellar pocket, glycolytic processes confined to a dedicated organelle (the 'glycosome'), and the characteristic concentration of mitochondrial DNA at the base of the flagellum (the 'kinetoplast'). 
+      
+      The purpose of a _B. saltans_ genome sequence is to provide an 'outgroup' for comparative genomic studies. As it is among the closest bodonid relatives of the trypanosomatids, it will provide a model of the ancestral trypanosomatid to distinguish those derived parts of the parasite genomes (i.e., unique trypanosomatid adaptations) from those which are a legacy of the free-living ancestor. This objective can be resolved into three principal comparative issues: 
+      
+      1\. Trypanosomatid disease; understanding how human trypanosomatid parasites acquired their distinct pathological strategies; 
+      
+      2\. Evolution of parasitism; understanding how the ancestral trypanosomatid became parasitic in terms of derived innovations (e.g., cell surfaces) and loss of genomic repertoire; 
+      
+      3\. Eukaryotic evolution; understanding how typical kinetoplastid features (e.g., glycosomes) evolved and how these might have been modified for parasitism.
+    published_data_description: |
+      A pilot study that described ~400kbp of _B. saltans_ genome sequenced from a whole genome fosmid library has been published (Jackson, Quail &amp; Berriman 2008, BMC Genomics, 9:594). A draft sequence for the entire _B. saltans_ genome has now been produced using Illumina HiSeq technology. The data were derived from two libraries of 300bp and 3kbp insert sizes respectively. Sequence assembly was carried out using _Velvet_ and subsequently corrected for misassembly using large-insert reads and custom scripts. 
+      
+      The draft genome sequence contains 39,864,435bp at ~110x coverage, arranged into 2,256 scaffolds. The average scaffold length is 16,804.54bp and the largest scaffold is 190,927bp long. N50 = 31,548bp (n=372). 
+      
+      The draft genome annotation contains 18,963 coding sequences. When analyzed using _CEGMA_, this covers 78% of the conserved sequence set. 
+      
+      In addition, we have produced a draft transcriptome using RNAseq technology. 85.5% of reads mapped to the genome assembly. The RNAseq reads were assembled using _Velvet_, producing 8,901 putative transcripts and transcript fragments. 
+      
+      All data can be downloaded via our ftp site: <ftp://ftp.sanger.ac.uk/pub/pathogens/Bodo/saltans>
+      
+      and searched using the GeneDB BLAST server: <http://www.genedb.org/blast/submitblast/GeneDB_Bsaltans>
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Bodo/saltans/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_saltans
+      text: BLAST server
+
+  Crithidia:
+    description: |
+      This page contains details of a partial trypanosomatid genomic sequence from an unnamed species of _Crithidia_. This organism is a parasite of insects and was originally recorded as _Crithidia deanei_. As a close relative of the human parasites _Leishmania_ spp. and _Trypanosoma_ spp., it should provide useful comparisons with those genome sequences. 
+      
+      This project was formerly described as belonging to _Crithidia deanei_. In 2009, [Yurchenko et al. (Int J Syst Evol Microbiol, 59:893-909)](http://www.ncbi.nlm.nih.gov/pubmed/19329626) showed that the _C. deanei_ ATCC30255 isolate was incorrectly named since the cells did not contain the b-proteobacterial endosymbionts characteristic of _C. deanei_ and its close relatives, and was phylogenetically related to _Crithidia insperata_ and _Leptomonas bifurcata_. Therefore, the project has been renamed and this species is likely to belong to a _Crithidia_ or _Leptomonas_ species near to _Leishmania_. The data are unchanged.
+    published_data_description: |
+      A fosmid library was created for this _Crithidia_ sp. genome (ATCC 30255) in 2007 with average insert size of 25kb and approximately 4x clone coverage. End-sequencing of all fosmids in the library has produced an initial library of 10,092 sequence reads, which may be searched here. In addition to the end-sequences, various fosmids have been fully sequenced, producing 10,363 further reads that are included here. Users should beware of possible contamination from vector or vector host material during the cloning process.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Crithidia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/crithidia
+      text: BLAST server
+
+  Dictyostelium discoideum:
+    description: |
+      An international consortium which includes the Sanger Institute completed the sequencing of the _Dictyostelium discoideum_ genome (strain AX4). _D.discoideum_ has a 34 Mb haploid genome with a base composition of 77% [A+T]. It consists of 6 chromosomes encoding approximately 12,500 proteins.
+    pubmed_ids:
+    - 15875012
+
+  Eimeria tenella:
+    description: |
+      _Eimeria tenella_ is one of the seven species of _Eimeria_, a group of intracellular protozoan parasites, that causes avian coccidiosis in chicken. It has a significant, detrimental effect on the poultry industry. The total cost of coccidial infections in the UK (circa 780 million broilers) has been estimated to be at least 42 million pounds per year in the UK, with a global cost estimated in the hundreds of millions. At least a quarter of this cost derives from prophylatics and therapy, the remainder attributable to "failure to thrive". 
+      
+      The Sanger Institute has sequenced the genome of the _Eimeria tenella_ Houghton strain to 7x coverage using capillary sequencing. In addition, both Illumina and 454 sequencing technologies have been used to improve the assembly. Transcriptome sequencing (mRNA-seq) is being used to improve the annotation of the genome and also to examine changes in gene expression between different life stages. 
+      
+      The _Eimeria tenella_ genome project at The Sanger Institute, a joint collaboration with Drs. Martin Shirley and Fiona Tomley (Institute of Animal Health, Compton, UK), has been funded by the BBSRC.
+    published_data_description: |
+      The Houghton strain of _Eimeria tenella_ was selected by the research community for the genome project. The genome is approximately 60 MB in size, with a GC content of approximately 53%. There are 14 chromosomes that range in size from 1Mb to &gt; 6Mb. Two major ribosomal DNA clusters, that account for some 2.5% of the genome size, have been mapped as tandem arrays on chromosome 12 (140 copies of an 8 Kb 18S-5.8S-28S unit) and chromosome 10 (500 copies of a 730bp 5S unit).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Eimeria/tenella/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_tenella/omni
+      text: BLAST server
+    pubmed_ids:
+    - 25015382
+    - 17284678
+
+  Entamoeba:
+    description: |
+      _Entamoeba histolytica_ is the causal agent of amoebic dysentery and amoebic liver abscess. With an estimated 40 million cases worldwide and 100,000 deaths, it is responsible for agreat deal of suffering, particularly in the developing world. 
+      
+      The Wellcome Trust Sanger Institute Pathogen Genomics Group, in collaboration with Graham Clark (London School of Hygiene and Tropical Medicine), sequenced the genome of _E. histolytica_ HM-1:IMSS strain.
+    published_data_description: |
+      The E. histolytica genome is ~24 Mb in size and split into 14 chromosomes. A whole genome shotgun sequence (8X coverage) was produced in collaboration with The Institute of Genome Research and assembled into 888 scaffolds. 
+      
+      Additionally, for comparative purposes, the Wellcome Trust Sanger Institute Pathogen Genomics Group sequenced 20000 sequence reads each of _Entamoeba dispar_, _Entamoeba invadens_, _Entamoeba moshkovskii_ and _Entamoeba terrapinae_.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Entamoeba/
+      text: FTP site (Sanger)
+    - url: http://amoebadb.org/common/downloads/
+      text: FTP site (AmoebaDB - latest assemblies)
+    - url: http://amoebadb.org/amoeba/showQuestion.do?questionFullName=UniversalQuestions.UnifiedBlast
+      text: BLAST server (AmoebaDB)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_histolytica
+      text: BLAST server (Sanger E. histolytica)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/comp_entamoeba
+      text: BLAST server (Sanger comparative Entamoeba)
+    pubmed_ids:
+    - 15729342
+
+  Leishmania braziliensis:
+    description: |
+      The _Leishmania_ parasite is an intracellular pathogen of the immune system targeting macrophages and dendritic cells. The disease Leishmaniasis affects the populations of 88 counties worldwide with symptoms ranging from disfiguring cutaneous and muco-cutaneous lesions that can cause widespread destruction of mucous membranes to visceral disease affecting the haemopoetic organs. 
+      
+      Unlike previous species sequenced, _Leishmania braziliensis_ is a New World pathogen and currently the only _Leishmania_ genome from the Viannia species group. As well as causing localised cutaneous lesions in affected people, _Leishmania braziliensis_ can also result in a more destructive, progressive infection in mucosal tissue in a proportion of patients. 
+      
+      We have generated a whole genome shotgun, to approximately 5x coverage, of _Leishmania braziliensis_ clone MHOM/BR/75M2904. This project is a collaboration with Universidade de Sao Paulo - FMRP - USP and Debbie Smith (Imperial College).
+    published_data_description: |
+      A whole genome shotgun, to approximately 5x coverage, of _Leishmania braziliensis_ clone MHOM/BR/75M2904 was generated. This project is a collaboration with Angela Cruz (Universidade de São Paulo - FMRP - USP) and Debbie Smith (University of York).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/L_braziliensis/
+      text: FTP site
+    pubmed_ids:
+    - 17572675
+
+  Leishmania donovani:
+    description: |
+      _Leishmania donovani_ is a protozoan parasite belonging to the Trypanosomatid group. As a major human tropical disease causing debilitating visceral and dermal leishmaniasis, examining genomic variation in strains infecting patients can illuminate the molecular mechanisms of its pathogenicity and resistance to drugs. 
+      
+      Work exploring the genome-level variablility in _Leishmania donovani_ at the Sanger is funded under European Framework Project 7 through two consortia, Kaladrug-r and Gemini, created to evaluate the biology of the parasite. More information on [Kaladrug-r](http://www.leishrisk.net/leishrisk/Default.aspx?Menu=MenuMain&MIID=35&WPID=41&L=E) and on [Gemini](http://www.leishrisk.net/leishrisk/Default.aspx?Menu=MenuMain&MIID=37&WPID=42&L=E) is available.
+    published_data_description: |
+      The genome sequence of _Leishmania donovani_ has not yet been published.
+    pubmed_ids:
+    - 20109253
+    - 20113552
+    - 18598618
+    - 17517634
+
+  Leishmania infantum:
+    description: |
+      The _Leishmania_ parasite is an intracellular pathogen of the immune system targeting macrophages and dendritic cells. The disease Leishmaniasis affects the populations of 88 counties worldwide with symptoms ranging from disfiguring cutaneous and muco-cutaneous lesions that can cause widespread destruction of mucous membranes to visceral disease affecting the haemopoetic organs. 
+      
+      The species of the _L. donovani_ complex are found in different geographical regions. _L. donovani_ is the primary cause of visceral leishmaniasis in the Indian subcontinent and East Africa, _L. infantum_ in the the Mediterranean region and L. chagasi in the New World. While the last two species are genetically identical, all three species are very similar. _L. infantum_ was chosen as the second _Leishmania_ species to sequence after _L. major_ because it is part of the _L. donovani_ complex and is an adaptable species for experimentation. For more information on visceral Leishmaniasis we recommend the WHO website
+    published_data_description: |
+      A whole genome shotgun, to ~5x coverage, of _L. infantum_ clone JPCM5 (MCAN/ES/98/LLM-877) was generated. This was completed in October 2003. This project is a collaboration with Professor Debbie Smith (University of York) and Professor Jeremy Mottram (University of Glasgow).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/infantum
+      text: FTP site
+    pubmed_ids:
+    - 17572675
+
+  Leishmania major:
+    description: |
+      The _Leishmania_ parasite is an intracellular pathogen of the immune system targeting macrophages and dendritic cells. The disease Leishmaniasis affects the populations of 88 counties worldwide with symptoms ranging from disfiguring cutaneous and muco-cutaneous lesions that can cause widespread destruction of mucous membranes to visceral disease affecting the haemopoetic organs. 
+      
+      The _L. major_ Friedlin genome is 32.8Mb in size, with a karyotype of 36 chromosomes. The G+C content is approximately 63%. The Pathogen Genomics group at the Wellcome Trust Sanger Institute played a major role in sequencing the genome of _Leishmania major_ (see Ivens et al .). The sequence data were obtained by adopting several parallel approaches, including complete cosmid sequencing, whole chromosome shotguns and/or BAC sequencing/skimming.
+    published_data_description: |
+      The Pathogen Genomics group at the Wellcome Trust Sanger Institute played a major role in the genome sequencing of _Leishmania major_ Friedlin, sequencing 24 of the 36 chromosomes. Six of the remaining chromosomes were sequenced by SBRI (Seattle, USA) and the other six by the EULEISH consortium. 
+      
+      The sequence data were obtained by adopting several parallel approaches, including complete cosmid sequencing, whole chromosome shotguns and/or BAC sequencing/skimming. 
+      
+      The _L. major_ Friedlin cosmid library was constructed by Jon Warner using genomic DNA isolated by Deborah Smith. The cLHYG vector was a gift from its creator Steve Beverley. A BAC library has also been made by Peter Myler.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/major
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_major
+      text: BLAST server
+    pubmed_ids:
+    - 16020728
+
+  Leishmania mexicana:
+    description: |
+      The _Leishmania_ parasite is an intracellular pathogen of the immune system targeting macrophages and dendritic cells. The disease Leishmaniasis affects the populations of 88 counties worldwide with symptoms ranging from disfiguring cutaneous and muco-cutaneous lesions that can cause widespread destruction of mucous membranes to visceral disease affecting the haemopoetic organs. 
+      
+      _Leishmania mexicana_ is the fourth _Leishmania_ species to be sequenced at the Wellcome Trust Sanger Institute and is representative of the fourth principle species complex that causes disease in man: in this case, cutaneous disease in the New World (Central and South America). It is known that there are significant differences in virulence factors between _L. mexicana_ complex organisms and _L. major_ parasites (that cause cutaneous disease in the Old World), while these species also give rise to different disease pathologies and elicit distinct host immune responses that mediate susceptibility or resistance to infection.
+    published_data_description: |
+      The _L. mexicana_ genome is roughly 32 MBPs in size, with a karyotype of 34 chromosomes. The G+C content is approximately 59%. This project is in collaboration with Debbie Smith (University of York) and Jeremy Mottram (University of Glasgow). _L. mexicana_ MHOM/GT/2001/U1103 (originally from Byron Arana's lab in Guatemala and obtained from Paul Bates at the Liverpool School of Tropical Medicine) was isolated from a 30 year old male patient with a single ear lesion.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/mexicana
+      text: FTP site
+
+  Leptomonas seymouri:
+    description: |
+      _Leptomonas seymouri_ (ATCC 30220) is a parasite of insects, first ioslated from the gut of a hemipteran _Dysdercus suturellus_. _L. seymouri_ is a very close relative of _Leishmania_ spp. and should provide a useful comparison with the human parasites. 
+      
+      A genomic library has been created that contains &gt;4,500 fosmid clones each carrying an insert of 25-40kb, amounting to ~140MB of sequence and ~4X coverage of the _L. seymouri_ genome. Various fosmid inserts have been specifically targeted and fully sequenced. 11,281 sequence reads from these projects are available here to be searched via BLAST or downloaded.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leptomonas/seymouri
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_seymouri
+      text: BLAST server
+
+  Neospora caninum:
+    description: |
+      _Neospora caninum_ is a protozoan parasite of the phylum Apicomplexa that has emerged as a global pathogen of major importance in cattle and dogs. It is estimated to have a nuclear genome size of ~62MB. 
+      
+      The Sanger Institute, in collaboration with the University of Liverpool, has sequenced the genome of the _Neospora caninum_ Liverpool strain to 8x coverage using capillary sequencing. High-thoughput second generation transcriptome sequencing (mRNA-Seq) has been used to improve annotation of the genome sequence and also to study differential expression in the tachyzoite life stage.
+    published_data_description: |
+      The _N. caninum_ genome assembly and annotation is available from GeneDB [[1]](http://www.genedb.org/Homepage/Ncaninum).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neospora/caninum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/n_caninum
+      text: BLAST server
+    pubmed_ids:
+    - 22458863
+
+  Plasmodium berghei:
+    description: |
+      _P. berghei_ is a murine malaria species, originally isolated from thicket rats in Central Africa. The species is one of four common murine model but its relative ease of transfection has made it a particularly popular model for reverse genetics. Although the ‘core’ genome shares large block of synteny with human malaria parasites, there are several well-characterised breaks in synteny and the gene organisation in the subtelomeres is substantially different. 
+      
+      An initial analysis of a low-coverage (3x) draft genome produced by Sanger-sequencing was published by Hall _et al_. in 2005. From these data, _P. berghei_ has an estimated genome size of 18-20 Mb, with 14 chromosomes in the size range of 0.6 Mb to 3.8 Mb. DNA for this sequencing project was obtained from asynchronous bloodstages of clone 15cy1 of the ANKA strain of _P. berghei_. 
+      
+      Further sequencing of _P. berghei_ ANKA and several other strains has been completed using Illumina Sequence-by-synthesis technology. The re-assembly and annotation has been published (PMID:25359557).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/berghei/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_berghei
+      text: BLAST server
+    pubmed_ids:
+    - 25359557
+
+  Plasmodium chabaudi:
+    description: |
+      _P. chabaudi_ is one of the four malaria species that infect murine rodents from Central Africa that are infectious to laboratory rodents and easily maintained and transmitted by _Anopheles stephensi_ in the laboratory. It serves as a good model for the human parasites with which it shares high homology in most essential aspects of structure, biochemistry and life cycle. Genome organisation is conserved between rodent and human parasites and the two share detailed synteny. 
+      
+      An initial analysis of a low-coverage (3x) draft genome produced by Sanger-sequencing was published by Hall _et al_. in 2005. From these data _P. chabaudi_ has an estimated genome size of 18-20 Mb, with 14 chromosomes in the size range of 0.6 Mb to 3.8 Mb. DNA for this sequencing project was obtained from bloodstages of clone AS of of _P. chabaudi_. 
+      
+      Further sequencing of _P. chabaudi_ AS and several other strains has been completed using Illumina Sequence-by-synthesis technology. The re-assembly and annotation has been published (PMID:25359557).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/chabaudi/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_chabaudi
+      text: BLAST server
+    pubmed_ids:
+    - 25359557
+
+  Plasmodium cynomolgi:
+    description: |
+      _Plasmodium cynomolgi_ is a non-human primate malaria parasite that naturally infects various macaque. This species is used as a model for human _P. vivax_ infections. It is phylogenetically close to _P. vivax_ and shares important biological features including the dormant liver form (hypnozoite) with this parasite. 
+      
+      In collaboration with Dr. Clemens Kocken, Prof. Alan Thomas and Dr. Erica Pasini (BPRC, Rijswijk), we have produced a draft genome from the M strain of _P. cynomolgi_ using Illumina Sequence-by-synthesis technology.
+
+  Plasmodium falciparum:
+    description: |
+      _Plasmodium falciparum_ is the deadliest of five human malaria species and responsible for the majority of malaria related deaths. There are around 300 million clinical cases occur each year resulting in at least one million deaths annually, predominantly in sub-saharan Africa. An estimated 3,000 children, under the age of five, fall victim to malaria each day and around 40% of the worlds population are at risk of infection. 
+      
+      The canonical reference _P. falciparum_ clone 3D7 was first published by Gardner _et al_. in 2002. The nuclear genome was described as 22.9 Mb and essentially complete, with 14 chromosomes, a G+C content of approximately 19%, 5268 genes and approximately 80 gaps. 
+      
+      ## Genome improvement of _P. falciparum_ 3D7
+      
+      Since publication efforts have continued to improve both the sequence and annotation. The latest annotation is continually updated in [GeneDB](http://www.genedb.org/Homepage/Pfalciparum) and used to periodically update [PlasmoDB](http://plasmodb.org). A complete telomere-to-telomere sequence is in preparation that includes full assessment of accuracy using [REAPR](http://www.sanger.ac.uk/resources/software/reapr/) (Hunt _et al_). The current version (v3.0) has 5369 genes, some re-assembled regions of chromosomes 7, 8 and 13, comprehensive reannotation and no gaps. A publication describing the complete methodology and important changes is in preparation. Please refer to [Data Use Statement](http://www.sanger.ac.uk/about/who-we-are/policies/open-access-science/#guidelines). 
+      
+      ## Other P. falciparum sequencing projects
+      
+      A draft sequence of _P. falciparum IT_ clone was produced using Sanger sequencing (funded as a component of the [BioMalPar Consortium](http://www.biomalpar.org/), European Union 6th Framework Program, Contract number LSHP-LT-2004-503578) and more recently using Illumina Sequence-by-Synthesis. An annotation of the latest version can be accessed at [GeneDB](http://www.genedb.org/Homepage/PfalciparumIT) and is currently unpublished. Please refer to [Data Use Statement](http://www.sanger.ac.uk/about/who-we-are/policies/open-access-science/#guidelines). 
+      
+      Large-scale resequencing of global P. falciparum isolates is being undertaken as part of the [Malaria Programme](http://www.sanger.ac.uk/research/areas/malariaprogramme/).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/falciparum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_falciparum
+      text: BLAST server
+    pubmed_ids:
+    - 12368864
+    - 12368867
+    - 10448855
+
+  Plasmodium gallinaceum:
+    description: |
+      _P. gallinaceum_ is an avian malaria parasite. It is phylogenetically closer to _P. falciparum_ than many other malaria species and became popular as model due to the large size of its non-primate host. 
+      
+      A low coverage (3x) draft genome sequence has been produced using Sanger sequencing from genomic DNA provided by Thomas McCutchan (NIH/NIAID) and Joseph Vinetz (UCSD). With further DNA from Vinetz, an annotated high quality draft genome is being produced using Illumina Sequence-by-synthesis. These data are unpublished. Please refer to [Data Use Statement](http://www.sanger.ac.uk/about/who-we-are/policies/open-access-science/#guidelines).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/gallinaceum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_gallinaceum
+      text: BLAST server
+    pubmed_ids:
+    - 10875925
+
+  Plasmodium knowlesi:
+    description: |
+      _Plasmodium knowlesi_ is a primate malaria parasite whose natural host is the long-tailed macaque (_Macaca fascicularis_). The parasite cause zoonotic infections in humans and is used as a model species. 
+      
+      A reference sequence of _P. knowlesi_ was first published by Pain _et al_. in 2008. The nuclear genome was described as 24.1 Mb, a G+C content of 37.5 % and 5188 predicted genes. It contained 190 gaps within the core regions of 14 chromosomes, but several hundred small contigs representing the subtelomeric and other repetitive regions. The published (v4) assembly was produced by Sanger sequencing from the H strain of _P. knowlesi_, originally isolated from an infected patient in Malaysia in 1965 and provided by Clemens Kocken (BPRC). 
+      
+      Further sequencing of the _P. knowlesi_ H strain is underway using Illumina Sequence-by-Synthesis and DNA provided by Mary Gallinski (Emory Vaccine Center). A publication describing the complete methodology and important changes is in preparation. Please refer to [Data Use Statement](http://www.sanger.ac.uk/about/who-we-are/policies/open-access-science/#guidelines).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/knowlesi
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_knowlesi
+      text: BLAST server
+    pubmed_ids:
+    - 18843368
+
+  Plasmodium malariae:
+    description: |
+      _P. malariae_ is considered as one of the minor parasites of the five human malaria species along with _P. ovale_ because of low prevalence rates in most endemic areas and its relatively mild and chronic nature. The parasite has an unusually chronic blood stage infection with an individual known to have been infected for 40 years. 
+      
+      Sequencing has been attempted using DNA provided by Jetsumonn Prachumsri (Mahidol, Thailand). Further sequencing and full annotation is planned. We would welcome any source of high quality DNA.
+
+  Plasmodium ovale:
+    description: |
+      _P. ovale_ is considered as one of the minor parasites of the five human malaria species along with _P. malariae_ because of low prevalence rates in most endemic areas and its relatively mild and chronic nature. The parasite, like _P. vivax_, has a true relapse mechanism with a dormant liver stage (hypnozoite). 
+      
+      Production of a high quality reference sequence has been attempted from multiple sources of _P. ovale_ DNA. Using the Nigeria I/CDC strain (isolated in 1977 from a Peace Corps worker in Nigeria), provided by John Barnwell (CDC, Atlanta), a low coverage draft has been produced using Sanger sequencing. Further sequencing has been attempted using DNA provided by Colin Sutherland. 
+      
+      Further sequencing and full annotation is planned. We would welcome any source of high quality DNA. 
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/ovale/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_ovale
+      text: BLAST server
+
+  Plasmodium reichenowi:
+    description: |
+      The chimpanzee malaria parasite _P. reichenowi_ is phylogenetically close to the human parasite _P. falciparum_ and whole genome comparisons should reveal crucial information about the evolution of host specificity. 
+      
+      A low (1-2x) coverage draft genome sequence was previously produced by Sanger sequencing from the only known source of _P. reichenowi_ genomic DNA (CDC strain) provided by Alan Thomas (BPRC, Netherlands). Following the discovery of an additional aliquot of the same DNA source, a full genome sequence has been produced using Illumina Sequence-by-Synthesis. The complete and annotated genome, compared with that of _P. falciparum_ has been published (PMID:25203297).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/reichenowi/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_reichenowi
+      text: BLAST server
+    pubmed_ids:
+    - 25203297
+
+  Plasmodium vivax:
+    description: |
+      _P. vivax_ causes severe disease in humans but unlike _P. falciparum_ it is rarely fatal. This project is part of a study to compare the genomes of the two organisms in an attempt to understand differences in their pathology. 
+      
+      The Sanger Institute sequenced a single _P. vivax_ YAC mapping to a telomere, in collaboration with Hernando A. del Portillo at the at the Universidade de Sao Paulo and Michael Lanzer of the Universitat Heidelberg.
+    published_data_description: |
+      The complete IVD10 YAC clone 155,711 bp in length has now been sequenced, finished and annotated. 32 predicted genes and four pseudogenes have been identified, the majority being members of a novel gene family, termed _vir_, encoding putative transmembrane proteins. 
+      
+      The predicted genes and pseudogenes from the _vir_ family have similar structure. The majority have three exons, a short first exon followed by a longer second exon containing a predicted transmembrain domain at its 3' end and a third exon of uniform length. The _vir_ genes family can be divided into subfamilies based on homology. To date 6 families have been identified, termed A to F.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vivax/
+      text: FTP site
+    pubmed_ids:
+    - 18843361
+
+  Plasmodium yoelii:
+    description: |
+      _P. yoelii_ is a murine malaria species, originally isolated from from thicket rats in Central Africa. The species is one of four common murine models which has been utilised within vaccine research. Although the ‘core’ genome shares large block of synteny with human malaria parasites, there are several well-characterised breaks in synteny and the gene organisation in the subtelomeres is substantially different. 
+      
+      Three subspecies are recognized, _P. yoelii yoelii_, _P. yoelii killicki_ and _P. yoelii nigeriensis_. 
+      
+      An initial analysis of a draft genome produced at The Institute for Genome Research by Sanger-sequencing and published by [Carlton _et al._, 2002](http://www.ncbi.nlm.nih.gov/pubmed/12368865). From these data _P. yoelii_ has an estimated genome size of 23.1 Mb distributed across 14 chromosomes, but with &gt; 5000 gaps. DNA for this sequencing project was obtained from _P. yoelii yoelii_ 17XNL strain. 
+      
+      Further sequencing of _P. yoelii yoelii_ and several other strains and subspecies has been completed using Illumina Sequence-by-synthesis technology. The re-assembly and annotation of _P. yoelii yoelii_ YM and _P. yoelii yoelii_ 17X has been published (PMID:25359557).
+    pubmed_ids:
+    - 25359557
+
+  Theileria annulata:
+    description: |
+      _Theileria annulata_ is a tickborne protozoan pathogen which is a major cause of livestock disease in sub-tropical regions with greater that 250 million cattle at risk. 
+      
+      Both whole genome shotgun sequencing and EST sequencing of _T. annulata_ have been done at the Sanger Institute.
+    published_data_description: |
+      ###  _Theileria annulata_ Whole Genome Shotgun
+      
+      The Sanger Institute fully sequenced the genome of _T. annulata_ in a collaborative project with Professor Andy Tait, Professor Brian Shiels at the University of Glasgow and Professor Declan McKeever at the Moredun Research Institute, Edinburgh. _T. annulata_ has a 8.3 megabase genome, comprising of four haploid chromosomes. The intention was to shotgun sequence the whole genome of the Ankara clone C9. The whole genome shotgun was carried out to a 8 x coverage. Shotguns of individual chromosomes was performed to a further 2 x coverage. BAC libraries were also prepared and BAC end sequencing to 10 x coverage was carried out to further aid assembly. Information from the EST project has greatly aided gene identification in the finished sequence. 
+      
+      ###  _Theileria annulata_ EST Sequencing
+      
+      Ten thousand reads from a cDNA library from Theileria annulata have being generated with the aim to identify genes involved in pathogenicity, and possible drug targets.. The project was carried out as part of a research program at the Department of Infectious Diseases and Immunology of Utrecht University and is supported by the Netherlands Foundation for the advancement of Tropical Research and the Dutch National Organization for Scientific Research.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/T_annulata/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_annulata
+      text: BLAST server
+    pubmed_ids:
+    - 15994557
+
+  Toxoplasma gondii:
+    description: |
+      _Toxoplasma gondii_ is a protozoan parasite which casuses disease in humans and has a very wide host range. It is capable of infecting almost any cell type in any warm-blooded animal. 
+      
+      The Sanger Insitute has used high-throughput transcriptome sequencing (mRNA-seq) to determine the transcriptome of _T. gondii_ VEG strain tachyzoites. The goal of this project is to determine differences between _T. gondii_ and the similar parasite _Neospora caninum_. 
+      
+      The _T. gondii_ genome was sequenced by the J Craig Venter Insitute and is available from [ToxoDB](http://toxodb.org/toxo/).
+    pubmed_ids:
+    - 16902086
+
+  Trypanoplasma borreli:
+    description: |
+      _Trypanoplasma (Cryptobia) borreli_ is a haematozoic endoparasite transmitted by leeches (_Piscicola_ sp.). As a species of _Cryptobia_, _T. borreli_ causes cryptobiosis in cyprinid fish, characterized severe anemia and splenomegaly, affecting both wild fish and commerical fisheries. _T. borreli_ is often found co-infecting fish with _Trypanosoma_ spp.; both _Cryptobia_ spp. (Parabodonidae) and _Trypanosoma_ spp. (Trypanosomatidae) are members of the Kinetoplastida and represent independent origins of blood parasitism. 
+      
+      As part of our efforts to understand the evolution of trypanosomatid genomes, we have produced a draft genome sequence for _T. borreli_ K-100 (ATCC 50432) using the Illumina HiSeq platform. 400bp and 3kb-insert libraries were created from whole genomic DNA isolated from an axenic _T. borreli_ culture. The primary purpose of the genome sequence is to provide an outgroup for the comparison of trypanosomatids with _Bodo saltans_, a free-living kinetoplastid more closely related to trypanosomatids than _T. borreli_. When compariing the free-living _B. saltans_ with parasitic trypanosomatids, we need to distinguish losses of conserved kinetoplastid genes in trypanosomatids (present in _T. borreli_) from Bodo-specific gene gains (absent in _T. borreli_). Secondarily, we will compare the _T. borreli_ and _Trypanosoma brucei_ genomes to explore any similarities associated with the convergent evolution of blood parasitism.
+    published_data_description: |
+      The _T. borreli_ genome sequence was assembled from 100bp paired-end Illumina reads from a 400bp-insert library using _Velvet_. This assembly was then corrected for misassembly and subsequently expanded using reads from a 3kb-insert library using custom scripts and _IMAGE_. 
+      
+      The final assembly contains 25,816,007bp in 23,265 contigs (N50 = 12100bp). The average contig length is 1109.6 bp and the largest contig is 133333bp.
+    links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_borreli
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanoplasma/borreli/
+      text: FTP site
+
+  Trypanosoma brucei:
+    description: |
+      Protozoan parasites within the species _Trypanosoma brucei_ are the etiological agent of human sleeping sickness and Nagana in animals. Infections are limited to patches of sub-Saharan Africa where insects vectors of the _Glossina_ genus are endemic. The most recent estimates indicate between 50,000 - 70,000 human cases currently exist, with 17 000 new cases each year (WHO Factsheet, 2006). 
+      
+      _T. brucei_ possesses a two-unit genome, a nuclear genome and a mitochondrial (kinetoplast) genome with a total estimated size of 35Mb/haploid genome. The nuclear genome is split into three classes of chromosomes according to their size on pulsed-field gel electrophoresis, 11 pairs of megabase chromosomes (0.9-5.7 Mb), intermediate (300-900 kb) and minichromosomes (50-100 kb). The _T. brucei_ genome contains a ~0.5Mb segmental duplication affecting chromosomes 4 and 8, which is responsible for some 75 gene duplicates unique to this species.
+    published_data_description: |
+      ###  Megabase Chromosome Sequencing Project
+      
+      In July 2005, the megabase complement of the genome of _T. brucei_ strain 927 was published along with the genomes of _Leishmania major_ and _Trypanosoma cruzi_ as well as a paper describing the comparative gene content and architecture of the 3 parasites. 
+      
+      ###  Project History
+      
+      Beowulf Genomics funded a pilot scheme to sequence chromosome Ia of _T. brucei_ as a collaboration with Professor Keith Gull (University of Oxford) and Dr. Sara Melville (University of Cambridge) within the framework of the World Health Organisation _T. brucei_ Genome Project. 
+      
+      In April 2000, the Wellcome Trust, via its Beowulf Genomics Initiative, awarded more funding to the _T.brucei_ genome project at the Sanger Institute to sequence chromosomes IX (3.5 Mb), X (4.4 Mb) and XI (5.2 Mb) in collaboration with Dr. Sara Melville and the WHO/TDR supported _T. brucei_ Genome Network. 
+      
+      At around the same time, NIAID funded TIGR to sequence chromosomes II to VIII in collaboration with Drs. John Donelson (University of Iowa), Sara Melville (University of Cambridge) and Elisabetta Ullu (Yale University). 
+      
+      Chromosomes I to VIII are complete and the Sanger Institute is actively continuing to finish chromosomes IX, X and XI in order to remove the few remaining gaps. Annotation and curation of the whole _T. brucei_ genome sequence is ongoing. 
+      
+      _T. brucei_ possesses a two-unit genome, a nuclear genome and a mitochondrial (kinetoplast) genome with a total estimated size of 35Mb/haploid genome. The nuclear genome is split into three classes of chromosomes according to their size on pulsed-field gel electrophoresis, 11 pairs of megabase chromosomes (0.9-5.7 Mb), intermediate (300-900 kb) and minichromosomes (50-100 kb). 
+      
+      The _T. brucei_ genome contains a ~0.5Mb segmental duplication affecting chromosomes 4 and 8, which is responsible for some 75 gene duplicates unique to this species. 
+      
+      ###  Intermediate and Mini Chromosome Sequencing Project
+      
+      _T. brucei_ devotes 10-20% of its nuclear genome to chromosomes &lt; 1 Mb in size. Pulsed-field gel electrophoresis of whole chromosome-sized DNAs from the genome of _T. brucei_ strain 927 resolves 2 "intermediate-sized" bands of ~350kb, representing 2, or possibly 4, intermediate chromosomes. Unfortunately, the lack of specific markers prevents further karyotype analysis (pers. comm. S. Melville, University of Cambridge). The intermediate chromosomes of _T. brucei_ strain 427 are known to encode bloodstream expression sites, 3 of which have been sequenced. These are: ES Bn-2 (TB13J3, [AL670322](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=AL670322&style=raw)); ES VO2 (TBN19B2, [AL671256](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=AL671256&style=raw)); ES221 (TBH25N7, [AL671259](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=AL671259&style=raw)). 
+      
+      In addition, the 927 genome contains ~100 minichromosomes of 30 - ~150kb in size, which expand the parasite's repertoire of telomeric variant surface glycoprotein (VSG) genes. Both classes of chromosomes share a canonical structure based around a large central core of 177-bp repeats.([Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/15173109?dopt=Abstract)) 
+      
+      ###  Sequencing Approach
+      
+      The intermediate and mini-chromosome will be sequenced as a collaboration between Dr Sara Melville (University of Cambridge) and Dr Bill Wickstead/Professor Keith Gull (University of Oxford). The intermediate chromosomes will be separated by pulsed field gel electrophoresis and sequenced by whole chromosome shotgun approach. 
+      
+      The minichromosomes will be sequenced by two complementary approaches. Unique minichromosome sequence willl be TAR cloned using the 177-bp repeat sequence in the S. cerevisiae vector. Where possible, resulting clones will be screened to reduce redundancy. In addition, the whole minichromosome population will be sequenced to a low coverage (1-2x), using a whole chromosome shotgun approach. 
+      
+      ###  Telomere Sequencing Projects
+      
+      The Pathogen Genomics group in collaboration with Drs Gloria Rudenko (University of Oxford) and Ed Louis (University of Nottingham) has initiated the sequencing of VSG expression site containing telomeres of two _T. brucei_ strains. 
+      
+      ###  _T. brucei_ strain 927
+      
+      Due to the under-representation of these sequences in the BAC libraries, a separate cloning project targeting the 927 telomeric regions was initiated to complement the megabase genome sequencing project. Using transformation-associated recombination (TAR) cloning with internal, chromosome-specific sequences as target, the telomeres of chromosomes 4 and 6 have so far been cloned. They are currently being subcloned into smaller insert libraries. Clones from the small-insert library from the right hand end of chromosome 4 are currently in shotgun. 
+      
+      ###  _T. brucei_ strain 427
+      
+      The Pathogen Genomics group is also involved in the sequencing of VSG expression sites cloned from strain 427. The _T. brucei_ 427 telomere-specific library of 182 bloodstream expression sites was constructed using the 427 dominant expression site promoter as recombinational target. These clones were further sorted into a minimal set of 17 groups, based on sequence determination of regions from the promoter and ESAG6. See [here](http://www.ncbi.nlm.nih.gov/pubmed/15520294?dopt=Abstract) for more details. 
+      
+      Reads are available for download and searching and annotations are available via GeneDB. 
+      
+      ###  _T. brucei_ GSS Sequence Data
+      
+      In addition to sequencing the megabase chromosomes of the _T. brucei_ genome, the Wellcome Trust Sanger Institute and TIGR have carried out extensive genome survey sequencing. 
+      
+      TIGR has provided 47,000 single-pass reads of randomly selected clones: these derived both from ends of P1 and BAC genomic clones as well as from genomic DNA clones, selected from a _T. brucei_ TREU927 GUTat 10.1 whole genome TIGR manufactured sheared DNA library (av. insert size 2-3 kb). These have proved immensely useful resources to the research community for gene discovery. The end-sequences of the P1 and BAC clones have also been used in physical mapping. 
+      
+      The Sanger Institute has in turn submitted &gt; 43,000 GSS sequences from the 2-kb sheared genomic DNA clones constructed by TIGR. These end sequences have since been clustered with ESTs available through public databases and some preliminary automated analysis has been carried out. The sequences can be obtained from [our ftp site](ftp://ftp.sanger.ac.uk/pub/databases/T.brucei_sequences/GSS/). 
+      
+      As an aid to the community, all GSS sequences were subjected to a BLASTX analysis of Swissprot/TrEMBL databases in February 2002. The summary data are shown below: 
+      
+      Applying a probability cut-off of 1e-10 to the BLAST output, 8196 (21%) had a hit. Detailed subsets of these results may be found on [our ftp site](ftp://ftp.sanger.ac.uk/pub/databases/T.brucei_sequences/GSS/). 
+      
+      ###  GSS and EST clustering
+      
+      All _T. brucei_ genome survey sequences plus approximately 5,500 EST/mRNA sequences were clustered, using the sequence assembly programme phrap. The ESTs were retrieved from EMBL in February 2001, using _Trypanosoma brucei_ listed as an organism as a search term. This will therefore include EST data generated from different _Trypanosoma brucei_ subspecies and strains. The dataset totalled 96,474 sequences (~45.87Mb). 12,251 contigs were generated, while 8,242 sequences could not be placed in a contig (singletons). The GSS/EST clusters have an estimated coverage of &gt;95% of the _T. brucei_ genome. 
+      
+      ###  The Trypanosoma brucei gambiense Partial Genome Project
+      
+      The Wellcome Trust Sanger Institute Pathogen Genomics group has partially shotgun sequenced the nuclear genome of the human-infective _Trypanosoma brucei gambiense_. While the non-human-infective _T. b. brucei_ is the preferred model organism for studying trypanosome biology, comparison with a human-infective organism is required to study mechanisms of disease. Human trypanosomiasis is caused by 2 other subspecies of _T. brucei_ \- _T. b. rhodesiense_ and _T. b. gambiense_. _T. b. rhodesiense_ is very similar to _T. b. brucei_, and so the genome sequence of _T. b. brucei_ will provide information on both subspecies. However, _T. b. gambiense_ stands apart, with profoundly different biological and genetic characteristics. The _T. b. gambiense_ genome will serve as a useful comparative genomics resource to complement the genomes of _Trypanosoma vivax_, _Trypanosoma congolense_ and _Trypanosoma brucei_. The _T. b. gambiense_ partial shotgun project is being carried out in collaboration with Wendy Gibson (University of Bristol, UK). 
+      
+      The strain chosen for sequencing is Dal 972 clone 1 (MHOM/CI/86/DAL972) isolated from a patient in Cote d'Ivoire in 1986. This strain has been little passaged and has an extremely chronic phenotype in experimental rodents. It has been transmitted through both _Glossina morsitans morsitans_ and _G. palpalis gambiensis_ in the lab, and grows well as procyclics in vitro. By biochemical characterisation, Dal 972 is a typical group 1 _T. b. gambiense_.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/brucei
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_brucei/
+      text: BLAST server
+    pubmed_ids:
+    - 20404998
+    - 16020726
+    - 12907729
+
+  Trypanosoma congolense:
+    description: |
+      _T. congolense_ is a major livestock pathogen in Africa. Despite the severe disease it causes, _T. congolense_ remains largely unstudied. The Sanger Institute's Pathogen Sequencing Unit (PSU), in collaboration with Professor David Barry (Glasgow University, UK), Dr Alberto Davila (Instituto Oswalso Cruz, Brazil) and Dr Phelix Majiwa (International Livestock Institute, Kenya), is carrying out a partial genome shotgun of this parasite, initially to a 1x coverage. 
+      
+      The Wellcome Trust Sanger Institute Pathogen Genomics group has partially shotgun sequenced the nuclear genome of the livestock-infective _Trypanosoma congolense_. This will serve as a useful comparative genomics resource to complement the genomes of _Trypanosoma vivax_ and _Trypanosoma brucei_. The _T. congolense_ and _T. vivax_ partial shotgun projects are being carried out in collaboration with David Barry (Glasgow University, UK), Alberto Davila (Instituto Oswalso Cruz, Brazil), Phelix Majiwa (International Livestock Institute, Kenya) and Sara Melville (University of Cambridge, UK).
+    published_data_description: |
+      The strain chosen for sequencing was clone IL3000 ([Bienen et al. 1991](http://www.ncbi.nlm.nih.gov/pubmed/1720394?dopt=Abstract)), isolated from a cow in the Transmara. It is capable of growth in laboratory rodents, is fly transmissible and is able to grow in vitro. 
+      
+      For this partial genome shotgun pilot project, nuclear DNA was isolated at ILRI from bloodstream stage _T. congolense_ raised in rats. Small insert libararies (2-4kb) were constructed by cloning sheared DNA into pUC18 vectors. The targeted shotgun coverage is 5x. 
+      
+      ###  The _Trypanosoma congolense_ EST project
+      
+      The Wellcome Trust Sanger Institute Pathogen Genomics group has sequenced ESTs prepared from 6 different _T. congolense_ libraries in collaboration with John Donelson (University of Iowa). To date, ca. 4500 ESTs from each of the libraries have been sequenced, clustered and analysed for similarity. 
+      
+      These libraries were 
+      
+        * Bloodstream stage library 
+        * Bloodstream stage normalised library 
+        * Epimastigote stage library 
+        * Metacyclic stage library 
+        * Metacyclic stage normalised library 
+        * Procyclic stage library
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/congolense
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_congolense
+      text: BLAST server
+
+  Trypanosoma evansi: {}
+
+  Trypanosoma vivax:
+    description: |
+      _Trypanosoma vivax_ is a major livestock pathogen in Africa and some South American countries. Despite the severe disease it causes, _T. vivax_ remains largely unstudied. 
+      
+      The Wellcome Trust funded the Sanger Institute Pathogen Genomics group to partially shotgun sequence the nuclear genome of the livestock-infective _Trypanosoma vivax_. This will serve as a useful comparative genomics resource to complement the genomes of _Trypanosoma congolense_ and _Trypanosoma brucei_, which is currently being sequenced in collaboration between the PSU and The Institute for Genomic Research. The _T. congolense_ and _T. vivax_ partial shotgun projects are being carried out in collaboration with David Barry (Glasgow University, UK), Alberto Davila (Instituto Oswalso Cruz, Brazil), Phelix Majiwa (International Livestock Institute, Kenya) and Sara Melville (University of Cambridge, UK).
+    published_data_description: |
+      The Sanger Institute's Pathogen Genomics group, in collaboration with Professor David Barry (Glasgow University, UK), Dr Alberto Davila (Instituto Oswalso Cruz, Brazil) and Dr Phelix Majiwa (International Livestock Institute, Kenya), has carried out a partial genome shotgun of this parasite. The current coverage is 5x.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/vivax
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_vivax
+      text: BLAST server
+

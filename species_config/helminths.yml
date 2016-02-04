@@ -1,0 +1,161 @@
+---
+databases:
+- pathogen_helminth_track
+- pathogen_pacbio_track
+metadata:
+  description: |
+    This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.  Assembled genome data are made available via the ftp links for individual organisms on a regular basis.
+    These data include complete, ongoing and forthcoming sequencing projects.
+    We have also collaborated on [Taenia solium (sequenced and assembled at the Universidad Nacional Autónoma de México)](http://www.taeniasolium.unam.mx/taenia/) and participate in the 50 Helminth genomes initiative.  
+    The draft genomes of many nematodes, cestodes and trematodes are available; sequence data for each project is accessible for download from the [FTP site](ftp://ftp.sanger.ac.uk/pub/project/pathogens/HGI/) and searching using [50HGI BLAST](http://www.sanger.ac.uk/cgi-bin/blast/submitblast/helminth_genome_initiative/).  These are available from the Sanger Institute as part of a pre-publication release. For information on the proper use of pre-publication data shared by the Wellcome Trust Sanger Institute (including details of any publication moratoria), please see the data sharing policy.
+  list_data: false
+  title: Helminth vector genomes - data download
+species:
+  Ascaris suum:
+    show: false
+
+  Caenorhabditis elegans:
+    show: false
+
+  Echinococcus granulosus:
+    description: |
+      _Echinococcus granulosus_ is a member of the Cyclophyllidea, which comprise the majority of tapeworms that are of medical importance. Adult _E. granulosus_ parasitise the small intestines of dogs and other canids. Larval stages of _E. granulosus_ and the related _Taenia solium_ cause the serious and life-threatening human diseases cystic echinococcosis and neurocysticercosis, respectively. _E. granulosus_ has a worldwide distribution. 
+      
+      The genome sequence of _E. granulosus_ will be used in comparative studies with the related _Echinococcus multilocularis_, for which a reference quality genome is being produced. 
+      
+      This work is being done in collaboration with Cecilia Fernandez from the Universidad de la República, Montevideo, Uruguay.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_granulosus
+      text: BLAST server
+    pubmed_ids:
+    - 23485966
+
+  Echinococcus multilocularis:
+    description: |
+      _Echinococcus multilocularis_ is a member of the Cyclophyllidea, which comprise the majority of tapeworms that are of medical importance. The disease alveolar echinococcosis, which is caused by the larval stage of _E. multilocularis_, is considered to be one of the most dangerous worm infections in the world. Larval stages of the related tapeworms _E. granulosus_ and _Taenia solium_ cause the serious and life-threatening diseases cystic echinococcosis and neurocysticercosis, respectively. While _E. granulosus_, _T. solium_ and _T. saginata_ have a worldwide distribution _E. multilocularis_ has a limited distribution within the Northern Hemisphere. However, recent data indicate a spread of _E. multilocularis_ in Europe, Japan, and North America to areas that were previously free of the parasite leading to the classification of alveolar echinococcosis as an emerging zoonosis. 
+      
+      This is a Wellcome Trust funded project to sequence the nuclear genome of _E. multilocularis_, in collaboration with Prof. Klaus Brehm of Institute for Hygiene and Microbiology, University of Wurzburg. The assembled sequence data suggests the genome of _E. multilocularis_ is approximately 110 MB and is being produced by whole genome shotgun sequencing using a mixture of capillary sequencing, illumina sequencing and 454 pyrosequencing. We are also profiling the transcriptome of different life cycle stages of this organism using RNA-seq.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_multilocularis
+      text: BLAST server
+    pubmed_ids:
+    - 23485966
+
+  Globodera pallida:
+    description: |
+      The Potato Cyst Nematodes (PCN), _Globodera pallida_ and _Globodera rostochiensis_ are the most economically important nematode problems of the U.K. potato industry. They occur in 65% of U.K. potato land with _G. pallida_ present at 92% of these sites. PCN impose an annual cost in excess of £50 million on U.K. potato growers and threaten the future of the crop for many growers. Breeding for resistance since 1950s has produced a few commercially acceptable varieties with resistance to _G. pallida_. Effective control of _G. pallida_ is an essential requirement to maintain the competitiveness of U.K. potato production. The aim of this project is to obtain the full genome sequence of _G. pallida_ to aide in defining new control measures and pest management strategies. 
+      
+      This is a BBSRC funded project to sequence and and analyse the nuclear and mitochondrial genomes of _G. pallida_ with the goal of producing a reference quality genome sequence. The sequencing is being done using a combination of capillary sequencing, Roche (454) and Illumina (Solexa) sequencing technology platforms. As part of the project we are profiling the transcriptome of the parasite across its life cycle using RNA-seq. 
+      
+      We are collaborating with John Jones and Vivian Blok and Peter Cock (The James Hutton Institute), Brian Kerry (Rothamsted Research), Catherine Lilley and Peter Urwin (University of Leeds).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Globodera/pallida/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_pallida
+      text: BLAST server
+
+  Haemonchus contortus:
+    description: |
+      _Haemonchus contortus_ is a highly pathogenic parasitic nematode of that can infect a large number of wild and domesticated ruminant species and is the most economically important parasite of sheep and goats worldwide. Although originally a tropical parasite, it has been disseminated around the world by livestock movement and can now be found as far north as the arctic circle. Adult worms are blood feeders that reside in the abomasum (stomach) and are approximately 2cm in length when mature. They are dioecious with single females typically producing several thousand eggs per day which pass out of the host in faeces and develop to infective larvae on the pasture. 
+      
+      _H. contortus_ is a member of the superfamily trichostrongyloidea (Strongylida) which contains most of the economically important parasitic nematodes of grazing livestock. These parasites cost the global livestock industry billions of dollars per annum in lost production and drug costs. Resistance to all the major anthelmintic classes is now common worldwide often leading to failure of treatment and control. _H. contortus_ is a close relative of the human hookworm species and belongs to the nearest phylogenetic group of parasites to the free-living model nematode _Caenorhabditis elegans_. This makes it an important model of parasitic nematode biology that is commonly used for experimental studies. 
+      
+      This is a Wellcome Trust funded project to sequence and analyse the nuclear genome of _H. contortus_ with the goal of producing reference quality genome sequence. We are collaborating with John Gilleard (University of Calgary).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Haemonchus/contortus/genome/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_contortus
+      text: BLAST server
+
+  Hymenolepis microstoma:
+    description: |
+      _Hymenolepis microstoma_ is a member of the Cyclophyllidea, which comprises the majority of tapeworms that are of medical importance. _H. microstoma_ is a rodent tapeworm which is used as a laboratory model organism. Much of the basic understanding of tapeworm biology stems from work on _Hymenolepis_ species. 
+      
+      This is a pilot project to sequence the genome of _H. microstoma_. Shotgun sequencing will be performed using 454 pyrosequencing and illumina sequencing. The draft genome will be used to assess levels of polymorphism and to evaluate prospects for further sequencing. The draft will be used for comparative genomics against other tapeworms such as _Echinococcus multilocularis_ and _Echinococcus granulosus_ and as a reference for gene finding using RNA-seq. 
+      
+      This work is being done in collaboration with Dr. Pete Olson from the Natural History Museum.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Hymenolepis/microstoma/
+      text: FTP site
+    - url: ftp://ngs.sanger.ac.uk/scratch/project/pathogens/Hymenolepis/microstoma/BAM/
+      text: FTP site (large NGS files)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_microstoma
+      text: BLAST server
+    pubmed_ids:
+    - 23485966
+
+  Nippostrongylus brasiliensis:
+    show: false
+
+  Onchocerca volvulus:
+    description: |
+      _Onchocerca volvulus_ is a filarial nematode parasite of humans, causing Onchocerciasis, or River Blindness, which affects over 37 million people, mainly in Africa. It is a severely debilitating disease, which is transmitted to humans by black fly. 
+      
+      This is a Wellcome Trust funded project to sequence and analyse the nuclear genome of _O. volvulus_ with the goal of producing reference quality genome sequence. Sequence data are being produced using 454 rapid sequencing technology and Illumina sequencing. 
+      
+      Onchocerca volvulus is a gonochoristic filarial nematode parasite of humans causing Onchocerciasis. Onchocerciasis, or River Blindness, is a neglected tropical disease (NTD) which affects over 37 million people, mainly in Africa. It is a severely debilitating disease, which is transmitted to humans by the bite of Simulium blackflies that live and breed near fast-flowing streams and rivers. 
+      
+      We are collaborating with Dr Sara Lustigman, New York Blood Center.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Onchocerca/volvulus/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/o_volvulus
+      text: BLAST server
+
+  Schistosoma mansoni:
+    description: |
+      Blood flukes of the genus _Schistosoma_ (Platyhelminthes, Trematoda, Digenea) are responsible for the chronic debilitating disease schistosomiasis / bilharzia, widely considered to be second only to malaria as a global health problem and an incalculable drain on the economic development of endemic countries. 
+      
+      Since 1994, the World Health Organization has supported a genome initiative for _Schistosoma_, the _Schistosoma_ Genome Network, aimed at identifying new targets for drug and vaccine development, understanding the molecular basis of parasite metabolism and development and determining biological variation. That initiative developed, and continues to develop, resources and datasets that have provided a firm foundation from which large scale mapping and sequencing efforts have been launched. 
+      
+      _Schistosoma mansoni_ possesses 7 pairs of autosomes and one pair of sex chromosomes (female = ZW, male = ZZ). Chromosomes range in size from 18 to 73 MB and can be distinguished by size, shape and C banding. A draft genome has been produced by the Wellcome Trust Sanger Institute in collaboration with The Institute for Genomic Research using a whole genome shotgun sequencing strategy. Approximately 3.8 million pooled reads have been produced by the two genome centres and have been assembled using the Phusion assembly algorithm. The draft genome is 363Mb and encodes at least 11,809 genes. Further work is underway on the genome. 
+      
+      A first draft of the _S. mansoni_ genome has been published (PMID:19606141) and is available for browsing from GeneDB. Sequencing is continuing and further assemblies will be available from this site, prior to publication. 
+      
+      In collaboration with Prof. Alan Wilson (University of York), expressed sequence tags from the following life cycle stages have been produced: day 21 liver worms (mouse host), day 28 liver worms (mouse), day 28 liver worms (rat), day 7 lung stage, intramolluscan germ ball, cercariae, day 3 schistosomule. 
+      
+      Further characterisation of the life cycle using high-thoughput second generation sequencing (RNA-Seq) is ongoing.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Schistosoma/mansoni/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_mansoni
+      text: BLAST server
+    pubmed_ids:
+    - 22253936
+    - 19606141
+
+  Strongyloides ratti:
+    description: |
+      _Strongyloides ratti_ is a common gastro-intestinal parasite of the rat. The adult parasites are female only, about 2mm long and live in the mucosa of the small intestine. These parasites produce eggs that pass out of the host in its faeces. In the environment infective larval stages develop either directly or after a facultative sexual free-living adult generation. Infective larvae infect hosts by skin penetration. 
+      
+      _S. ratti_ is the laboratory analogue of the parasite of humans, _S. stercoralis_. _S. stercoralis_ is a wide-spread parasite of humans, occurring principally in the tropics and sub-tropics: some 100-200 million people are infected worldwide. Infection of immunosuppressed individuals can result in disseminated strongyloidiasis, in which worms occur throughout the body. This can be fatal unless anti-Strongyloides therapy is given. Other species of Strongyloides parasitise a wide range of vertebrates. 
+      
+      This is a Wellcome Trust funded project to sequence and analyse the nuclear genome of _Strongyloides ratti_ with the goal of producing a reference quality genome sequence. Work is also underway to profile the transcriptome of the different life cycle stages of the parasite using high throughput second generation sequencing RNA-Seq. 
+      
+      We are collaborating with Mark Viney (University of Bristol), Fiona Thompson (University of Bristol), Adrian Streit (University of Tübingen) and Jonathan Wastling (University of Liverpool).
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Strongyloides/ratti/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/strongyloides
+      text: BLAST server
+
+  Teladorsagia circumcincta:
+    show: false
+
+  Trichuris muris:
+    description: |
+      Whipworms (Trichuris sp) are successful gastrointestinal dwelling nematode parasites of many species including man. The human parasite _Trichuris trichiura_ is currently thought to infect up to 1 billion people worldwide resulting in considerable morbidity. 
+      
+      _Trichuris muris_ is very closely related to the human parasite _T. trichiura_ sharing cross reactive antigens. Moreover, it is a remarkably tractable model system for dissecting immune responses and host parasite relationships and is actively being investigated in a number of laboratories worldwide. _T. muris_ is a naturally occurring nematode parasite of mice which resides in the caecum and colon and has a direct oral faecal life cycle. Embryonated eggs are ingested and hatch in the crypts of the large intestine. After undergoing a series of moults, they become adult parasites which mate and release eggs that are shed in the faeces and can develop externally. The adult worms have an unusual niche in that the anterior end burrows through epithelial cells forming syncitial tunnels whereas the posterior end of the worm remains free within the lumen facilitating mating and egg deposition. 
+      
+      This projects aims to sequence the genome of _T. muris_ using second generation sequencing technologies. DNA is being supplied by Dr Allison Bancroft and Professor Richard Grencis from the University of Manchester as part of our ongoing work on _T. muris_ funded by the Wellcome Trust.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trichuris/muris/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_muris
+      text: BLAST server
+

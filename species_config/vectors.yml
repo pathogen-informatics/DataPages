@@ -1,0 +1,30 @@
+---
+databases:
+- pathogen_euk_track
+- pathogen_pacbio_track
+metadata:
+  description: |
+    This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
+  list_data: false
+  title: Disease vector genomes - data download
+species:
+  Aedes aegypti:
+    show: false
+  Aedes polynesiensis:
+    show: false
+  Aedes riversi:
+    show: false
+  Anopheles gambiae:
+    show: false
+  Glossina morsitans morsitans:
+    description: |
+      Male and female tsetse flies (Glossina spp.) are vectors of trypanosomes (e.g _T. brucei gambiense_ and _T. brucei brucei_) that cause Sleeping Sickness (human African trypanosomiasis) and nagana. It is conservatively estimated by the World Health Organization that there are currently between 300,000 and 500,000 cases of African sleeping sickness, with 60 million people at risk in 37 countries covering 40% of Africa. 
+      
+      The Wellcome Trust Sanger Institute has undertaken whole genome shotgun sequencing as part of the International Glossina Genomics Initiative (IGGI). Other activities by IGGI members include extensive BAC end sequencing (RIKEN), and ESTs and full length cDNA sequencing (Genoscope and RIKEN). WHO/TDR convened the first meeting of the International Glossina Genomics Initiative (IGGI) in 2004. The genome DNA for library construction, has been provided by the Professors Michael Lehane (Liverpool School of Tropical Medicine) and Serap Aksoy (Yale School of Public Health). Small insert libraries for whole genome shotgun sequencing, made from a single endosymbiont-free tsetse fly (from the Aksoy lab) are currently being tested.
+    links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Glossina/morsitans/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_morsitans
+      text: BLAST server
+    pubmed_ids:
+    - 14519198
