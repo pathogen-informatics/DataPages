@@ -1,6 +1,7 @@
 import collections
 import json
 import logging
+import markdown
 import os
 import pandas as pd
 import pickle
@@ -152,7 +153,7 @@ def merge_data(lane_details, ena_run_details, studies):
     joint_data = merge_ena_status(joint_data, ena_details)
     return joint_data
 
-def build_relevant_data(joint_data, species_list):
+def build_relevant_data(joint_data, species_config):
     logger.info("Reformatting data for export")
     now = datetime.now()
     column_name_map = collections.OrderedDict([
@@ -174,11 +175,15 @@ def build_relevant_data(joint_data, species_list):
     tmp = tmp[original_column_names]
     tmp.columns = prefered_column_names
     lowercase_cache = tmp.apply(lambda row: row['Species'].lower(), axis=1)
-    for species in species_list:
+    for species in species_config.species_list:
         species_data = tmp[lowercase_cache.map(lambda el: el.startswith(species.lower()))]
+        description_markdown = species_config.data['species'][species].get('description', '')
+        description = markdown.markdown(description_markdown,
+                                        extensions=['markdown.extensions.tables'])
         yield (species, {
             'columns': prefered_column_names,
             'data': species_data.values.tolist(),
+            'description': description,
             'species': species,
             'count': len(species_data.index),
             'updated': now.isoformat()
@@ -267,6 +272,6 @@ if __name__ == '__main__':
 
     joint_data = merge_data(lane_details, ena_run_details, studies)
 
-    relevant_data = build_relevant_data(joint_data, species_config.species_list)
+    relevant_data = build_relevant_data(joint_data, species_config)
     output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
     write_site_data_files(relevant_data, output_dir)

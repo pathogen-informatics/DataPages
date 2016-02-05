@@ -57,6 +57,11 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-md-12">
+            <div id="description"></div>
+          </div>
+        </div>
+        <div class="row">
           <div id="data-div" class="col-md-12">
               <table id="data-table" class="display">
                   <thead>
@@ -132,6 +137,8 @@
             var column_lookup = {};
             new_columns.forEach((name, index) => $(table.columns(index).header()).text(name));
             var last_updated = new Date(data['updated']);
+            var description = data['description'];
+            $('#description').html(description);
             $('#data-updated').text("Last updated: "+last_updated);
             $('#data-div').show();
             $('#wait-div').hide();
