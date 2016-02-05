@@ -1,15 +1,20 @@
+import logging
 import pymysql
 
 class Vrtrack(object):
     def __init__(self, host, port, database, user):
+        self.logger = logging.getLogger(__name__)
+        self.logger.info("Connecting to vrtrack on %s:%s" % (host, port))
         self.connection = pymysql.connect(
             host=host,
             port=port,
             user=user,
             db=database
         )
+        self.database = database
 
     def get_lanes(self):
+        self.logger.info("Getting vrtrack details from %s" % self.database)
         query = """SELECT DISTINCT latest_project.name as internal_project_name,
                 latest_sample.name as internal_sample_name,
                 latest_lane.name as lane_name,

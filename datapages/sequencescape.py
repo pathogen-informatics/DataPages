@@ -1,8 +1,11 @@
+import logging
 import pymysql
 import time
 
 class Sfind(object):
     def __init__(self, host, port, database, user):
+        self.logger = logging.getLogger(__name__)
+        self.logger.info("Connecting to sequencescape on %s:%s" % (host, port))
         self.connection = pymysql.connect(
             host=host,
             port=port,
@@ -11,8 +14,11 @@ class Sfind(object):
         )
         self.max_ssids = 20
         self.wait = 1
+        self.database = database
 
     def get_studies(self, project_ssids):
+        self.logger.info("Getting sequencescape details from %s" %
+                         self.database)
         SIZE=self.max_ssids
         ssid_groups = (project_ssids[i:i+SIZE] for i in range(0,len(project_ssids),SIZE))
         ssid_group = next(ssid_groups, [])

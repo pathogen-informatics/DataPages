@@ -16,7 +16,6 @@ def get_config(config_filepath):
         'DATAPAGES_VRTRACK_HOST',
         'DATAPAGES_VRTRACK_PORT',
         'DATAPAGES_VRTRACK_RO_USER',
-        'DATAPAGES_VRTRACK_DATABASE',
         'DATAPAGES_SEQUENCESCAPE_HOST',
         'DATAPAGES_SEQUENCESCAPE_PORT',
         'DATAPAGES_SEQUENCESCAPE_RO_USER',
@@ -68,11 +67,12 @@ def get_config(config_filepath):
 
     return config
 
-def get_species_list(species_list_filename):
-    with open(species_list_filename, 'r') as species_file:
-        species_list = [line.strip() for line in species_file]
-    return species_list
-
+class SpeciesConfig(object):
+    def __init__(self, path):
+      with open(path, 'r') as config_file:
+        self.data = yaml.load(config_file)
+      self.species_list = sorted(self.data['species'].keys())
+      self.databases = self.data['databases']
 
 if __name__ == '__main__':
     default_config_file = os.path.join(os.path.expanduser('~'),

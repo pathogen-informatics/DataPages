@@ -1,3 +1,4 @@
+import logging
 import re
 import requests
 import time
@@ -8,13 +9,17 @@ class ENADetails(object):
         self.url_template = "http://www.ebi.ac.uk/ena/data/view/%s&display=xml"
         self.max_accessions = 20
         self.wait = 1
+        self.logger = logging.getLogger(__name__)
     
     def get_run_accessions(self, study_accessions):
+        self.logger.info("Getting details from the ena")
         SIZE=self.max_accessions
         accn_groups = (study_accessions[i:i+SIZE] for i in range(0,len(study_accessions),SIZE))
         accn_group = next(accn_groups, [])
         sample_accessions = self._get_run_accessions_for_group(accn_group)
-        for accn_group in accn_groups:
+        number_of_groups = int((len(study_accessions)-1) / SIZE)
+        for i, accn_group in enumerate(accn_groups):
+            self.logger.info("  Making request %s of %s" % (i, number_of_groups))
             time.sleep(self.wait)
             sample_accessions += self._get_run_accessions_for_group(accn_group)
         return sample_accessions       

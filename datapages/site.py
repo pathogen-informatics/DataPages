@@ -2,7 +2,7 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
-from .common import species_filename, get_species_list, get_config
+from .common import species_filename, get_config, SpeciesConfig
 
 def get_template():
     datapages_dir = os.path.dirname(os.path.realpath(__file__))
@@ -23,10 +23,12 @@ def write_index(species_list, output_dir):
 
 if __name__ == '__main__':
     default_config_file = os.path.join(os.path.expanduser('~'),
-                                       '.datapages_config.yml')
-    config = get_config(os.environ.get('DATAPAGES_CONFIG_FILE',
+                                       '.datapages_global_config.yml')
+    config = get_config(os.environ.get('DATAPAGES_GLOBAL_CONFIG',
                                        default_config_file))
-    species_list_filename = "Project_webpages_species_list_Prokaryotes.txt"
-    species_list = get_species_list(species_list_filename)
+
+    species_config_filename = os.environ['DATAPAGES_SPECIES_CONFIG']
+    species_config = SpeciesConfig(species_config_filename)
+
     output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
-    write_index(species_list, output_dir)
+    write_index(species_config.species_list, output_dir)
