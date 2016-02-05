@@ -1,5 +1,11 @@
-i*.pyc
+*.pyc
 *~
 *.swp
 venv
-site/*.json
+site/data/*.json
+site/index.html
+.ipynb_checkpoints/
+__pycache__/
+datapages/__pycache__/
+.datapages_cache.pkl
+env.sh
