@@ -1,17 +1,14 @@
 import collections
-import json
 import logging
-import markdown
 import os
 import pandas as pd
 import pickle
-import shutil
-import sys
 import yaml
 
 from datetime import datetime
 
-from .common import species_filename, get_config, SpeciesConfig
+from .common import get_config, SpeciesConfig
+from .write_data import write_site_data_files
 from .vrtrack import Vrtrack
 from .enametadata import ENADetails
 from .sequencescape import Sfind
@@ -189,58 +186,6 @@ def build_relevant_data(joint_data, species_config):
             'updated': now.isoformat()
         })
 
-def _make_temp_dir(data_dir_temp):
-    os.makedirs(data_dir_temp, mode=0o755)
-
-def _remove_old_backup(output_dir_backup):
-    try:
-        shutil.rmtree(output_dir_backup)
-    except FileNotFoundError:
-        pass
-
-def _backup(output_dir_root, output_dir_backup):
-    try:
-        shutil.copytree(output_dir_root, output_dir_backup)
-    except FileNotFoundError:
-        pass
-
-def _update_data(output_dir_temp, data_dir_temp, data_dir):
-    try:
-        shutil.rmtree(data_dir)
-    except FileNotFoundError:
-        pass
-    shutil.move(data_dir_temp, data_dir)
-    shutil.rmtree(output_dir_temp)
-
-def _write_species_to_folder(data_dir_temp, species, data):
-    output_filename = species_filename(species)
-    output_filepath = os.path.join(data_dir_temp, output_filename)
-    with open(output_filepath, 'w') as output_file:
-        json.dump(data, output_file)
-    return output_filename
-
-def write_site_data_files(relevant_data, output_dir_root):
-    logger.info("Writing data to disk")
-    now = datetime.now()
-    summary = {'species': {},
-               'created': now.isoformat()}
-    timestamp = now.strftime("%Y%m%d%H%M%S")
-    output_dir_temp = "%s_%s_temp" % (output_dir, timestamp)
-    data_dir_temp = os.path.join(output_dir_temp, 'data')
-    data_dir = os.path.join(output_dir_root, 'data')
-    output_dir_backup = "%s_backup" % output_dir_root
-    _make_temp_dir(data_dir_temp)
-    for species, data in relevant_data:
-        output_filename = _write_species_to_folder(data_dir_temp, species, data)
-        summary['species'][species] = {'filename': output_filename,
-                                       'count': data['count']}
-    summary_path = os.path.join(data_dir_temp, '_data_summary.json')
-    with open(summary_path, 'w') as summary_file:
-        json.dump(summary, summary_file)
-    _remove_old_backup(output_dir_backup)
-    _backup(output_dir_root, output_dir_backup)
-    _update_data(output_dir_temp, data_dir_temp, data_dir)
-
 if __name__ == '__main__':
     logger.setLevel(logging.INFO)
     default_config_file = os.path.join(os.path.expanduser('~'),
@@ -273,5 +218,6 @@ if __name__ == '__main__':
     joint_data = merge_data(lane_details, ena_run_details, studies)
 
     relevant_data = build_relevant_data(joint_data, species_config)
-    output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
-    write_site_data_files(relevant_data, output_dir)
+    site_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
+    name = species_config.name
+    write_site_data_files(relevant_data, site_dir, name)

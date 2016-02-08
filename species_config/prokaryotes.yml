@@ -12,6 +12,7 @@ metadata:
     [BSAC projects](http://www.sanger.ac.uk/resources/downloads/bacteria/bsac/) - British Society for Antimicrobial Chemotherapy projects
   list_data: true
   title: Bacterial vector genomes - data download
+  name: bacteria
 species:
   Achromobacter:
     description: |

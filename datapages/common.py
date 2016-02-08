@@ -75,6 +75,7 @@ class SpeciesConfig(object):
         self.data = yaml.load(config_file)
       self.species_list = sorted(self.data['species'].keys())
       self.databases = self.data['databases']
+      self.name = self.data['metadata']['name']
 
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})

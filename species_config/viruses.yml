@@ -7,6 +7,7 @@ metadata:
     This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
   list_data: true
   title: Virus genomes - data download
+  name: viruses
 species:
   Herpesviridae Lymphocryptovirus:
     description: |

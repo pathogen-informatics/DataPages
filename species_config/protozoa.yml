@@ -7,6 +7,7 @@ metadata:
     This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
   list_data: false
   title: Protozoan genomes - data download
+  name: protozoa
 species:
   Babesia bigemina:
     description: |

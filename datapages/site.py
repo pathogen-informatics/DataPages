@@ -13,12 +13,12 @@ def get_template():
     index_template = env.get_template('index.html')
     return index_template
 
-def write_index(species_list, output_dir):
+def write_index(species_list, output_dir, name):
     def species_url(species):
         return "data/%s" % species_filename(species)
     species_urls = {species: species_url(species) for species in
                     species_list}
-    with open(os.path.join(output_dir, 'index.html'), 'w') as index_file:
+    with open(os.path.join(output_dir, name, 'index.html'), 'w') as index_file:
         print(get_template().render(species_urls=species_urls), file=index_file)
 
 if __name__ == '__main__':
@@ -31,4 +31,4 @@ if __name__ == '__main__':
     species_config = SpeciesConfig(species_config_filename)
 
     output_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
-    write_index(species_config.species_list, output_dir)
+    write_index(species_config.species_list, output_dir, species_config.name)
