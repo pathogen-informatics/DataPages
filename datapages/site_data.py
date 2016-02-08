@@ -177,15 +177,15 @@ def build_relevant_data(joint_data, species_config):
     lowercase_cache = tmp.apply(lambda row: row['Species'].lower(), axis=1)
     for species in species_config.species_list:
         species_data = tmp[lowercase_cache.map(lambda el: el.startswith(species.lower()))]
-        description_markdown = species_config.data['species'][species].get('description', '')
-        description = markdown.markdown(description_markdown,
-                                        extensions=['markdown.extensions.tables'])
         yield (species, {
             'columns': prefered_column_names,
-            'data': species_data.values.tolist(),
-            'description': description,
-            'species': species,
             'count': len(species_data.index),
+            'data': species_data.values.tolist(),
+            'description': species_config.render_description(species),
+            'published_config_description': species_config.render_published_data_description(species),
+            'publications': species_config.render_publications(species),
+            'links': species_config.render_links(species),
+            'species': species,
             'updated': now.isoformat()
         })
 

@@ -58,7 +58,12 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div id="description"></div>
+            <div id="title" class="display"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="description" class="display"></div>
           </div>
         </div>
         <div class="row">
@@ -77,6 +82,21 @@
                     </thead>
               </table>
               <div id='data-updated'></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="published_data_description" class="display"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="publications" class="display"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="links" class="display"></div>
           </div>
         </div>
     </div>
@@ -121,27 +141,59 @@
         });
       }
 
-      function update_table_for_species(table, species, project) {
+      function _show_spinner_hide_content(){
         $('#data-div').hide();
+        $('#title').hide();
+        $('#description').hide();
+        $('#published_data_description').hide();
+        $('#publications').hide();
+        $('#links').hide();
         $('#wait-div').show();
+      }
+
+      function _show_content_hide_spinner(){
+        $('#data-div').show();
+        $('#title').show();
+        $('#description').show();
+        $('#published_data_description').show();
+        $('#publications').show();
+        $('#links').show();
+        $('#wait-div').hide();
+      }
+
+      function update_table_for_species(table, species, project) {
+        _show_spinner_hide_content();
         var data_url = get_species_urls()[species];
         $('#species_selector').text(species);
         var current_species = $('#species_selector').data('species');
         if (current_species && current_species == species) {
-          $('#data-div').show();
-          $('#wait-div').hide();
+          _show_content_hide_spinner();
           update_project_lists_from_table(table, species, project);
         } else if (data_url && table.ajax.url(data_url)) {
           table.load(function (data) {
             var new_columns = data['columns'];
             var column_lookup = {};
             new_columns.forEach((name, index) => $(table.columns(index).header()).text(name));
+
             var last_updated = new Date(data['updated']);
+            $('#data-updated').text("Last updated: "+last_updated);
+
+            var title = '<h2>' + data['species'] + '</h2>'
+            $('#title').html(title);
+
             var description = data['description'];
             $('#description').html(description);
-            $('#data-updated').text("Last updated: "+last_updated);
-            $('#data-div').show();
-            $('#wait-div').hide();
+
+            var published_data_description = data['published_data_description'];
+            $('#published_data_description').html(published_data_description);
+
+            var publications = data['publications'];
+            $('#publications').html(publications);
+
+            var links = data['links'];
+            $('#links').html(links);
+
+            _show_content_hide_spinner();
             $('#species_selector').data('species', species);
             update_project_lists_from_table(table, species, project);
             add_ena_links(table);
@@ -152,8 +204,7 @@
         } else {
           // There was an issue updating the table, maybe the species doesn't exist
           table.clear();
-          $('#data-div').show();
-          $('#wait-div').hide();
+          _show_content_hide_spinner();
           $('#species_selector').data('species', species);
           update_project_lists_from_table(table, species, 'All Projects');
         }

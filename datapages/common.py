@@ -1,9 +1,11 @@
 import logging
+import markdown
 import os
 import sys
 import yaml
 
 from boltons.strutils import slugify
+from jinja2 import Template
 
 def species_filename(species):
     return slugify(species).lower()+'.json'
@@ -73,6 +75,50 @@ class SpeciesConfig(object):
         self.data = yaml.load(config_file)
       self.species_list = sorted(self.data['species'].keys())
       self.databases = self.data['databases']
+
+    def render_description(self, species):
+        species_data = self.data['species'].get(species, {})
+        markdown_content = species_data.get('description', '')
+        html = markdown.markdown(markdown_content,
+                                 extensions=['markdown.extensions.tables'])
+        return html
+
+    def render_published_data_description(self, species):
+        species_data = self.data['species'].get(species, {})
+        markdown_content = species_data.get('published_data_description', '')
+        html = markdown.markdown(markdown_content,
+                                 extensions=['markdown.extensions.tables'])
+        return html
+
+    def render_publications(self, species):
+        species_data = self.data['species'].get(species, {})
+        publications = species_data.get('pubmed_ids', [])
+        template = Template("""\
+{% if publications -%}
+<h3>Relevant Publications</h3>
+<ul>
+  {%- for publication in publications %}
+  <li>{{ publication }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}""")
+        html = template.render(publications=publications)
+        return html
+
+    def render_links(self, species):
+        species_data = self.data['species'].get(species, {})
+        links = species_data.get('links', [])
+        template = Template("""\
+{% if links -%}
+<h3>Relevant Links</h3>
+<ul>
+  {%- for link in links %}
+  <li><a href="{{ link['url'] }}">{{ link['text'] }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endif %}""")
+        html = template.render(links=links)
+        return html
 
 if __name__ == '__main__':
     default_config_file = os.path.join(os.path.expanduser('~'),
