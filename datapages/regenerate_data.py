@@ -7,14 +7,12 @@ import yaml
 
 from datetime import datetime
 
-from .common import get_config, SpeciesConfig
-from .write_data import write_site_data_files
 from .vrtrack import Vrtrack
 from .enametadata import ENADetails
 from .sequencescape import Sfind
 
 DbDetails = collections.namedtuple('DbDetails', 'host, port, database, user')
-logger = logging.getLogger('datapages')
+logger = logging.getLogger(__name__)
 
 def get_vrtrack_db_details_list(config, databases_list):
     return [DbDetails(
@@ -186,18 +184,8 @@ def build_relevant_data(joint_data, species_config):
             'updated': now.isoformat()
         })
 
-if __name__ == '__main__':
-    logger.setLevel(logging.INFO)
-    default_config_file = os.path.join(os.path.expanduser('~'),
-                                       '.datapages_global_config.yml')
-    config = get_config(os.environ.get('DATAPAGES_GLOBAL_CONFIG',
-                                       default_config_file))
-    default_cache_path = os.path.join(os.path.expanduser('~'),
-                                      ".datapages_cache.pkl")
-    cache_path = config.get('DATAPAGES_DATA_CACHE_PATH', default_cache_path)
-
-    species_config_filename = os.environ['DATAPAGES_SPECIES_CONFIG']
-    species_config = SpeciesConfig(species_config_filename)
+def generate_data(config, site_config):
+    cache_path = config['DATAPAGES_DATA_CACHE_PATH']
 
     if config.get('DATAPAGES_LOAD_DATA_CACHE') is None:
         logging.info("Loading data from databases")
@@ -217,7 +205,5 @@ if __name__ == '__main__':
 
     joint_data = merge_data(lane_details, ena_run_details, studies)
 
-    relevant_data = build_relevant_data(joint_data, species_config)
-    site_dir = config.get('DATAPAGES_SITE_DATA_DIR', 'site')
-    name = species_config.name
-    write_site_data_files(relevant_data, site_dir, name)
+    relevant_data = build_relevant_data(joint_data, site_config)
+    return relevant_data
