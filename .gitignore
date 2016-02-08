@@ -9,3 +9,4 @@ __pycache__/
 datapages/__pycache__/
 .datapages_cache.pkl
 env.sh
+*.egg-info/

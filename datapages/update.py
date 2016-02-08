@@ -50,7 +50,7 @@ def parse():
 
     return parser.parse_args()
 
-if __name__ == '__main__':
+def main():
     """Load config and update data and index.html files
 
     Config is loaded from the following sources in decreasing priority:
@@ -109,3 +109,6 @@ if __name__ == '__main__':
 
     write_site_data_files(data, site_dir, species_config.name)
     write_index(species_config.species_list, site_dir, species_config.name)
+
+if __name__ == '__main__':
+    main()
