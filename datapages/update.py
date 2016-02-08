@@ -83,13 +83,11 @@ def main():
     config_file.close()
 
     if args.save_cache:
-        args.save_cache.close()
         config['DATAPAGES_SAVE_CACHE_PATH'] = args.save_cache
     else:
         config.setdefault('DATAPAGES_SAVE_CACHE_PATH', None)
 
     if args.load_cache:
-        args.load_cache.close()
         config['DATAPAGES_LOAD_CACHE_PATH'] = args.load_cache
     else:
         config.setdefault('DATAPAGES_LOAD_CACHE_PATH', None)

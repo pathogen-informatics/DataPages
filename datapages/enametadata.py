@@ -19,7 +19,7 @@ class ENADetails(object):
         sample_accessions = self._get_run_accessions_for_group(accn_group)
         number_of_groups = int((len(study_accessions)-1) / SIZE)
         for i, accn_group in enumerate(accn_groups):
-            self.logger.info("  Making request %s of %s" % (i, number_of_groups))
+            self.logger.info("  Making request %s of %s" % (i+1, number_of_groups))
             time.sleep(self.wait)
             sample_accessions += self._get_run_accessions_for_group(accn_group)
         return sample_accessions       
