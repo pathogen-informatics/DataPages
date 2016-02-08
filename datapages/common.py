@@ -10,7 +10,7 @@ from jinja2 import Template
 def species_filename(species):
     return slugify(species).lower()+'.json'
 
-def get_config(config_filepath):
+def get_config(config_file):
     """Creates a dictionary like object, preferably from config,
     else from environment variables"""
 
@@ -25,21 +25,18 @@ def get_config(config_filepath):
     ]
 
     optional_keys = [
-        'DATAPAGES_DATA_CACHE_PATH',
-        'DATAPAGES_LOAD_DATA_CACHE',
-        'DATAPAGES_SAVE_DATA_CACHE'
+        'DATAPAGES_LOAD_CACHE_PATH',
+        'DATAPAGES_SAVE_CACHE_PATH'
     ]
 
     try:
-        with open(config_filepath, 'r') as config_file:
-            config_from_file = yaml.load(config_file)
+        config_file.seek(0)
+        config_from_file = yaml.load(config_file)
     except IOError:
-        if config_filepath:
-            logging.warn("Could not load config from %s, using environment variables" % config_filepath)
+        logging.warn("Could not load config from %s, using environment variables" % config_file.name)
         config_from_file = {}
     except yaml.parser.ParserError:
-        if config_filepath:
-            logging.warn("%s doesn't look like valid YAML, using environment variables" % config_filepath)
+        logging.warn("%s doesn't look like valid YAML, using environment variables" % config_file.name)
         config_from_file = {}
 
     config = {}
@@ -70,12 +67,11 @@ def get_config(config_filepath):
     return config
 
 class SpeciesConfig(object):
-    def __init__(self, path):
-      with open(path, 'r') as config_file:
+    def __init__(self, config_file):
         self.data = yaml.load(config_file)
-      self.species_list = sorted(self.data['species'].keys())
-      self.databases = self.data['databases']
-      self.name = self.data['metadata']['name']
+        self.species_list = sorted(self.data['species'].keys())
+        self.databases = self.data['databases']
+        self.name = self.data['metadata']['name']
 
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})

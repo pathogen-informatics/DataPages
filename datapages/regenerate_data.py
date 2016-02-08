@@ -185,20 +185,20 @@ def build_relevant_data(joint_data, species_config):
         })
 
 def generate_data(config, site_config):
-    cache_path = config['DATAPAGES_DATA_CACHE_PATH']
-
-    if config.get('DATAPAGES_LOAD_DATA_CACHE') is None:
+    if config.get('DATAPAGES_LOAD_CACHE_PATH'):
+        cache_path = config.get('DATAPAGES_LOAD_CACHE_PATH')
+        logging.warn("Loading cached data from %s" % cache_path)
+        project_ssids, ena_run_details, lane_details, studies = reload_cache_data(cache_path)
+    else:
         logging.info("Loading data from databases")
         vrtrack_db_details_list = get_vrtrack_db_details_list(config,
                                                          species_config.databases)
         sequencescape_db_details = get_sequencescape_db_details(config)
         lane_details, ena_run_details, studies = get_all_data(vrtrack_db_details_list,
                                                               sequencescape_db_details)
-    else:
-        logging.warn("Loading cached data from %s" % cache_path)
-        project_ssids, ena_run_details, lane_details, studies = reload_cache_data(cache_path)
 
-    if not config.get('DATAPAGES_SAVE_DATA_CACHE') is None:
+    if config.get('DATAPAGES_SAVE_CACHE_PATH'):
+        cache_path = config.get('DATAPAGES_SAVE_CACHE_PATH')
         logging.warn("Saving data to cache in %s" % cache_path)
         project_ssids = list({lane['project_ssid'] for lane in lane_details})
         cache_data(cache_path, project_ssids, ena_run_details, lane_details, studies)
