@@ -100,13 +100,16 @@ def main():
 
     site_dir = config['DATAPAGES_SITE_DATA_DIR']
     logging.info("Preparing updates to %s" % site_dir)
-    domain_config_file, *others = args.domain_config # FIXME: use others
 
-    domain_config = DomainConfig(species_config_file)
-    data = generate_data(config, domain_config)
+    for domain_config_file in args.domain_config:
+        domain_config = DomainConfig(domain_config_file)
 
-    write_domain_data_files(data, site_dir, domain_config.domain_name)
-    write_domain_index(domain_config.species_list, site_dir, domain_config.domain_name)
+        if domain_config.list_data:
+            data = generate_data(config, domain_config)
+        else:
+            data = generate_empty_data(domain_config)
+        write_domain_data_files(data, site_dir, domain_config.domain_name)
+        write_domain_index(domain_config.species_list, site_dir, domain_config.domain_name)
 
 if __name__ == '__main__':
     main()

@@ -72,6 +72,7 @@ class DomainConfig(object):
         self.species_list = sorted(self.data['species'].keys())
         self.databases = self.data['databases']
         self.domain_name = self.data['metadata']['name']
+        self.list_data = self.data['metadata'].get('list_data', False)
 
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})

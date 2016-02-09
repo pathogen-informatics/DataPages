@@ -24,5 +24,5 @@ def write_domain_index(species_list, output_dir, domain_name):
                     species_list}
     index_path = os.path.join(output_dir, domain_name, 'index.html')
     with open(index_path, 'w') as index_file:
-        logger.info("Writing index page for %s to %s" % (name, index_path))
+        logger.info("Writing index page for %s to %s" % (domain_name, index_path))
         print(get_template().render(species_urls=species_urls), file=index_file)

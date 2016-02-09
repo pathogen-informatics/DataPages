@@ -159,6 +159,31 @@ def merge_data(lane_details, ena_run_details, studies):
     joint_data = merge_ena_status(joint_data, ena_details)
     return joint_data
 
+def generate_empty_data(domain_config):
+    logger.info("Building empty species data")
+    now = datetime.now()
+    prefered_column_names = [
+        'Species',
+        'Study Name',
+        'Study Accession',
+        'Sample Name',
+        'Strain',
+        'Run Accession',
+        'Sample Accession'
+    ]
+    for species in domain_config.species_list:
+        yield (species, {
+            'columns': prefered_column_names,
+            'count': 0,
+            'data': [],
+            'description': domain_config.render_description(species),
+            'published_config_description': domain_config.render_published_data_description(species),
+            'publications': domain_config.render_publications(species),
+            'links': domain_config.render_links(species),
+            'species': species,
+            'updated': now.isoformat()
+        })
+
 def build_relevant_data(joint_data, domain_config):
     logger.info("Reformatting data for export")
     now = datetime.now()
