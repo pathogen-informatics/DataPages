@@ -112,7 +112,7 @@ class DomainConfig(object):
         links = species_data.get('links', [])
         template = Template("""\
 {% if links -%}
-<h3>Relevant Links</h3>
+<h4>Relevant Links</h4>
 <ul>
   {%- for link in links %}
   <li><a href="{{ link['url'] }}">{{ link['text'] }}</a></li>
@@ -121,21 +121,3 @@ class DomainConfig(object):
 {%- endif %}""")
         html = template.render(links=links)
         return html
-
-if __name__ == '__main__':
-    default_config_file = os.path.join(os.path.expanduser('~'),
-                                       '.datapages_config.yml')
-    config = get_config(os.environ.get('DATAPAGES_CONFIG_FILE',
-                                       default_config_file))
-    import json
-    print(json.dumps(config, sort_keys=True))
-    e = {key: value for key, value in os.environ.items() if 'DATAPAGES' in key}
-    print(json.dumps(e, sort_keys=True))
-    config_filepath = os.environ.get('DATAPAGES_CONFIG_FILE', default_config_file)
-    with open(config_filepath, 'r') as config_file:
-        config_in_file = yaml.load(config_file)
-    print(json.dumps(config_in_file, sort_keys=True))
-
-    
-
-
