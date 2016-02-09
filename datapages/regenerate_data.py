@@ -215,7 +215,14 @@ def build_relevant_data(joint_data, domain_config):
         if not domain_config.is_visible(species):
             continue
 
-        species_data = tmp[lowercase_cache.map(lambda el: el.startswith(species.lower()))]
+        mask = lowercase_cache.map(lambda el: el.startswith(species.lower()))
+        # Some species have common names which they
+        # may also be referred to by.
+        for alias in domain_config.aliases(species):
+            alias_mask = lowercase_cache.map(lambda el:
+                                             el.startswith(alias.lower()))
+            mask = mask | alias_mask
+        species_data = tmp[mask]
         yield (species, {
             'columns': prefered_column_names,
             'count': len(species_data.index),

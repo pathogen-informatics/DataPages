@@ -78,6 +78,10 @@ class DomainConfig(object):
         species_data = self.data['species'].get(species, {})
         return species_data.get('show', True)
 
+    def aliases(self, species):
+        species_data = self.data['species'].get(species, {})
+        return species_data.get('aliases', [])
+
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})
         markdown_content = species_data.get('description', '')
