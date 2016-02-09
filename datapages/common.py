@@ -74,6 +74,10 @@ class DomainConfig(object):
         self.domain_name = self.data['metadata']['name']
         self.list_data = self.data['metadata'].get('list_data', False)
 
+    def is_visible(self, species):
+        species_data = self.data['species'].get(species, {})
+        return species_data.get('show', True)
+
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})
         markdown_content = species_data.get('description', '')

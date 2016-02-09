@@ -109,7 +109,9 @@ def main():
         else:
             data = generate_empty_data(domain_config)
         write_domain_data_files(data, site_dir, domain_config.domain_name)
-        write_domain_index(domain_config.species_list, site_dir, domain_config.domain_name)
+        species_list = [species for species in domain_config.species_list if
+                        domain_config.is_visible(species)]
+        write_domain_index(species_list, site_dir, domain_config.domain_name)
 
 if __name__ == '__main__':
     main()

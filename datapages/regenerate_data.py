@@ -172,6 +172,8 @@ def generate_empty_data(domain_config):
         'Sample Accession'
     ]
     for species in domain_config.species_list:
+        if not domain_config.is_visible(species):
+            continue
         yield (species, {
             'columns': prefered_column_names,
             'count': 0,
@@ -207,6 +209,12 @@ def build_relevant_data(joint_data, domain_config):
     tmp.columns = prefered_column_names
     lowercase_cache = tmp.apply(lambda row: row['Species'].lower(), axis=1)
     for species in domain_config.species_list:
+        # Species can be temporarily hidden by setting
+        # show: false
+        # in their config
+        if not domain_config.is_visible(species):
+            continue
+
         species_data = tmp[lowercase_cache.map(lambda el: el.startswith(species.lower()))]
         yield (species, {
             'columns': prefered_column_names,
