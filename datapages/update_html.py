@@ -3,7 +3,7 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
-from .common import species_filename, get_config, SpeciesConfig
+from .common import species_filename, get_config, DomainConfig
 
 logger = logging.getLogger(__name__)
 
@@ -17,12 +17,12 @@ def get_template():
     logger.info('Using index.html template from %s' % templates_dir)
     return index_template
 
-def write_index(species_list, output_dir, name):
+def write_domain_index(species_list, output_dir, domain_name):
     def species_url(species):
         return "data/%s" % species_filename(species)
     species_urls = {species: species_url(species) for species in
                     species_list}
-    index_path = os.path.join(output_dir, name, 'index.html')
+    index_path = os.path.join(output_dir, domain_name, 'index.html')
     with open(index_path, 'w') as index_file:
         logger.info("Writing index page for %s to %s" % (name, index_path))
         print(get_template().render(species_urls=species_urls), file=index_file)

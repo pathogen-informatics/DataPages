@@ -65,10 +65,10 @@ def main():
     else:
         logger.setLevel(logging.INFO)
 
-    from .common import get_config, SpeciesConfig
-    from .write_data import write_site_data_files
+    from .common import get_config, DomainConfig
+    from .write_data import write_domain_data_files
     from .regenerate_data import generate_data
-    from .update_html import write_index
+    from .update_html import write_domain_index
 
     if args.global_config:
         config_file = args.global_config
@@ -100,13 +100,13 @@ def main():
 
     site_dir = config['DATAPAGES_SITE_DATA_DIR']
     logging.info("Preparing updates to %s" % site_dir)
-    species_config_file, *others = args.domain_config # FIXME: use others
+    domain_config_file, *others = args.domain_config # FIXME: use others
 
-    species_config = SpeciesConfig(species_config_file)
-    data = generate_data(config, species_config)
+    domain_config = DomainConfig(species_config_file)
+    data = generate_data(config, domain_config)
 
-    write_site_data_files(data, site_dir, species_config.name)
-    write_index(species_config.species_list, site_dir, species_config.name)
+    write_domain_data_files(data, site_dir, domain_config.domain_name)
+    write_domain_index(domain_config.species_list, site_dir, domain_config.domain_name)
 
 if __name__ == '__main__':
     main()

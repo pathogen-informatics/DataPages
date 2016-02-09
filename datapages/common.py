@@ -66,12 +66,12 @@ def get_config(config_file):
 
     return config
 
-class SpeciesConfig(object):
+class DomainConfig(object):
     def __init__(self, config_file):
         self.data = yaml.load(config_file)
         self.species_list = sorted(self.data['species'].keys())
         self.databases = self.data['databases']
-        self.name = self.data['metadata']['name']
+        self.domain_name = self.data['metadata']['name']
 
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})

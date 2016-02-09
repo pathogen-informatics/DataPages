@@ -41,15 +41,15 @@ def _write_species_to_folder(data_dir_temp, species, data):
         json.dump(data, output_file)
     return output_filename
 
-def write_site_data_files(relevant_data, output_dir_root, name):
+def write_domain_data_files(relevant_data, output_dir_root, domain_name):
     logger.info("Writing data to disk")
     now = datetime.now()
     summary = {'species': {},
                'created': now.isoformat()}
     timestamp = now.strftime("%Y%m%d%H%M%S")
-    output_dir_temp = os.path.join(output_dir_root, "%s_%s_temp" % (name, timestamp))
+    output_dir_temp = os.path.join(output_dir_root, "%s_%s_temp" % (domain_name, timestamp))
     data_dir_temp = os.path.join(output_dir_temp, 'data')
-    data_dir = os.path.join(output_dir_root, name, 'data')
+    data_dir = os.path.join(output_dir_root, domain_name, 'data')
     output_dir_backup = "%s_backup" % output_dir_root
     _make_temp_dir(data_dir_temp)
     for species, data in relevant_data:
@@ -62,4 +62,3 @@ def write_site_data_files(relevant_data, output_dir_root, name):
     _remove_old_backup(output_dir_backup)
     _backup(output_dir_root, output_dir_backup)
     _update_data(output_dir_temp, data_dir_temp, data_dir)
-

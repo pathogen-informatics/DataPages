@@ -47,7 +47,7 @@ def get_all_data(vrtrack_db_details_list, sequencescape_db_details):
     studies = sfind.get_studies(project_ssids)
     return lane_details, ena_run_details, studies
 
-def cache_data(cache_path, name, project_ssids, ena_run_details, lane_details, studies):
+def cache_data(cache_path, domain_name, project_ssids, ena_run_details, lane_details, studies):
     """Just for testing"""
     try:
         with open(cache_path, 'rb') as cache_file:
@@ -57,7 +57,7 @@ def cache_data(cache_path, name, project_ssids, ena_run_details, lane_details, s
     except FileNotFoundError:
         cache={}
 
-    cache[name] = {
+    cache[domain_name] = {
         'project_ssids': project_ssids,
         'ena_run_details': ena_run_details,
         'lane_details': lane_details,
@@ -66,16 +66,16 @@ def cache_data(cache_path, name, project_ssids, ena_run_details, lane_details, s
     with open(cache_path, 'wb') as cache_file:
         pickle.dump(cache, cache_file)
 
-def reload_cache_data(cache_path, name):
+def reload_cache_data(cache_path, domain_name):
     with open(cache_path, 'rb') as cache_file:
         cache = pickle.load(cache_file)
     try:
-        project_ssids = cache[name]['project_ssids']
-        ena_run_details = cache[name]['ena_run_details']
-        lane_details = cache[name]['lane_details']
-        studies = cache[name]['ss_studies']
+        project_ssids = cache[domain_name]['project_ssids']
+        ena_run_details = cache[domain_name]['ena_run_details']
+        lane_details = cache[domain_name]['lane_details']
+        studies = cache[domain_name]['ss_studies']
     except KeyError:
-        raise ValueError("Could not load %s from %s" % (name, cache_path))
+        raise ValueError("Could not load %s from %s" % (domain_name, cache_path))
     return project_ssids, ena_run_details, lane_details, studies
 
 def join_vrtrack_sequencescape(vrtrack, sequencescape):
@@ -159,7 +159,7 @@ def merge_data(lane_details, ena_run_details, studies):
     joint_data = merge_ena_status(joint_data, ena_details)
     return joint_data
 
-def build_relevant_data(joint_data, species_config):
+def build_relevant_data(joint_data, domain_config):
     logger.info("Reformatting data for export")
     now = datetime.now()
     column_name_map = collections.OrderedDict([
@@ -181,41 +181,41 @@ def build_relevant_data(joint_data, species_config):
     tmp = tmp[original_column_names]
     tmp.columns = prefered_column_names
     lowercase_cache = tmp.apply(lambda row: row['Species'].lower(), axis=1)
-    for species in species_config.species_list:
+    for species in domain_config.species_list:
         species_data = tmp[lowercase_cache.map(lambda el: el.startswith(species.lower()))]
         yield (species, {
             'columns': prefered_column_names,
             'count': len(species_data.index),
             'data': species_data.values.tolist(),
-            'description': species_config.render_description(species),
-            'published_config_description': species_config.render_published_data_description(species),
-            'publications': species_config.render_publications(species),
-            'links': species_config.render_links(species),
+            'description': domain_config.render_description(species),
+            'published_config_description': domain_config.render_published_data_description(species),
+            'publications': domain_config.render_publications(species),
+            'links': domain_config.render_links(species),
             'species': species,
             'updated': now.isoformat()
         })
 
-def generate_data(config, site_config):
-    if config.get('DATAPAGES_LOAD_CACHE_PATH'):
-        cache_path = config.get('DATAPAGES_LOAD_CACHE_PATH')
+def generate_data(global_config, domain_config):
+    if global_config.get('DATAPAGES_LOAD_CACHE_PATH'):
+        cache_path = global_config.get('DATAPAGES_LOAD_CACHE_PATH')
         logging.warn("Loading cached data from %s" % cache_path)
-        cache = reload_cache_data(cache_path, site_config.name)
+        cache = reload_cache_data(cache_path, domain_config.domain_name)
         project_ssids, ena_run_details, lane_details, studies = cache
     else:
         logging.info("Loading data from databases")
-        vrtrack_db_details_list = get_vrtrack_db_details_list(config,
-                                                         site_config.databases)
-        sequencescape_db_details = get_sequencescape_db_details(config)
+        vrtrack_db_details_list = get_vrtrack_db_details_list(global_config,
+                                                         domain_config.databases)
+        sequencescape_db_details = get_sequencescape_db_details(global_config)
         lane_details, ena_run_details, studies = get_all_data(vrtrack_db_details_list,
                                                               sequencescape_db_details)
 
-    if config.get('DATAPAGES_SAVE_CACHE_PATH'):
-        cache_path = config.get('DATAPAGES_SAVE_CACHE_PATH')
+    if global_config.get('DATAPAGES_SAVE_CACHE_PATH'):
+        cache_path = global_config.get('DATAPAGES_SAVE_CACHE_PATH')
         logging.warn("Saving data to cache in %s" % cache_path)
         project_ssids = list({lane['project_ssid'] for lane in lane_details})
-        cache_data(cache_path, site_config.name, project_ssids, ena_run_details, lane_details, studies)
+        cache_data(cache_path, domain_config.domain_name, project_ssids, ena_run_details, lane_details, studies)
 
     joint_data = merge_data(lane_details, ena_run_details, studies)
 
-    relevant_data = build_relevant_data(joint_data, site_config)
+    relevant_data = build_relevant_data(joint_data, domain_config)
     return relevant_data
