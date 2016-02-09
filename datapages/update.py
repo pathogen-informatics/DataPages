@@ -67,7 +67,7 @@ def main():
 
     from .common import get_config, DomainConfig
     from .write_data import write_domain_data_files
-    from .regenerate_data import generate_data
+    from .regenerate_data import generate_data, generate_empty_data
     from .update_html import write_domain_index
 
     if args.global_config:
@@ -103,6 +103,8 @@ def main():
 
     for domain_config_file in args.domain_config:
         domain_config = DomainConfig(domain_config_file)
+        logger.info("Processing %s from %s" % (domain_config.domain_name,
+                                               domain_config_file.name))
 
         if domain_config.list_data:
             data = generate_data(config, domain_config)

@@ -191,6 +191,10 @@
         $('#projects').hide();
       }
 
+      function _number_of_rows(table) {
+        return table.rows().data().length
+      }
+
       function update_table_for_species(table, species, project) {
         _show_spinner_hide_content();
         var data_url = get_species_urls()[species];
@@ -198,7 +202,12 @@
         var current_species = $('#species_selector').data('species');
         if (current_species && current_species == species) {
           _show_content_hide_spinner();
-          update_project_lists_from_table(table, species, project);
+          if (_number_of_rows(table) == 0) {
+            _hide_table_and_project_list();
+          } else {
+            update_project_lists_from_table(table, species, project);
+            _show_table_and_project_list();
+          }
         } else if (data_url && table.ajax.url(data_url)) {
           table.load(function (data) {
             var new_columns = data['columns'];
@@ -208,7 +217,7 @@
             _update_content(data)
             _show_content_hide_spinner();
             $('#species_selector').data('species', species);
-            if (data['count'] == 0) {
+            if (_number_of_rows(table) == 0) {
               _hide_table_and_project_list();
             } else {
               update_project_lists_from_table(table, species, project);
