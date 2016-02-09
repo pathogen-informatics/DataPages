@@ -204,11 +204,10 @@
     var species = state['species'];
     var project = state['project'];
     var table = $("#data-table").DataTable();
-    console.log("Returning to (" + species + ", " + project + ")");
     update_table_for_species(table, species, project);
   };
 
-  (function() {
+  $(document).ready(function() {
     var params = get_url_params()
     var first_species=$('#species_list a').first().text();
     var species = params['species'] || first_species;
@@ -222,5 +221,5 @@
       update_table_for_species(table, species, 'All Projects');
       update_url_params(species, 'All Projects', true);
     });
-  })();
+  });
 })();
