@@ -72,11 +72,36 @@
     var published_data_description = data['published_data_description'];
     $('#published_data_description').html(published_data_description);
 
-    var publications = data['publications'];
-    $('#publications').html(publications);
-
     var links = data['links'];
     $('#links').html(links);
+
+    var pubmed_ids = data['pubmed_ids'];
+    var backup_pubmedid_rendering = function() {
+      $('#publications').empty();
+      $('#publications').append($('<h3>Publications</h3>'));
+      var publication_list = $('<ul></ul>');
+      $.each(pubmed_ids, function(_, pubmed_id) {
+        publication_list.append($('<li><a href="http://europepmc.org/abstract/MED/'+pubmed_id+'">'+pubmed_id+'</a></li>'));
+      });
+      $('#publications').append(publication_list);
+    };
+    if (pubmed_ids.length) {
+      $.ajax({
+        url: "/component/References?pars=" + pubmed_ids.join(" "),
+        success: function(result) {
+          if (result.length > 0) {
+            $('#publications').empty();
+            $('#publications').append($('<h3>Publications</h3>'));
+            $('#publications').append($(result));
+          } else {
+            backup_pubmedid_rendering()
+          }
+        },
+        error: backup_pubmedid_rendering,
+      });
+    } else {
+      $('#publications').empty();
+    }
   }
 
   function _show_table_and_project_list() {

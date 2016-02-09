@@ -96,20 +96,9 @@ class DomainConfig(object):
                                  extensions=['markdown.extensions.tables'])
         return html
 
-    def render_publications(self, species):
+    def pubmed_ids(self, species):
         species_data = self.data['species'].get(species, {})
-        publications = species_data.get('pubmed_ids', [])
-        template = Template("""\
-{% if publications -%}
-<h3>Relevant Publications</h3>
-<ul>
-  {%- for publication in publications %}
-  <li>{{ publication }}</li>
-  {%- endfor %}
-</ul>
-{%- endif %}""")
-        html = template.render(publications=publications)
-        return html
+        return species_data.get('pubmed_ids', [])
 
     def render_links(self, species):
         species_data = self.data['species'].get(species, {})

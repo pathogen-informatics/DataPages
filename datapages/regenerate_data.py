@@ -179,8 +179,8 @@ def generate_empty_data(domain_config):
             'count': 0,
             'data': [],
             'description': domain_config.render_description(species),
-            'published_config_description': domain_config.render_published_data_description(species),
-            'publications': domain_config.render_publications(species),
+            'published_data_description': domain_config.render_published_data_description(species),
+            'pubmed_ids': domain_config.pubmed_ids(species),
             'links': domain_config.render_links(species),
             'species': species,
             'updated': now.isoformat()
@@ -228,8 +228,8 @@ def build_relevant_data(joint_data, domain_config):
             'count': len(species_data.index),
             'data': species_data.values.tolist(),
             'description': domain_config.render_description(species),
-            'published_config_description': domain_config.render_published_data_description(species),
-            'publications': domain_config.render_publications(species),
+            'published_data_description': domain_config.render_published_data_description(species),
+            'pubmed_ids': domain_config.pubmed_ids(species),
             'links': domain_config.render_links(species),
             'species': species,
             'updated': now.isoformat()
