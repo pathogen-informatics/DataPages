@@ -4,6 +4,14 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h2>{{ domain_title }}<h2>
+            </div>
+            <div class="col-md-12">
+                {{ domain_description }}
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-4">
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="species_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -14,16 +22,6 @@
                     {% for name, url in (species_urls.items() | sort) %}
                         <li><a href='{{ url }}'>{{ name }}</a></li>
                     {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="dropdown display" id="projects">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="project_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      All Projects
-                      <span class="caret"></span>
-                    </button>
-                    <ul id="project_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="project_selector">
                     </ul>
                 </div>
             </div>
@@ -42,6 +40,25 @@
           <div class="col-md-12">
             <div id="description" class="display"></div>
           </div>
+        </div>
+        <div id="projects">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Data</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dropdown display">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="project_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          All Projects
+                          <span class="caret"></span>
+                        </button>
+                        <ul id="project_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="project_selector">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
           <div id="data-div" class="col-md-12">

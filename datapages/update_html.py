@@ -17,12 +17,18 @@ def get_template():
     logger.info('Using index.html template from %s' % templates_dir)
     return index_template
 
-def write_domain_index(species_list, output_dir, domain_name):
+def write_domain_index(species_list, output_dir, domain_config):
+    domain_name = domain_config.domain_name
     def species_url(species):
         return "data/%s" % species_filename(species)
     species_urls = {species: species_url(species) for species in
                     species_list}
     index_path = os.path.join(output_dir, domain_name, 'index.html')
+    content = get_template().render(
+        species_urls=species_urls,
+        domain_title=domain_config.domain_title,
+        domain_description=domain_config.render_domain_description()
+    )
     with open(index_path, 'w') as index_file:
         logger.info("Writing index page for %s to %s" % (domain_name, index_path))
-        print(get_template().render(species_urls=species_urls), file=index_file)
+        print(content, file=index_file)

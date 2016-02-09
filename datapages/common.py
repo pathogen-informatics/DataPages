@@ -71,8 +71,9 @@ class DomainConfig(object):
         self.data = yaml.load(config_file)
         self.species_list = sorted(self.data['species'].keys())
         self.databases = self.data['databases']
-        self.domain_name = self.data['metadata']['name']
         self.list_data = self.data['metadata'].get('list_data', False)
+        self.domain_name = self.data['metadata']['name']
+        self.domain_title = self.data['metadata']['title']
 
     def is_visible(self, species):
         species_data = self.data['species'].get(species, {})
@@ -81,6 +82,12 @@ class DomainConfig(object):
     def aliases(self, species):
         species_data = self.data['species'].get(species, {})
         return species_data.get('aliases', [])
+
+    def render_domain_description(self):
+        description = self.data['metadata']['description']
+        html = markdown.markdown(description,
+                                 extensions=['markdown.extensions.tables'])
+        return html
 
     def render_description(self, species):
         species_data = self.data['species'].get(species, {})

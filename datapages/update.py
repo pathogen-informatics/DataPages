@@ -118,7 +118,7 @@ def main():
             logger.warning("Skipping data regeneration, you specified --html-only")
         species_list = [species for species in domain_config.species_list if
                         domain_config.is_visible(species)]
-        write_domain_index(species_list, site_dir, domain_config.domain_name)
+        write_domain_index(species_list, site_dir, domain_config)
 
 if __name__ == '__main__':
     main()
