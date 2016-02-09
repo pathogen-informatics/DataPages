@@ -44,6 +44,8 @@ def parse():
                         help="Cache database results to this file")
     parser.add_argument('--load-cache', type=_could_read,
                         help="Load cached database results from this file")
+    parser.add_argument('--html-only', action='store_true', default=False,
+                        help="Don't update data, just html")
     parser.add_argument('domain_config', type=FileType(mode='r'), nargs='+',
                         help="One or more domain config files (e.g. viruses.yml)")
 
@@ -106,11 +108,14 @@ def main():
         logger.info("Processing %s from %s" % (domain_config.domain_name,
                                                domain_config_file.name))
 
-        if domain_config.list_data:
-            data = generate_data(config, domain_config)
+        if not args.html_only:
+          if domain_config.list_data:
+              data = generate_data(config, domain_config)
+          else:
+              data = generate_empty_data(domain_config)
+          write_domain_data_files(data, site_dir, domain_config.domain_name)
         else:
-            data = generate_empty_data(domain_config)
-        write_domain_data_files(data, site_dir, domain_config.domain_name)
+            logger.warning("Skipping data regeneration, you specified --html-only")
         species_list = [species for species in domain_config.species_list if
                         domain_config.is_visible(species)]
         write_domain_index(species_list, site_dir, domain_config.domain_name)
