@@ -2,53 +2,29 @@
 <head>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>{{ domain_title }}<h2>
+    <div id="main">
+        <div class="panel">
+            <h2>{{ domain_title }}</h2>
+            {{ domain_description }}
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="species_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Pick your pathogen
+                  <span class="caret"></span>
+                </button>
+                <ul id="species_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="species_selector">
+                {% for name, url in (species_urls.items() | sort) %}
+                    <li><a href='{{ url }}'>{{ name }}</a></li>
+                {% endfor %}
+                </ul>
             </div>
-            <div class="col-md-12">
-                {{ domain_description }}
+            <div id="wait-div" style="display: none;">
+                  <h4><i class="fa fa-spinner fa-pulse"></i> Please wait while we load your data</h4>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="species_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Pick your pathogen
-                      <span class="caret"></span>
-                    </button>
-                    <ul id="species_list" class="dropdown-menu scrollable-dropdown" aria-labelledby="species_selector">
-                    {% for name, url in (species_urls.items() | sort) %}
-                        <li><a href='{{ url }}'>{{ name }}</a></li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="wait-div" class="row" style="display: none;">
-          <div class="col-md-12">
-              <h4><i class="fa fa-spinner fa-pulse"></i> Please wait while we load your data</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
             <div id="title" class="display"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
             <div id="description" class="display"></div>
-          </div>
-        </div>
-        <div id="projects">
-            <div class="row">
-                <div class="col-md-4">
+            <div id="data-div">
+                <div id="projects">
                     <h3>Data</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
                     <div class="dropdown display">
                         <button class="btn btn-default dropdown-toggle" type="button" id="project_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                           All Projects
@@ -58,43 +34,39 @@
                         </ul>
                     </div>
                 </div>
+                <table id="data-table" class="display">
+                    <thead>
+                          <tr>
+                              <th>Species</th>
+                              <th>Study Name</th>
+                              <th>Study Accession</th>
+                              <th>Sample Name</th>
+                              <th>Strain</th>
+                              <th>Run Accession</th>
+                              <th>Sample Accession</th>
+                          </tr>
+                      </thead>
+                </table>
+                <div id='data-updated'></div>
             </div>
-        </div>
-        <div class="row">
-          <div id="data-div" class="col-md-12">
-              <table id="data-table" class="display">
-                  <thead>
-                        <tr>
-                            <th>Species</th>
-                            <th>Study Name</th>
-                            <th>Study Accession</th>
-                            <th>Sample Name</th>
-                            <th>Strain</th>
-                            <th>Run Accession</th>
-                            <th>Sample Accession</th>
-                        </tr>
-                    </thead>
-              </table>
-              <div id='data-updated'></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
             <div id="published_data_description" class="display"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
             <div id="publications" class="display"></div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
+    </div>
+    <div id="rhs">
+        <div class="panel">
             <div id="links" class="display"></div>
-          </div>
+            <div>
+                <h4>Data Use Statement</h4>
+                <p>This sequencing centre plans on publishing the completed and annotated sequences in a peer-reviewed journal as soon as possible. Permission of the principal investigator should be obtained before publishing analyses of the sequence/open reading frames/genes on a chromosome or genome scale. See our data sharing policy.</p>
+
+                <h4>Sequencing enquiries</h4>
+                <p>Please address all sequencing enquiries to: <a href="mailto:%70%61%74%68%69%6E%66%6F%40%73%61%6E%67%65%72%2E%61%63%2E%75%6B">pathinfo@sanger.ac.uk</a></p>
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
@@ -104,8 +76,8 @@
           overflow-x: hidden;
       }
     </style>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="../assets/js/datapages.js"></script>
 </body>
