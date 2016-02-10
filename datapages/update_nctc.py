@@ -329,6 +329,7 @@ def main():
     Domain specific config is always loaded from a config file"""
     args = parse()
     
+    from .common import get_config
     from .regenerate_data import get_vrtrack_db_details_list, \
                                  get_sequencescape_db_details, \
                                  get_all_data, \
