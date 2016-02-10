@@ -2,13 +2,13 @@
 databases:
 - pathogen_pacbio_track
 ftp_root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000'
-automatic_gff: 
+automatic_gffs:
   root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_automatic'
   root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_automatic'
-manual_embl: 
+manual_embls:
   root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_manual'
   root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_manual'
-manual_gff: 
+manual_gffs:
   root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_manual'
   root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_manual'
 project_ssids:
