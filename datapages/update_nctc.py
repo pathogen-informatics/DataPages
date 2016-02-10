@@ -9,7 +9,7 @@ from argparse import ArgumentTypeError, FileType
 
 from .common import cache_data, reload_cache_data, \
                     _is_dir, _could_write, _could_read
-from .update_projects import get_template
+from .update_projects_html import get_template
 
 logger = logging.getLogger('datapages')
 
@@ -242,7 +242,7 @@ def build_relevant_nctc_data(joint_data, nctc_config):
 class NctcConfig(object):
     def __init__(self, config_file):
         self.data = yaml.load(config_file)
-        §self.nctc_name = self.data['metadata']['name']
+        self.nctc_name = self.data['metadata']['name']
         self.type = self.data['metadata']['type']
         self.databases = self.data['databases']
         self.ftp_root_dir = self.data['ftp_root_dir']
@@ -375,13 +375,13 @@ def main():
     logger.info("Processing %s" % args.nctc_config.name)
 
     if nctc_config.type != 'nctc':
-        message = "Expected config type of nctc in %s, got %s" %
+        message = "Expected config type of nctc in %s, got %s" % \
                      (args.nctc_config.name, nctc_config.type)
         logger.error(message)
         raise ValueError(message)
 
     data = generate_nctc_data(config, nctc_config)
-    write_nctc_index(relevant_data, site_dir, nctc_config) # TODO
+    write_nctc_index(relevant_data, site_dir, nctc_config)
 
 if __name__ == '__main__':
     main()
