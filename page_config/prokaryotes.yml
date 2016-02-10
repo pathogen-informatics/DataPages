@@ -12,7 +12,7 @@ metadata:
     [NCTC reference collection](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) - generation of annotated and assembled genomes for 3,000 bacteria and 500 viruses
     [BSAC projects](http://www.sanger.ac.uk/resources/downloads/bacteria/bsac/) - British Society for Antimicrobial Chemotherapy projects
   list_data: true
-  title: Bacterial vector genomes - data download
+  title: Bacterial genomes - data download
   name: bacteria
 species:
   Achromobacter:

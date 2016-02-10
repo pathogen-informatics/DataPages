@@ -7,6 +7,7 @@ import yaml
 
 from datetime import datetime
 
+from .common import cache_data, reload_cache_data
 from .vrtrack import Vrtrack
 from .enametadata import ENADetails
 from .sequencescape import Sfind
@@ -46,37 +47,6 @@ def get_all_data(vrtrack_db_details_list, sequencescape_db_details):
                   sequencescape_db_details.user)
     studies = sfind.get_studies(project_ssids)
     return lane_details, ena_run_details, studies
-
-def cache_data(cache_path, domain_name, project_ssids, ena_run_details, lane_details, studies):
-    """Just for testing"""
-    try:
-        with open(cache_path, 'rb') as cache_file:
-            cache = pickle.load(cache_file)
-    except EOFError:
-        cache={}
-    except FileNotFoundError:
-        cache={}
-
-    cache[domain_name] = {
-        'project_ssids': project_ssids,
-        'ena_run_details': ena_run_details,
-        'lane_details': lane_details,
-        'ss_studies': studies
-    }
-    with open(cache_path, 'wb') as cache_file:
-        pickle.dump(cache, cache_file)
-
-def reload_cache_data(cache_path, domain_name):
-    with open(cache_path, 'rb') as cache_file:
-        cache = pickle.load(cache_file)
-    try:
-        project_ssids = cache[domain_name]['project_ssids']
-        ena_run_details = cache[domain_name]['ena_run_details']
-        lane_details = cache[domain_name]['lane_details']
-        studies = cache[domain_name]['ss_studies']
-    except KeyError:
-        raise ValueError("Could not load %s from %s" % (domain_name, cache_path))
-    return project_ssids, ena_run_details, lane_details, studies
 
 def join_vrtrack_sequencescape(vrtrack, sequencescape):
     logger.info("Joining vrtrack and sequencescape data")
@@ -239,8 +209,11 @@ def generate_data(global_config, domain_config):
     if global_config.get('DATAPAGES_LOAD_CACHE_PATH'):
         cache_path = global_config.get('DATAPAGES_LOAD_CACHE_PATH')
         logging.warn("Loading cached data from %s" % cache_path)
-        cache = reload_cache_data(cache_path, domain_config.domain_name)
-        project_ssids, ena_run_details, lane_details, studies = cache
+        data = reload_cache_data(cache_path, domain_config.domain_name)
+        project_ssids = data['project_ssids']
+        ena_run_details = data['ena_run_details']
+        lane_details = data['lane_details']
+        studies = data['ss_studies']
     else:
         logging.info("Loading data from databases")
         vrtrack_db_details_list = get_vrtrack_db_details_list(global_config,
@@ -253,7 +226,13 @@ def generate_data(global_config, domain_config):
         cache_path = global_config.get('DATAPAGES_SAVE_CACHE_PATH')
         logging.warn("Saving data to cache in %s" % cache_path)
         project_ssids = list({lane['project_ssid'] for lane in lane_details})
-        cache_data(cache_path, domain_config.domain_name, project_ssids, ena_run_details, lane_details, studies)
+        data = {
+            'project_ssids': project_ssids,
+            'ena_run_details': ena_run_details,
+            'lane_details': lane_details,
+            'ss_studies': studies
+        }
+        cache_data(cache_path, domain_config.domain_name, data)
 
     joint_data = merge_data(lane_details, ena_run_details, studies)
 

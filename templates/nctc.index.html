@@ -1,0 +1,62 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="main">
+        <div class="panel">
+            <h2>{{ title }}</h2>
+            {{ description }}
+            <div id="data-div">
+                <div id="projects">
+                    <h3>Data</h3>
+                </div>
+                <table id="data-table" class="display">
+                    <thead>
+                          <tr>
+                              <th>Species</th>
+                              <th>Study Name</th>
+                              <th>Study Accession</th>
+                              <th>Sample Name</th>
+                              <th>Strain</th>
+                              <th>Run Accession</th>
+                              <th>Sample Accession</th>
+                          </tr>
+                      </thead>
+                </table>
+                <div id='data-updated'></div>
+            </div>
+            <div id="published_data_description" class="display"></div>
+            <div id="publications" class="display"></div>
+        </div>
+    </div>
+    {{ data }}
+    <div id="rhs">
+        <div class="panel">
+            <div id="links" class="display"></div>
+        </div>
+        <div class="panel">
+            <div>
+                <h4>Data Use Statement</h4>
+                <p>This sequencing centre plans on publishing the completed and annotated sequences in a peer-reviewed journal as soon as possible. Permission of the principal investigator should be obtained before publishing analyses of the sequence/open reading frames/genes on a chromosome or genome scale. See our data sharing policy.</p>
+        </div>
+        <div class="panel">
+                <h4>Sequencing enquiries</h4>
+                <p>Please address all sequencing enquiries to: <a href="mailto:%70%61%74%68%69%6E%66%6F%40%73%61%6E%67%65%72%2E%61%63%2E%75%6B">pathinfo@sanger.ac.uk</a></p>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+      .scrollable-dropdown {
+          height: auto;
+          max-height: 200px;
+          overflow-x: hidden;
+      }
+    </style>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+</body>

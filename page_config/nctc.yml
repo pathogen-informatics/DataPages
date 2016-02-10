@@ -1,0 +1,25 @@
+---
+databases:
+- pathogen_pacbio_track
+ftp_root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000'
+automatic_gff: 
+  root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_automatic'
+  root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_automatic'
+manual_embl: 
+  root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_manual'
+  root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_manual'
+manual_gff: 
+  root_dir: '/nfs/disk69/ftp/pub/project/pathogens/NCTC3000/datalinks_manual'
+  root_url: 'ftp://ftp.sanger.ac.uk/pub/project/pathogens/NCTC3000/datalinks_manual'
+project_ssids:
+- 3012
+metadata:
+  type: nctc
+  name: nctc
+aliases:
+  Peptoclostridium difficile:
+  - Clostridium difficile
+blacklist:
+  strains:
+  - NCTC3610
+  - NCTC12962

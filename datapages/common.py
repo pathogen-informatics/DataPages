@@ -10,6 +10,29 @@ from jinja2 import Template
 def species_filename(species):
     return slugify(species).lower()+'.json'
 
+def cache_data(cache_path, name, data):
+    """Just for testing"""
+    try:
+        with open(cache_path, 'rb') as cache_file:
+            cache = pickle.load(cache_file)
+    except EOFError:
+        cache={}
+    except FileNotFoundError:
+        cache={}
+
+    cache[name] = data
+    with open(cache_path, 'wb') as cache_file:
+        pickle.dump(cache, cache_file)
+
+def reload_cache_data(cache_path, name):
+    with open(cache_path, 'rb') as cache_file:
+        cache = pickle.load(cache_file)
+    try:
+        data = cache[name]
+    except KeyError:
+        raise ValueError("Could not load %s from %s" % (name, cache_path))
+    return data
+
 def get_config(config_file):
     """Creates a dictionary like object, preferably from config,
     else from environment variables"""
