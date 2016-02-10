@@ -50,7 +50,7 @@ def write_domain_data_files(relevant_data, output_dir_root, domain_name):
     data_dir_temp = os.path.join(output_dir_temp, 'data')
     data_dir = os.path.join(output_dir_root, domain_name, 'data')
     logger.info("About to write data to %s" % data_dir)
-    output_dir_backup = "%s_backup" % output_dir_root
+    output_dir_backup = "%s_backup" % os.path.abspath(output_dir_root)
     _make_temp_dir(data_dir_temp)
     for species, data in relevant_data:
         output_filename = _write_species_to_folder(data_dir_temp, species, data)

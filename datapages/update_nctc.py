@@ -306,7 +306,7 @@ def write_nctc_index(relevant_data, output_dir_root, nctc_config):
                                    (nctc_config.nctc_name, timestamp))
     os.makedirs(output_dir_temp, mode=0o755)
     output_file_path = os.path.join(output_dir_temp, 'index.html')
-    output_dir_backup = "%s_backup" % output_dir_root
+    output_dir_backup = "%s_backup" % os.path.abspath(output_dir_root)
     template = get_template('nctc.index.html')
     content = template.render(
         title="Awesom NCTC page",
