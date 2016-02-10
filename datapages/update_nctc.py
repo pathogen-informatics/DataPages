@@ -54,7 +54,7 @@ def _parse_automatic_gffs(all_paths, root_dir, root_url):
     lookup = []
     file_regex = "([^/]+).gff$"
     path_regex = re.compile(os.path.join(root_dir, file_regex))
-    for match in (path_regex.match(path) for path in all_paths):
+    for path, match in ((path, path_regex.match(path)) for path in all_paths):
         if match:
             sample_accession, = match.groups()
             url = _file_to_ftp_url(path, root_dir, root_url)
