@@ -1,7 +1,6 @@
 import argparse
 import logging
 import os
-import pickle
 
 from argparse import ArgumentTypeError, FileType
 

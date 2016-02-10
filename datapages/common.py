@@ -1,6 +1,7 @@
 import logging
 import markdown
 import os
+import pickle
 import sys
 import yaml
 
