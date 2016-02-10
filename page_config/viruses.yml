@@ -3,6 +3,7 @@ databases:
 - pathogen_euk_track
 - pathogen_pacbio_track
 metadata:
+  type: domain
   description: |
     This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.
   list_data: true

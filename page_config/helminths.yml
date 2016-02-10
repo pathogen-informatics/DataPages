@@ -3,6 +3,7 @@ databases:
 - pathogen_helminth_track
 - pathogen_pacbio_track
 metadata:
+  type: domain
   description: |
     This page provides access to genomes sequenced at the Wellcome Trust Sanger Institute.  Assembled genome data are made available via the ftp links for individual organisms on a regular basis.
     These data include complete, ongoing and forthcoming sequencing projects.

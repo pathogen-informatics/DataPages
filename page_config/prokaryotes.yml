@@ -3,6 +3,7 @@ databases:
 - pathogen_prok_track
 - pathogen_pacbio_track
 metadata:
+  type: domain
   description: |
     This page provides access to the genome sequence of bacteria sequenced at the Wellcome Trust Sanger Institute.
     We have sequenced a large number of bacterial genomes and make all our sequence data available. The Institute's bacterial sequencing effort concentrates on pathogenic bacteria. The data include complete, ongoing and forthcoming sequencing projects.
