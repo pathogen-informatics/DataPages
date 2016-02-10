@@ -7,7 +7,8 @@ import yaml
 
 from argparse import ArgumentTypeError, FileType
 
-from .common import cache_data, reload_cache_data
+from .common import cache_data, reload_cache_data,
+                    _is_dir, _could_write, _could_read
 from .update_projects import get_template
 
 logger = logging.getLogger('datapages')

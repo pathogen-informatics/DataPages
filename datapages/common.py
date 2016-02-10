@@ -8,6 +8,31 @@ import yaml
 from boltons.strutils import slugify
 from jinja2 import Template
 
+def _is_dir(path):
+    if not os.path.isdir(path):
+        raise ArgumentTypeError("Expected %s to be a directory" % path)
+    return path
+
+def _could_write(path):
+    try:
+        f = open(path, 'ab')
+        f.close()
+    except PermissionError:
+        raise ArgumentTypeError("Permission denied: cannot open %s for writing" % path)
+    except FileNotFoundError:
+        raise ArgumentTypeError("Bad path to %s" % path)
+    return os.path.abspath(path)
+
+def _could_read(path):
+    try:
+        f = open(path, 'rb')
+        f.close()
+    except PermissionError:
+        raise ArgumentTypeError("Permission denied: cannot open %s for reading" % path)
+    except FileNotFoundError:
+        raise ArgumentTypeError("Bad path to %s" % path)
+    return os.path.abspath(path)
+
 def species_filename(species):
     return slugify(species).lower()+'.json'
 
