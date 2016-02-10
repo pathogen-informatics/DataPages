@@ -3,13 +3,17 @@ import logging
 import os
 import pandas as pd
 import pickle
+import re
 import yaml
 
 from argparse import ArgumentTypeError, FileType
 
 from .common import cache_data, reload_cache_data, \
-                    _is_dir, _could_write, _could_read
+                    _is_dir, _could_write, _could_read, \
+                    get_config
 from .update_projects_html import get_template
+from .regenerate_data import get_vrtrack_db_details_list, get_sequencescape_db_details, \
+                             get_all_data, _get_default_columns
 
 logger = logging.getLogger('datapages')
 
@@ -340,12 +344,6 @@ def main():
 
     Domain specific config is always loaded from a config file"""
     args = parse()
-    
-    from .common import get_config
-    from .regenerate_data import get_vrtrack_db_details_list, \
-                                 get_sequencescape_db_details, \
-                                 get_all_data, \
-                                 _get_default_columns
 
     if args.quiet:
         logger.setLevel(logging.WARNING)
