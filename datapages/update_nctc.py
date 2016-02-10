@@ -37,13 +37,16 @@ def _file_to_ftp_url(path, ftp_root_dir, ftp_root_url):
     re.sub(root_dir, ftp_root_url, abspath)
 
 def _get_all_paths(root_dir):
+    logger.info("Finding all the files in %s" % root_dir)
     all_files = []
     abs_root_dir = os.path.abspath(root_dir)
     for root, dirnames, filenames in os.walk(abs_root_dir):
         all_files += [os.path.join(root, fn) for fn in filenames]
+    logger.info("Found %s files in %s" % (len(all_files), root_dir))
     return all_files
 
 def _parse_automatic_gffs(all_paths, root_dir, root_url):
+    logger.info("Getting details of automatic gff files")
     lookup = []
     file_regex = "([^/]+).gff$"
     path_regex = re.compile(os.path.join(root_dir, file_regex))
@@ -83,6 +86,7 @@ def _gff_stats(gff_path):
     }
 
 def _parse_manual_gffs(all_paths, root_dir, root_url):
+    logger.info("Getting details of manual gff files")
     lookup = []
     file_regex = "([^/]+).gff$"
     path_regex = re.compile(os.path.join(root_dir, file_regex))
@@ -123,6 +127,7 @@ def _embl_stats(embl_path):
     }
 
 def _parse_manual_embls(all_paths, root_dir, root_url):
+    logger.info("Getting details of manual embl files")
     lookup = []
     file_regex = "([^/]+).embl$"
     path_regex = re.compile(os.path.join(root_dir, file_regex))
@@ -140,6 +145,7 @@ def _parse_manual_embls(all_paths, root_dir, root_url):
     return lookup
 
 def file_mappings(nctc_config):
+    logger.info("Mapping files in %s to successful assemblies" % nctc_config.ftp_root_dir)
     root_dir = nctc_config.ftp_root_dir
     all_paths = _get_all_paths(root_dir)
     automatic_gffs = _parse_automatic_gffs(all_paths,
@@ -167,6 +173,7 @@ def add_canonical_nctc_data(joint_data):
                          'Pending')
 
 def merge_nctc_data(database_data, automatic_gffs, manual_embls, manual_gffs):
+    logging.info("Merging in assembly details")
     joint_data = pd.merge(database_data, automatic_gffs,
                           left_on='sample_accession_v', right_on='sample_accession',
                           how='left')
@@ -189,6 +196,7 @@ def _list_run_accessions(group):
     })
 
 def _group_run_accessions(data):
+    logging.info("Group runs on the same data together")
     data.columns = prefered_column_names
     columns_except_run = list(data.columns.values)
     columns_except_run = columns_except_run.remove('Run Accession')
@@ -303,6 +311,7 @@ def generate_nctc_data(global_config, nctc_config):
     return relevant_data
 
 def write_nctc_index(relevant_data, output_dir_root, nctc_config):
+    logger.info("Writing results to %s" % output_dir_root)
     now = datetime.now()
     timestamp = now.strftime("%Y%m%d%H%M%S")
     output_dir = os.path,join(output_dir_root, nctc_config.nctc_name)
