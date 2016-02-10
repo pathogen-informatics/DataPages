@@ -80,13 +80,13 @@ def main():
     logging.info("Preparing updates to %s" % site_dir)
 
     for domain_config_file in args.domain_config:
-        domain_config = DomainConfig(domain_config_file)
-        if domain_config.type != 'domain':
-            logger.error("Expected %s to contain domain config, got %s; skipping" % (domain_config_file, domain_config.type))
+        try:
+            domain_config = DomainConfig(domain_config_file)
+        except ValueError as e:
+            logger.error(e)
             continue
         logger.info("Processing %s from %s" % (domain_config.domain_name,
                                                domain_config_file.name))
-
         if not args.html_only:
           if domain_config.list_data:
               data = generate_data(config, domain_config)

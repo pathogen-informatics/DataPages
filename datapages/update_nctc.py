@@ -242,8 +242,11 @@ def build_relevant_nctc_data(joint_data, nctc_config):
 class NctcConfig(object):
     def __init__(self, config_file):
         self.data = yaml.load(config_file)
-        self.nctc_name = self.data['metadata']['name']
         self.type = self.data['metadata']['type']
+        if self.type != 'nctc':
+            message = "Expected %s to contain nctc config, got %s; skipping" % (config_file.name, self.type)
+            raise ValueError(message)
+        self.nctc_name = self.data['metadata']['name']
         self.databases = self.data['databases']
         self.ftp_root_dir = self.data['ftp_root_dir']
         self.project_ssids = self.data['project_ssids']

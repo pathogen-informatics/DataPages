@@ -119,6 +119,9 @@ class DomainConfig(object):
     def __init__(self, config_file):
         self.data = yaml.load(config_file)
         self.type = self.data['metadata'].get('type', 'unknown')
+        if self.type != 'domain':
+            message = "Expected %s to contain domain config, got %s; skipping" % (config_file.name, self.type)
+            raise ValueError(message)
         self.species_list = sorted(self.data['species'].keys())
         self.databases = self.data['databases']
         self.list_data = self.data['metadata'].get('list_data', False)
