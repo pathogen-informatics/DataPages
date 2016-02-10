@@ -17,6 +17,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        datapages_update=datapages.update:main
+        datapages_update_projects=datapages.update_projects:main
     ''',
 )

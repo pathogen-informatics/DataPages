@@ -70,7 +70,7 @@ def main():
     from .common import get_config, DomainConfig
     from .write_data import write_domain_data_files
     from .regenerate_data import generate_data, generate_empty_data
-    from .update_html import write_domain_index
+    from .update_projects_html import write_domain_index
 
     if args.global_config:
         config_file = args.global_config
