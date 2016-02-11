@@ -28,6 +28,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bigemina
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Babesia/bigemina/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bigemina
+      text: BLAST server
 
   Babesia bovis:
     description: |
@@ -35,6 +39,10 @@ species:
       
       Ten thousand reads from a cDNA library from Babesia bovis are being generated with the aim to identify genes expressed during infection. The project is carried out as part of a research programme at the Department of Infectious Diseases and Immunology of Utrecht University and is supported by the Netherland_s Foundation for the advancement of Tropical Research and the Dutch National Organisation for Scientific Research. So far 12565 B. bovis_ cDNA clones have been sequenced. A BLAST server now exists to allow easy searching of the _Babesia bovis_ sequence.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/babesia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bovis
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/babesia/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bovis
@@ -68,6 +76,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_saltans
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Bodo/saltans/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_saltans
+      text: BLAST server
 
   Crithidia:
     description: |
@@ -77,6 +89,10 @@ species:
     published_data_description: |
       A fosmid library was created for this _Crithidia_ sp. genome (ATCC 30255) in 2007 with average insert size of 25kb and approximately 4x clone coverage. End-sequencing of all fosmids in the library has produced an initial library of 10,092 sequence reads, which may be searched here. In addition to the end-sequences, various fosmids have been fully sequenced, producing 10,363 further reads that are included here. Users should beware of possible contamination from vector or vector host material during the cloning process.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Crithidia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/crithidia
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Crithidia/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/crithidia
@@ -98,6 +114,10 @@ species:
     published_data_description: |
       The Houghton strain of _Eimeria tenella_ was selected by the research community for the genome project. The genome is approximately 60 MB in size, with a GC content of approximately 53%. There are 14 chromosomes that range in size from 1Mb to &gt; 6Mb. Two major ribosomal DNA clusters, that account for some 2.5% of the genome size, have been mapped as tandem arrays on chromosome 12 (140 copies of an 8 Kb 18S-5.8S-28S unit) and chromosome 10 (500 copies of a 730bp 5S unit).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Eimeria/tenella/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_tenella/omni
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Eimeria/tenella/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_tenella/omni
@@ -126,6 +146,16 @@ species:
       text: BLAST server (Sanger E. histolytica)
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/comp_entamoeba
       text: BLAST server (Sanger comparative Entamoeba)
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Entamoeba/
+      text: FTP site (Sanger)
+    - url: http://amoebadb.org/common/downloads/
+      text: FTP site (AmoebaDB - latest assemblies)
+    - url: http://amoebadb.org/amoeba/showQuestion.do?questionFullName=UniversalQuestions.UnifiedBlast
+      text: BLAST server (AmoebaDB)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_histolytica
+      text: BLAST server (Sanger E. histolytica)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/comp_entamoeba
+      text: BLAST server (Sanger comparative Entamoeba)
     pubmed_ids:
     - 15729342
 
@@ -139,6 +169,8 @@ species:
     published_data_description: |
       A whole genome shotgun, to approximately 5x coverage, of _Leishmania braziliensis_ clone MHOM/BR/75M2904 was generated. This project is a collaboration with Angela Cruz (Universidade de São Paulo - FMRP - USP) and Debbie Smith (University of York).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/L_braziliensis/
+      text: FTP site
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/L_braziliensis/
       text: FTP site
     pubmed_ids:
@@ -167,6 +199,8 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/infantum
       text: FTP site
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/infantum
+      text: FTP site
     pubmed_ids:
     - 17572675
 
@@ -186,6 +220,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_major
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/major
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_major
+      text: BLAST server
     pubmed_ids:
     - 16020728
 
@@ -199,6 +237,8 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/mexicana
       text: FTP site
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/mexicana
+      text: FTP site
 
   Leptomonas seymouri:
     description: |
@@ -206,6 +246,10 @@ species:
       
       A genomic library has been created that contains &gt;4,500 fosmid clones each carrying an insert of 25-40kb, amounting to ~140MB of sequence and ~4X coverage of the _L. seymouri_ genome. Various fosmid inserts have been specifically targeted and fully sequenced. 11,281 sequence reads from these projects are available here to be searched via BLAST or downloaded.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leptomonas/seymouri
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_seymouri
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leptomonas/seymouri
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_seymouri
@@ -219,6 +263,10 @@ species:
     published_data_description: |
       The _N. caninum_ genome assembly and annotation is available from GeneDB [[1]](http://www.genedb.org/Homepage/Ncaninum).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neospora/caninum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/n_caninum
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neospora/caninum/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/n_caninum
@@ -238,6 +286,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_berghei
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/berghei/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_berghei
+      text: BLAST server
     pubmed_ids:
     - 25359557
 
@@ -249,6 +301,10 @@ species:
       
       Further sequencing of _P. chabaudi_ AS and several other strains has been completed using Illumina Sequence-by-synthesis technology. The re-assembly and annotation has been published (PMID:25359557).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/chabaudi/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_chabaudi
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/chabaudi/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_chabaudi
@@ -282,6 +338,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_falciparum
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/falciparum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_falciparum
+      text: BLAST server
     pubmed_ids:
     - 12368864
     - 12368867
@@ -297,6 +357,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_gallinaceum
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/gallinaceum/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_gallinaceum
+      text: BLAST server
     pubmed_ids:
     - 10875925
 
@@ -308,6 +372,10 @@ species:
       
       Further sequencing of the _P. knowlesi_ H strain is underway using Illumina Sequence-by-Synthesis and DNA provided by Mary Gallinski (Emory Vaccine Center). A publication describing the complete methodology and important changes is in preparation. Please refer to [Data Use Statement](http://www.sanger.ac.uk/about/who-we-are/policies/open-access-science/#guidelines).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/knowlesi
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_knowlesi
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/knowlesi
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_knowlesi
@@ -333,6 +401,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_ovale
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/ovale/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_ovale
+      text: BLAST server
 
   Plasmodium reichenowi:
     description: |
@@ -340,6 +412,10 @@ species:
       
       A low (1-2x) coverage draft genome sequence was previously produced by Sanger sequencing from the only known source of _P. reichenowi_ genomic DNA (CDC strain) provided by Alan Thomas (BPRC, Netherlands). Following the discovery of an additional aliquot of the same DNA source, a full genome sequence has been produced using Illumina Sequence-by-Synthesis. The complete and annotated genome, compared with that of _P. falciparum_ has been published (PMID:25203297).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/reichenowi/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_reichenowi
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/reichenowi/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_reichenowi
@@ -357,6 +433,8 @@ species:
       
       The predicted genes and pseudogenes from the _vir_ family have similar structure. The majority have three exons, a short first exon followed by a longer second exon containing a predicted transmembrain domain at its 3' end and a third exon of uniform length. The _vir_ genes family can be divided into subfamilies based on homology. To date 6 families have been identified, termed A to F.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vivax/
+      text: FTP site
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vivax/
       text: FTP site
     pubmed_ids:
@@ -392,6 +470,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_annulata
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/T_annulata/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_annulata
+      text: BLAST server
     pubmed_ids:
     - 15994557
 
@@ -415,6 +497,10 @@ species:
       
       The final assembly contains 25,816,007bp in 23,265 contigs (N50 = 12100bp). The average contig length is 1109.6 bp and the largest contig is 133333bp.
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_borreli
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanoplasma/borreli/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_borreli
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanoplasma/borreli/
@@ -496,6 +582,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_brucei/
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/brucei
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_brucei/
+      text: BLAST server
     pubmed_ids:
     - 20404998
     - 16020726
@@ -528,6 +618,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_congolense
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/congolense
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_congolense
+      text: BLAST server
 
   Trypanosoma evansi: {}
 
@@ -539,6 +633,10 @@ species:
     published_data_description: |
       The Sanger Institute's Pathogen Genomics group, in collaboration with Professor David Barry (Glasgow University, UK), Dr Alberto Davila (Instituto Oswalso Cruz, Brazil) and Dr Phelix Majiwa (International Livestock Institute, Kenya), has carried out a partial genome shotgun of this parasite. The current coverage is 5x.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/vivax
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_vivax
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/vivax
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_vivax

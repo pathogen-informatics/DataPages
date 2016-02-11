@@ -31,6 +31,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_granulosus
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_granulosus
+      text: BLAST server
     pubmed_ids:
     - 23485966
 
@@ -40,6 +44,10 @@ species:
       
       This is a Wellcome Trust funded project to sequence the nuclear genome of _E. multilocularis_, in collaboration with Prof. Klaus Brehm of Institute for Hygiene and Microbiology, University of Wurzburg. The assembled sequence data suggests the genome of _E. multilocularis_ is approximately 110 MB and is being produced by whole genome shotgun sequencing using a mixture of capillary sequencing, illumina sequencing and 454 pyrosequencing. We are also profiling the transcriptome of different life cycle stages of this organism using RNA-seq.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_multilocularis
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_multilocularis
@@ -59,6 +67,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_pallida
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Globodera/pallida/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_pallida
+      text: BLAST server
 
   Haemonchus contortus:
     description: |
@@ -72,6 +84,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_contortus
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Haemonchus/contortus/genome/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_contortus
+      text: BLAST server
 
   Hymenolepis microstoma:
     description: |
@@ -81,6 +97,12 @@ species:
       
       This work is being done in collaboration with Dr. Pete Olson from the Natural History Museum.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Hymenolepis/microstoma/
+      text: FTP site
+    - url: ftp://ngs.sanger.ac.uk/scratch/project/pathogens/Hymenolepis/microstoma/BAM/
+      text: FTP site (large NGS files)
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_microstoma
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Hymenolepis/microstoma/
       text: FTP site
     - url: ftp://ngs.sanger.ac.uk/scratch/project/pathogens/Hymenolepis/microstoma/BAM/
@@ -107,6 +129,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/o_volvulus
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Onchocerca/volvulus/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/o_volvulus
+      text: BLAST server
 
   Schistosoma mansoni:
     description: |
@@ -122,6 +148,10 @@ species:
       
       Further characterisation of the life cycle using high-thoughput second generation sequencing (RNA-Seq) is ongoing.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Schistosoma/mansoni/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_mansoni
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Schistosoma/mansoni/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_mansoni
@@ -144,6 +174,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/strongyloides
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Strongyloides/ratti/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/strongyloides
+      text: BLAST server
 
   Teladorsagia circumcincta:
     show: false
@@ -156,6 +190,10 @@ species:
       
       This projects aims to sequence the genome of _T. muris_ using second generation sequencing technologies. DNA is being supplied by Dr Allison Bancroft and Professor Richard Grencis from the University of Manchester as part of our ongoing work on _T. muris_ funded by the Wellcome Trust.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trichuris/muris/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_muris
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trichuris/muris/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_muris

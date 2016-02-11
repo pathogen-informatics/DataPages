@@ -59,6 +59,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vs/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/a_salmonicida
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vs/
+      text: FTP site
     pubmed_ids:
     - 19099551
 
@@ -112,6 +116,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_marinus
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bm/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_marinus
+      text: BLAST server
 
   Bacteroides:
     description: |
@@ -121,6 +129,10 @@ species:
       
       The Sanger Institute has been funded by the Wellcome Trust to sequence the genomes of two Bacteroides fragilis, strains NCTC9343 and 638R, in collaboration with Sheila Patrick (Queen's University of Belfast, UK), Garry Blakely (University of Edinburgh, UK), Val Abratt of the Department of Molecular anf Cell Biology at the University of Cape Town (South Africa), Prof. Brian Duerden (University of Wales College of Medicine, UK) and Prof. Ian Poxton (University of Edinburgh Medical School, UK).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
@@ -141,6 +153,10 @@ species:
       
       We have also sequenced, annotated and analysed the complete genome of strain 638R. The data from strain 638R are available for download by [FTP](ftp://ftp.sanger.ac.uk/pub/pathogens/bf/) and can be searched using our [BLAST server](http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis). The sequence is 5,373,121 bp with a G+C content of 43.42%. The shotgun data are still available: There are 81,661 reads in the database, totalling 46.520 Mb, and giving a theoretical coverage of 99.99%. The annotated data are also available from EMBL/GenBank with accession number [FQ312004](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=FQ312004&style=raw).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
@@ -225,6 +241,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pertussis
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bp/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pertussis
+      text: BLAST server
     pubmed_ids:
     - 18826580
     - 16885469
@@ -280,6 +300,14 @@ species:
       text: B. pseudomallei BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
       text: B. pseudomallei FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_cenocepacia
+      text: B. cenocepacia BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
+      text: B. cenocepacia FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pseudomallei
+      text: B. pseudomallei BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
+      text: B. pseudomallei FTP site
     pubmed_ids:
     - 18931103
     - 15377794
@@ -303,6 +331,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_cenocepacia
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
+      text: FTP site
     pubmed_ids:
     - 18931103
     - 12648723
@@ -319,6 +351,10 @@ species:
       
       Shotgun and assembly data from this project are available from the FTP link sbove.
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pseudomallei
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pseudomallei
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
@@ -357,6 +393,10 @@ species:
       text: Campylobacter jejuni FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
       text: Campylobacter jejuni BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cj/
+      text: Campylobacter jejuni FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
+      text: Campylobacter jejuni BLAST server
 
   Campylobacter coli:
     description: |
@@ -384,6 +424,10 @@ species:
       
       We have also generated sequence data from _C. jejuni_ M1 using the 454/Roche GS20 system. The sequence is in 624 contigs with a total size of 1.619 Mb and may be downloaded from our <ftp://ftp.sanger.ac.uk/pub/pathogens/cj/>[ FTP site]. Please note that this sequence is unchecked and unedited, and will contain errors. The GS20 is known to have problems with homopolymeric tracts, and these are therefore likely to contain significant numbers of errors.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cj/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cj/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
@@ -510,6 +554,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
       text: C. trachomatis BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Chlamydia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
+      text: C. trachomatis BLAST server
     pubmed_ids:
     - 23525359
     - 22406642
@@ -622,6 +670,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Chlamydia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
+      text: BLAST server
     pubmed_ids:
     - 23525359
     - 22406642
@@ -649,6 +701,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/ca/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ca/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_abortus
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ca/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_abortus
@@ -696,6 +752,12 @@ species:
       text: Citrobacter rodentium BLAST server
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
       text: Citrobacter freundii BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Citrobacter/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
+      text: Citrobacter rodentium BLAST server
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
+      text: Citrobacter freundii BLAST server
     pubmed_ids:
     - 19897651
 
@@ -707,6 +769,10 @@ species:
     published_data_description: |
       **357** contigs (N50 contig size **60,237 bp**) were obtained from **410,057** sequence reads with an average read length of **177 bp**, to give a total sequence length of **4,904,659 bp**. The data are available in the European Nucleotide Archive with accession [ERA000106](ftp://ftp.era.ebi.ac.uk/vol1/ERA000/ERA000106/sff/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Citrobacter/freundii/ballerup_7851/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Citrobacter/freundii/ballerup_7851/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
@@ -734,6 +800,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/crod/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
+      text: BLAST server
     pubmed_ids:
     - 19897651
 
@@ -749,6 +819,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/cm/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cm/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_michiganensis
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cm/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_michiganensis
@@ -789,6 +863,12 @@ species:
       text: C. botulinum BLAST server
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
       text: C. sordellii BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
+      text: C. botulinum BLAST server
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
+      text: C. sordellii BLAST server
     pubmed_ids:
     - 17519437
 
@@ -804,6 +884,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/cb/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cb/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cb/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
@@ -824,6 +908,7 @@ species:
       ### _Clostridium_sordellii_ assembly and annotation
       
       **Assembled and Annotated Genomes**   
+
       Strain| assembled/annotated genome  
       ---|---  
       **ATCC9714** | [chromosome](ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/sordellii/ATCC9714.embl) [plasmid 1](ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/sordellii/ATCC9714_pCS1-1.embl) [plasmid 2](ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/sordellii/ATCC9714_pCS2.embl)  
@@ -875,6 +960,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/sordellii/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
+      text: BLAST server
 
   Collinsella aerofaciens: {}
 
@@ -896,6 +985,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cdip/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
+      text: BLAST server
     pubmed_ids:
     - 14602910
 
@@ -911,6 +1004,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/cdip/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cdip/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cdip/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
@@ -980,6 +1077,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_carotovora
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/erc/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_carotovora
+      text: BLAST server
     pubmed_ids:
     - 15263089
 
@@ -1015,6 +1116,10 @@ species:
       
       This data is from bacterial isolates collected in the BSAC Resistance Surveillance Project. Please see [bsacsurv.org](//www.bsacsurv.org) for details and availability.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
@@ -1056,6 +1161,10 @@ species:
       
       This data is from bacterial isolates collected in the BSAC Resistance Surveillance Project. Please see [bsacsurv.org](//www.bsacsurv.org) for details and availability.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/coli/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/coli/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
@@ -1156,6 +1265,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_influenzae
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/hib/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_influenzae
+      text: BLAST server
     pubmed_ids:
     - 22377449
 
@@ -1183,6 +1296,10 @@ species:
       
       The fully annotated genome is available from the EMBL/GenBank databases with accession number [FQ670179](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=FQ670179&style=raw).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/hm/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_mustelae
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/hm/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_mustelae
@@ -1255,6 +1372,8 @@ species:
       
       The genome has been sequenced in collaboration with Prof. Gad Frankel (Imperial College) and is available from the EMBL/GenBank databases with accession number [FR687201](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=FR687201&style=raw).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Legionella/
+      text: FTP site
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Legionella/
       text: FTP site
     pubmed_ids:
@@ -1389,6 +1508,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/mycobacterium
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Mycobacterium/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/mycobacterium
+      text: BLAST server
     pubmed_ids:
     - 23995134
     - 23863072
@@ -1429,6 +1552,10 @@ species:
       
       Shotgun and assembly data from these projects are available from the our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/Neisseria/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neisseria/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neisseria/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
@@ -1534,6 +1661,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Peptoclostridium/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
+      text: BLAST server
     pubmed_ids:
     - 24076318
     - 23866975
@@ -1619,6 +1750,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cd/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
+      text: BLAST server
     pubmed_ids:
     - 24076318
     - 23866975
@@ -1658,6 +1793,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_asymbiotica
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pa/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_asymbiotica
+      text: BLAST server
     pubmed_ids:
     - 19583835
 
@@ -1691,6 +1830,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_mirabilis
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
+      text: FTP site
     pubmed_ids:
     - 18375554
 
@@ -1706,6 +1849,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/pm/).
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_mirabilis
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_mirabilis
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
@@ -1759,6 +1906,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/pseudomonas
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Pseudomonas
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/pseudomonas
+      text: BLAST server
     pubmed_ids:
     - 19047519
     - 19432983
@@ -1784,6 +1935,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_leguminosarum
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/rl/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_leguminosarum
+      text: BLAST server
     pubmed_ids:
     - 16640791
 
@@ -1799,6 +1954,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/re/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/re/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_equi
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/re/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_equi
@@ -1821,6 +1980,8 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/
       text: FTP site
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/
+      text: FTP site
     pubmed_ids:
     - 20373916
     - 19107866
@@ -1832,6 +1993,8 @@ species:
       
       The _Ruminococcus flavefaciens_ strain 007C genome was sequenced in collaboration with [Prof. Harry Flint](http://www.rowett.ac.uk/divisions/ghp/hf_group.html) of the Rowett Institute of Nutrition and Health, Aberdeen.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/flavefaciens/007c/
+      text: FTP site
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/flavefaciens/007c/
       text: FTP site
     pubmed_ids:
@@ -1996,6 +2159,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/salmonella
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Salmonella/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/salmonella
+      text: BLAST server
     pubmed_ids:
     - 24030491
     - 23470992
@@ -2027,6 +2194,10 @@ species:
       text: Serratia marcescens FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
       text: Serratia marcescens BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sm/
+      text: Serratia marcescens FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
+      text: Serratia marcescens BLAST server
 
   Serratia marcescens:
     description: |
@@ -2040,6 +2211,10 @@ species:
       
       Shotgun and assembly data from this project are available from or [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/sm/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sm/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sm/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
@@ -2061,6 +2236,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia_Shigella/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
+      text: BLAST server
 
   Shigella dysenteriae:
     description: |
@@ -2068,6 +2247,10 @@ species:
       
       These strains included _Shigella dysenteriae_ M131649 (M131). This project is still in finishing/gap closure.
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia_Shigella/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia_Shigella/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
@@ -2166,6 +2349,10 @@ species:
       text: Staphylococcus aureus FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
       text: Staphylococcus aureus BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sa/
+      text: Staphylococcus aureus FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
+      text: Staphylococcus aureus BLAST server
     pubmed_ids:
     - 23299977
     - 23158674
@@ -2251,11 +2438,16 @@ species:
       We have generated sequence data from two strains of _S. aureus_ using 454/Roche rapid resequencing technology. Reads were assembled into contigs using the 454 proprietary software _newbler_, version 1.1. Contigs generated by mapped assemblies and _de novo_ assemblies are available below. 
       
       **454 Data**   
+
       Strain| fold coverage| de novo| mapped  
       ---|---|---|---  
       **H1374** | 7.5x | [seq](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/H1374_denovo_454AllContigs.fna) [qual](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/H1374_denovo_454AllContigs.qual) | [seq](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/H1374_mapped_454AllContigs.fna) [qual](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/H1374_mapped_454AllContigs.qual)  
       **NOH4** | 8.5x | [seq](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/NOH4_denovo_454AllContigs.fna) [qual](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/NOH4_denovo_454AllContigs.qual) | [seq](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/NOH4_mapped_454AllContigs.fna) [qual](ftp://ftp.sanger.ac.uk/pub/pathogens/sa/454/NOH4_mapped_454AllContigs.qual)
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sa/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sa/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
@@ -2290,6 +2482,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_maltophilia
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
+      text: FTP site
     pubmed_ids:
     - 18419807
 
@@ -2303,6 +2499,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [ftp site](ftp://ftp.sanger.ac.uk/pub/pathogens/sma/).
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_maltophilia
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_maltophilia
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
@@ -2513,6 +2713,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_equi
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/se
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_equi
+      text: BLAST server
     pubmed_ids:
     - 19325880
 
@@ -2643,6 +2847,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sp/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_pyogenes
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sp/
+      text: FTP site
     pubmed_ids:
     - 17012393
 
@@ -2674,6 +2882,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ss/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_suis
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ss/
+      text: FTP site
     pubmed_ids:
     - 19603075
 
@@ -2687,6 +2899,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/su/).
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_uberis
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/su/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_uberis
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/su/
@@ -2708,6 +2924,10 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sz/
       text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_zooepidemicus
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sz/
+      text: FTP site
     pubmed_ids:
     - 19325880
 
@@ -2725,6 +2945,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_coelicolor
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/S_coelicolor/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_coelicolor
+      text: BLAST server
     pubmed_ids:
     - 12000953
 
@@ -2738,6 +2962,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/ssc/).
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_scabies
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ssc/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_scabies
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ssc/
@@ -2761,6 +2989,10 @@ species:
       
       Shotgun and assembly data from this project are available from our [ftp site](ftp://ftp.sanger.ac.uk/pub/pathogens/tw/).
     links:
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_whipplei
+      text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/tw/
+      text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_whipplei
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/tw/
@@ -2826,6 +3058,10 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/wolbachia
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Wolbachia/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/wolbachia
+      text: BLAST server
     pubmed_ids:
     - 18550617
 
@@ -2867,6 +3103,10 @@ species:
       
       Shotgun and assembly data from these projects are available from our [FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/ye/).
     links:
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
+      text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia

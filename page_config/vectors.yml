@@ -28,5 +28,9 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_morsitans
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Glossina/morsitans/
+      text: FTP site
+    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_morsitans
+      text: BLAST server
     pubmed_ids:
     - 14519198
