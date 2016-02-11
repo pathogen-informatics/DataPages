@@ -272,7 +272,7 @@ def generate_nctc_data(global_config, nctc_config):
     if global_config.get('DATAPAGES_LOAD_CACHE_PATH'):
         cache_path = global_config.get('DATAPAGES_LOAD_CACHE_PATH')
         logging.warn("Loading cached data from %s" % cache_path)
-        cache = reload_cache_data(cache_path, nctc_config.nctc_name)
+        data = reload_cache_data(cache_path, nctc_config.nctc_name)
         project_ssids = data['project_ssids']
         ena_run_details = data['ena_run_details']
         lane_details = data['lane_details']
