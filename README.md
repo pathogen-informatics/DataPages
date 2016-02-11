@@ -102,14 +102,63 @@ making lots of database or web requests.  It makes development a lot less painfu
 `--html-only` is another development flag.  In this case it doesn't make any updates to the relevant `/data` folders and
 just updates the `index.html` output.  This is much, much faster if you're just making small changes to styling or layout.
 
+#### Domain config
+
 `domain_config` is one or more configuration files for a group of species which I've collectivly called a 'domain' for want of
-a better word.
+a better word.  These files are yaml formatted, a good example is the [virus config](page_config/viruses.yml).
+
+We start with a list of VRTrack `databases` to query for this domain.  Then we provide `metadata` including the following:
+
+* `type` must be domain for now
+* `description` is a markdown formatted description of the domain which appears at the top of each page
+* `list_data` this can be used to temporarily disable all data tables for this domain
+* `title` to appear at the top of all pages for this domain
+* `name` used to name the folder the data is put into (and therefore the URL it will be found on).  This is also used by `--save-cache`
+
+After that comes the data for each `species`.  This includes the following:
+
+* The name of the species (N.B. this is used in a case insensitive search to find all species which _start with_ this name; e.g. the page for 'Staphylococcus' also includes lists of the data for Staphylococcus aureus)
+* `description` is a markdown formatted description for this species.  Tables are supported but some features may be missing.
+* `published_data_description` is like `description` but appears after the table of data
+* `aliases` is a list of pseudonyms for this species; species begining with these aliases are also included in the data presented on this page
+* `links` is a list of links to appear on the right hand side of the page
+* `pubmed_ids` is a list of pubmed ids for relevant publications which are rendered into useful citations in the final page
+* `show` defaults to true; when set to false it temporarily hides that species and removes the relevant JSON from `/data`
+
+### `datapages_update_projects`
+
+A work in progress, more to follow here.
 
 ## Installation
+
+This uses python3; all python dependencies are installed as follows:
 
 ```
 pip install git+https://github.com/sanger-pathogens/DataPages.git
 ```
 
+You can also install the scripts in a virtualenv which has the advantage of keeping dependencies isolated:
+
+```
+virtualenv venv -p $(which python3)
+. venv/bin/activate
+pip install git+https://github.com/sanger-pathogens/DataPages.git
+deactivate
+```
+
+You can then call the script without sourcing the virtualenv (e.g. in your cron job)
+
+```
+${PATH_TO_VENV}/venv/bin/datapages_update_projects --help
+```
+
 You store your own config anywhere but it makes more sense to also clone this repo and use it to version config in the
 [pages_config](pages_config) folder.
+
+You probably also want to create a file like `.datapages_global_config.yml` rather than relying on environment variables
+if this is going to be triggered by a cron job.
+
+## Further work
+
+Some pages are really quite slow to load (e.g. Salmonella); I've included some thoughts on how we could give users the 
+appearance that this is not the case.  You can find this in the [update_table_for_species function](site/assets/js/datapages.js).
