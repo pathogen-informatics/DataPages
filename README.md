@@ -134,7 +134,7 @@ A work in progress, more to follow here.
 This uses python3; all python dependencies are installed as follows:
 
 ```
-pip install git+https://github.com/sanger-pathogens/DataPages.git
+pip3 install git+https://github.com/sanger-pathogens/DataPages.git
 ```
 
 You can also install the scripts in a virtualenv which has the advantage of keeping dependencies isolated:
