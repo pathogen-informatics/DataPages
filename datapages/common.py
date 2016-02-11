@@ -75,7 +75,8 @@ def get_config(config_file):
 
     optional_keys = [
         'DATAPAGES_LOAD_CACHE_PATH',
-        'DATAPAGES_SAVE_CACHE_PATH'
+        'DATAPAGES_SAVE_CACHE_PATH',
+        'DATAPAGES_SITE_DATA_DIR'
     ]
 
     try:
