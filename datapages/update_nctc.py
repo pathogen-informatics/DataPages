@@ -156,11 +156,11 @@ def file_mappings(nctc_config):
                                            nctc_config.automatic_gffs_dir,
                                            nctc_config.automatic_gffs_url)
     manual_embls = _parse_manual_embls(all_paths,
-                                       nctc_config.automatic_embls_dir,
-                                       nctc_config.automatic_embls_url)
+                                       nctc_config.manual_embls_dir,
+                                       nctc_config.manual_embls_url)
     manual_gffs = _parse_manual_gffs(all_paths,
-                                     nctc_config.automatic_gffs_dir,
-                                     nctc_config.automatic_gffs_url)
+                                     nctc_config.manual_gffs_dir,
+                                     nctc_config.manual_gffs_url)
     return (
         pd.Dataframe(automatic_gffs),
         pd.Dataframe(manual_embls), 
