@@ -119,6 +119,19 @@
   }
 
   function update_table_for_species(table, species, project) {
+    // Some of the pages are very slow to load; here is how I might fix it
+    // For the big /data/foo.json files, create /data/foo.min.json with 100 rows
+    // but otherwise the same information.  In the species list in templates/index.html
+    // change the links from /data/foo.json to /data/foo.json#min for those
+    // species.  In the get_species_urls function return /data/foo.json and
+    // if it was suffixed with #min; foo.min.json.  If foo.min.json is returned
+    // load it using the current proceedure and then, in the load success,
+    // do another call to load the main content and re-update the project lists.
+    // In most cases, users won't notice that most of the content wasn't there
+    // for a few seconds.  You could also add a little note below the table
+    // to confess that more data is on the way but you probably don't need to
+    // bother.  The nice thing about using #min is that, if a user doesn't
+    // have javascript, they still have a working link to the full json blob.
     _show_spinner_hide_content();
     var data_url = get_species_urls()[species];
     $('#species_selector').text(species);
