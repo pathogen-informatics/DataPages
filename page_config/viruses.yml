@@ -146,7 +146,7 @@ species:
     - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/index.htm
       text: International Committee on Taxonomy of  Viruses Database
     - url: http://www.expasy.ch/viralzone/all_by_species/33.html
-      text: ViralZone:   Picornaviridae
+      text: 'ViralZone:   Picornaviridae'
     - url: http://www.virology.ed.ac.uk/research/Simmonds.htm
       text: Professor Peter Simmonds - Research Page
     - url: /science/dna-pipelines
