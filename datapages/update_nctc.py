@@ -40,7 +40,7 @@ def _file_to_ftp_url(path, ftp_root_dir, ftp_root_url):
     abspath = os.path.abspath(path)
     re.sub(root_dir, ftp_root_url, abspath)
 
-def _get_all_paths(root_dir):
+def get_all_paths(root_dir):
     logger.info("Finding all the files in %s" % root_dir)
     all_files = []
     abs_root_dir = os.path.abspath(root_dir)
@@ -148,10 +148,8 @@ def _parse_manual_embls(all_paths, root_dir, root_url):
             lookup.append(data)
     return lookup
 
-def file_mappings(nctc_config):
+def file_mappings(all_paths, nctc_config):
     logger.info("Mapping files in %s to successful assemblies" % nctc_config.ftp_root_dir)
-    root_dir = nctc_config.ftp_root_dir
-    all_paths = _get_all_paths(root_dir)
     automatic_gffs = _parse_automatic_gffs(all_paths,
                                            nctc_config.automatic_gffs_dir,
                                            nctc_config.automatic_gffs_url)
@@ -162,9 +160,9 @@ def file_mappings(nctc_config):
                                      nctc_config.manual_gffs_dir,
                                      nctc_config.manual_gffs_url)
     return (
-        pd.Dataframe(automatic_gffs),
-        pd.Dataframe(manual_embls), 
-        pd.Dataframe(manual_gffs)
+        pd.DataFrame(automatic_gffs),
+        pd.DataFrame(manual_embls),
+        pd.DataFrame(manual_gffs)
     )
 
 def add_canonical_nctc_data(joint_data):
@@ -279,9 +277,7 @@ def generate_nctc_data(global_config, nctc_config):
         ena_run_details = data['ena_run_details']
         lane_details = data['lane_details']
         studies = data['ss_studies']
-        automatic_gffs = pd.Dataframe(data['automatic_gffs'])
-        manual_embls = pd.Dataframe(data['manual_embls'])
-        manual_gffs = pd.Dataframe(data['manual_gffs'])
+        all_paths = data['all_paths']
 
     else:
         logging.info("Loading data from databases")
@@ -290,7 +286,7 @@ def generate_nctc_data(global_config, nctc_config):
         sequencescape_db_details = get_sequencescape_db_details(global_config)
         lane_details, ena_run_details, studies = get_all_data(vrtrack_db_details_list,
                                                               sequencescape_db_details)
-        automatic_gffs, manual_embls, manual_gffs = file_mappings(nctc_config)
+        all_paths = get_all_paths(nctc_config.ftp_root_dir)
 
     if global_config.get('DATAPAGES_SAVE_CACHE_PATH'):
         cache_path = global_config.get('DATAPAGES_SAVE_CACHE_PATH')
@@ -301,12 +297,11 @@ def generate_nctc_data(global_config, nctc_config):
             'ena_run_details': ena_run_details,
             'lane_details': lane_details,
             'ss_studies': studies,
-            'automatic_gffs': automatic_gffs.to_dict('records'),
-            'manual_embls': manual_embls.to_dict('records'),
-            'manual_gffs': manual_gffs.to_dict('records')
+            'all_paths': all_paths
         }
         cache_data(cache_path, domain_config.domain_name, data)
 
+    automatic_gffs, manual_embls, manual_gffs = file_mappings(all_paths, nctc_config)
     database_data = merge_data(lane_details, ena_run_details, studies)
     joint_data = merge_nctc_data(database_data, automatic_gffs, manual_embls,
                                  manual_gffs)
