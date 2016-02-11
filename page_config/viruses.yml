@@ -21,6 +21,15 @@ species:
       NC_007605 Human herpesvirus 4 type 1, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/NC_007605.1)
     aliases:
     - Human herpesvirus 4
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/index.htm
+      text: International Committee on Taxonomy of Viruses
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Herpesviridae Rhadinovirus:
     description: |
@@ -35,6 +44,15 @@ species:
       NC_009333 Human herpesvirus 8, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/NC_009333.1)
     aliases:
     - Human herpesvirus 8
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/00.031.3.02.htm
+      text: International Committee on Taxonomy of Viruses
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Herpesviridae Simplexvirus:
     description: |
@@ -49,6 +67,15 @@ species:
       NC_001806 Human herpesvirus 1, complete genome can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/9629378)
     aliases:
     - Human herpesvirus 1
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/index.htm
+      text: International Committee on Taxonomy of Viruses
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Orthomyxoviridae Influenzavirus A:
     description: |
@@ -72,6 +99,19 @@ species:
     - Influenza H3N2
     - Influenza A virus
     - Influenzavirus A
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.sanger.ac.uk/cgi-bin/Projects/viral/browser/search
+      text: WTSI Influenza sequences
+    - url: http://www.ncbi.nlm.nih.gov/genomes/FLU/FLU.html
+      text: NCBI Influenza Virus Resource
+    - url: http://platform.gisaid.org/dante-cms/live/struktur.jdante?aid=1131
+      text: Global Initiative on Sharing Avian Influenza Data (GISAID)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19465683
     - 19516283
@@ -98,6 +138,19 @@ species:
       Human echovirus 30 isolate 14916net87, complete genome, DQ534205 can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/106636122).
     aliases:
     - echovirus
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/index.htm
+      text: International Committee on Taxonomy of  Viruses Database
+    - url: http://www.expasy.ch/viralzone/all_by_species/33.html
+      text: ViralZone:   Picornaviridae
+    - url: http://www.virology.ed.ac.uk/research/Simmonds.htm
+      text: Professor Peter Simmonds - Research Page
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Reoviridae Orbivirus:
     description: |
@@ -122,6 +175,21 @@ species:
       These sequencing projects are funded by the Wellcome Trust.
     aliases:
     - Bluetongue virus
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: http://www.iah.ac.uk/disease/bt_aw.shtml
+      text: Institute for Animal Health - Bluetongue Research Programme
+    - url: http://www.reoviridae.org/dsRNA_virus_proteins/outbreaks.htm#Bluetongue_Outbreaks_
+      text: The dsRNA virus website
+    - url: http://www.gla.ac.uk/faculties/vet/research/staff/researchinterests/?sid=140
+      text: Professor Massimo Palmarini - Research Page
+    - url: http://www.ncbi.nlm.nih.gov/ICTVdb/ICTVdB/index.htm
+      text: International Committee on Taxonomy of Viruses Database
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Retroviridae Lentivirus:
     description: |
@@ -142,4 +210,11 @@ species:
       The reference sequence for the _Human immunodeficiency virus 1_ can be found [here](http://www.ncbi.nlm.nih.gov/nuccore/9629357)
     aliases:
     - Human immunodeficiency virus 1
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/viruses/
+      text: Viruses
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 

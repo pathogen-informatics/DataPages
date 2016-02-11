@@ -18,6 +18,13 @@ species:
   Achromobacter:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Acinetobacter:
     description: |
@@ -26,22 +33,78 @@ species:
       ## Project
       
       This data is from bacterial isolates collected in the BSAC Resistance Surveillance Project. Please see [bsacsurv.org](//www.bsacsurv.org) for details and availability.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Actinobacillus: {}
+  Actinobacillus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Actinomyces: {}
+  Actinomyces:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Actinotignum: {}
+  Actinotignum:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Adlercreutzia: {}
+  Adlercreutzia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Aerococcus: {}
+  Aerococcus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Aeromonas: {}
+  Aeromonas:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Aggregatibacter:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Aliivibrio salmonicida:
     description: |
@@ -59,10 +122,16 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vs/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/a_salmonicida
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vs/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: aliivibrio-wodanis.html
+      text: Aliivibrio wodanis
+    - url: aliivibrio.html
+      text: Aliivibrio
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19099551
 
@@ -77,26 +146,93 @@ species:
       Nils Peder Willassen and Erik Hjerde – Department of Molecular Biotechnology, University of Tromsø, N-9037 Tromsø, Norway 
       
       Henning Sørum – Norwegian School of Veterinary Science, P.O. Box 8146 Dep, N-0033 Oslo, Norway
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: aliivibrio-salmonicida.html
+      text: Aliivibrio salmonicida
+    - url: aliivibrio.html
+      text: Aliivibrio
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Alistipes: {}
+  Alistipes:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Alloscardovia: {}
+  Alloscardovia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Anaerostipes: {}
+  Anaerostipes:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Anaerotruncus: {}
+  Anaerotruncus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Arthrobacter: {}
+  Arthrobacter:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Atopobium: {}
+  Atopobium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Avibacterium:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Bacillus:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Bacteriovorax marinus:
     description: |
@@ -116,10 +252,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_marinus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bm/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_marinus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Bacteroides:
     description: |
@@ -133,10 +271,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: bacteroides-fragilis.html
+      text: Bacteroides fragilis
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20829291
     - 15746427
@@ -157,21 +299,67 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bf/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: bacteroides.html
+      text: Bacteroides
+    - url: http://www.genedb.org/Homepage/Bfragilis_NCTC9343
+      text: GeneDB
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_fragilis
       text: BLAST server
+    - url: ftp://ftp.sanger.ac.uk/pub/pathogens/bf/
+      text: FTP site
+    - url: http://borg.med.ecu.edu/~webpage/bacteroides.html
+      text: East Carolina University
+    - url: http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&style=html&id=AP006841
+      text: Bacteroides fragilis YCH46 genome @ EBI
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20829291
     - 15746427
 
-  Barnesiella: {}
+  Barnesiella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Bifidobacterium: {}
+  Bifidobacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Blautia: {}
+  Blautia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: blautia-producta.html
+      text: Blautia producta
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Blautia producta: {}
+  Blautia producta:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: blautia.html
+      text: Blautia
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Bordetella:
     description: |
@@ -241,10 +429,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pertussis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bp/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pertussis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.genedb.org/Homepage/Bbronchiseptica
+      text: GeneDB (B. bronchiseptica)
+    - url: http://www.genedb.org/Homepage/Bparapertussis
+      text: GeneDB (B. parapertussis)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18826580
     - 16885469
@@ -254,14 +448,42 @@ species:
   Brachyspira:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Brevibacterium: {}
+  Brevibacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Brucella: {}
+  Brucella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Budvicia aquatica:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Burkholderia:
     description: |
@@ -300,14 +522,22 @@ species:
       text: B. pseudomallei BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
       text: B. pseudomallei FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_cenocepacia
-      text: B. cenocepacia BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
-      text: B. cenocepacia FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pseudomallei
-      text: B. pseudomallei BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
-      text: B. pseudomallei FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: burkholderia-cenocepacia.html
+      text: Burkholderia cenocepacia
+    - url: burkholderia-pseudomallei.html
+      text: Burkholderia pseudomallei
+    - url: http://www.genedb.org/Homepage/Bcenocepacia
+      text: B. cenocepacia GeneDB
+    - url: http://www.genedb.org/Homepage/Bpseudomallei
+      text: B. pseudomallei GeneDB
+    - url: http://bpseudomallei.mlst.net/
+      text: B. pseudomallei MLST database
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18931103
     - 15377794
@@ -331,10 +561,18 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_cenocepacia
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bc/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: burkholderia-pseudomallei.html
+      text: Burkholderia pseudomallei
+    - url: burkholderia.html
+      text: Burkholderia
+    - url: http://www.genedb.org/Homepage/Bcenocepacia
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18931103
     - 12648723
@@ -355,14 +593,31 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_pseudomallei
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/bps/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: burkholderia-cenocepacia.html
+      text: Burkholderia cenocepacia
+    - url: burkholderia.html
+      text: Burkholderia
+    - url: http://www.genedb.org/Homepage/Bpseudomallei
+      text: GeneDB
+    - url: http://bpseudomallei.mlst.net/
+      text: MLST database
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15377794
 
-  Butyrivibrio: {}
+  Butyrivibrio:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Campylobacter:
     description: |
@@ -393,16 +648,37 @@ species:
       text: Campylobacter jejuni FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
       text: Campylobacter jejuni BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cj/
-      text: Campylobacter jejuni FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
-      text: Campylobacter jejuni BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: campylobacter-coli.html
+      text: Campylobacter coli
+    - url: campylobacter-jejuni.html
+      text: Campylobacter jejuni
+    - url: http://crf.lshtm.ac.uk/
+      text: Campylobacter Resource Facility
+    - url: http://www.genedb.org/Homepage/Cjejuni
+      text: C. jejuni GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Campylobacter coli:
     description: |
       _Campylobacter coli_ is a commensal of the gastrointestinal tract of poulty, pigs and humans and can cause enteritis in pigs and humans. 
       
       The Sanger Institute has sequenced a number of _C. coli_ genomes as part of a project to look at the exchange of DNA between members of the genus to better understand their evolution.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: campylobacter-jejuni.html
+      text: Campylobacter jejuni
+    - url: campylobacter.html
+      text: Campylobacter
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 10688204
 
@@ -428,24 +704,66 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cj/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_jejuni
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: campylobacter-coli.html
+      text: Campylobacter coli
+    - url: campylobacter.html
+      text: Campylobacter
+    - url: http://crf.lshtm.ac.uk/
+      text: Campylobacter Resource Facility
+    - url: http://www.genedb.org/Homepage/Cjejuni
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 10688204
 
-  Candidatus: {}
+  Candidatus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Carnobacterium: {}
+  Carnobacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Cedecea:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: cedecea-neteri.html
+      text: Cedecea neteri
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Cedecea neteri:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: cedecea.html
+      text: Cedecea
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Chlamydia:
     description: |
@@ -554,10 +872,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
       text: C. trachomatis BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Chlamydia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
-      text: C. trachomatis BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: chlamydia-trachomatis.html
+      text: Chlamydia trachomatis
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23525359
     - 22406642
@@ -670,10 +992,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Chlamydia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_trachomatis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: chlamydia.html
+      text: Chlamydia
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23525359
     - 22406642
@@ -682,6 +1008,17 @@ species:
     - 18032721
 
   Chlamydophila:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: chlamydophila-abortus.html
+      text: Chlamydophila abortus
+    - url: chlamydophila-pneumoniae.html
+      text: Chlamydophila pneumoniae
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15837807
 
@@ -705,18 +1042,55 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_abortus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ca/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_abortus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: chlamydophila-pneumoniae.html
+      text: Chlamydophila pneumoniae
+    - url: chlamydophila.html
+      text: Chlamydophila
+    - url: http://www.genedb.org/Homepage/Cabortus
+      text: GeneDB
+    - url: http://www.scotland.gov.uk/Home
+      text: The Scottish Office
+    - url: http://www.mri.sari.ac.uk/
+      text: Moredun Research Institute
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15837807
 
-  Chlamydophila pneumoniae: {}
+  Chlamydophila pneumoniae:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: chlamydophila-abortus.html
+      text: Chlamydophila abortus
+    - url: chlamydophila.html
+      text: Chlamydophila
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Chromobacterium: {}
+  Chromobacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Chryseobacterium: {}
+  Chryseobacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Citrobacter:
     description: |
@@ -752,12 +1126,20 @@ species:
       text: Citrobacter rodentium BLAST server
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
       text: Citrobacter freundii BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Citrobacter/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
-      text: Citrobacter rodentium BLAST server
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
-      text: Citrobacter freundii BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: citrobacter-freundii.html
+      text: Citrobacter freundii
+    - url: citrobacter-rodentium.html
+      text: Citrobacter rodentium
+    - url: http://www3.imperial.ac.uk/cmmi
+      text: CMMI
+    - url: ftp://ftp.era.ebi.ac.uk/vol1/ERA000/ERA000106/sff/
+      text: European Nucleotide Archive (C. freundii)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19897651
 
@@ -773,10 +1155,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Citrobacter/freundii/ballerup_7851/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_freundii
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: citrobacter-rodentium.html
+      text: Citrobacter rodentium
+    - url: citrobacter.html
+      text: Citrobacter
+    - url: ftp://ftp.era.ebi.ac.uk/vol1/ERA000/ERA000106/sff/
+      text: European Nucleotide Archive
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19897651
 
@@ -800,10 +1190,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/crod/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_rodentium
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: citrobacter-freundii.html
+      text: Citrobacter freundii
+    - url: citrobacter.html
+      text: Citrobacter
+    - url: http://www3.imperial.ac.uk/cmmi
+      text: CMMI
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19897651
 
@@ -823,14 +1221,29 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_michiganensis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cm/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_michiganensis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.usda.gov/wps/portal/usda/usdahome
+      text: USDA
+    - url: http://www.colostate.edu/Depts/bspm/
+      text: The Department of Bioagricultural Sciences and Pest Management at CSU
+    - url: http://www.hcs.ohio-state.edu/
+      text: HCS, Ohio State University
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18192393
 
-  Clostridiales: {}
+  Clostridiales:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Clostridium:
     description: |
@@ -863,12 +1276,22 @@ species:
       text: C. botulinum BLAST server
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
       text: C. sordellii BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
-      text: C. botulinum BLAST server
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
-      text: C. sordellii BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: clostridium-botulinum.html
+      text: Clostridium botulinum
+    - url: clostridium-sordellii.html
+      text: Clostridium sordellii
+    - url: http://www.reading.ac.uk/food/
+      text: Department of Food Science, University of Reading
+    - url: http://www.ifr.ac.uk/
+      text: Institute of Food Research
+    - url: http://www.imperial.ac.uk/people/n.fairweather
+      text: Professor Neil Fairweather
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17519437
 
@@ -888,10 +1311,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cb/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_botulinum
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: clostridium-sordellii.html
+      text: Clostridium sordellii
+    - url: clostridium.html
+      text: Clostridium
+    - url: http://www.reading.ac.uk/food/
+      text: Department of Food Science, University of Reading
+    - url: http://www.ifr.ac.uk/
+      text: Institute of Food Research
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17519437
 
@@ -960,14 +1393,36 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Clostridium/sordellii/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_sordellii
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: clostridium-botulinum.html
+      text: Clostridium botulinum
+    - url: clostridium.html
+      text: Clostridium
+    - url: http://www.imperial.ac.uk/people/n.fairweather
+      text: Professor Neil Fairweather
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Collinsella aerofaciens: {}
+  Collinsella aerofaciens:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Coprococcus: {}
+  Coprococcus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Corynebacterium:
     description: |
@@ -985,10 +1440,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cdip/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: corynebacterium-diphtheriae.html
+      text: Corynebacterium diphtheriae
+    - url: http://www.genedb.org/Homepage/Cdiphtheriae
+      text: GeneDB
+    - url: http://www.who.int/topics/diphtheria/en/
+      text: WHO
+    - url: http://www.hpa.org.uk/
+      text: Health Protection Agency
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 14602910
 
@@ -1008,28 +1473,77 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cdip/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_diphtheriae
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: corynebacterium.html
+      text: Corynebacterium
+    - url: http://www.genedb.org/Homepage/Cdiphtheriae
+      text: GeneDB
+    - url: http://www.who.int/topics/diphtheria/en/
+      text: WHO
+    - url: http://www.hpa.org.uk/
+      text: Health Protection Agency
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 14602910
 
   Cronobacter:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: cronobacter-sakazakii.html
+      text: Cronobacter sakazakii
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Cronobacter sakazakii:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: cronobacter.html
+      text: Cronobacter
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Dermabacter: {}
+  Dermabacter:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Dialister: {}
+  Dialister:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Edwardsiella:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Ehrlichia ruminantium:
     description: |
@@ -1040,16 +1554,41 @@ species:
       The sequencing was completed, and the genomic analysis performed, by Dr. B. Allsopp of the University of Pretoria Department of Veterinary Tropical Diseases, South Africa. 
       
       The fully annotated genome sequence is available from the EMBL/GenBank databases with accession number [CR767821](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=CR767821&style=raw).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.bi.up.ac.za/Ehrlichia_ruminantium/
+      text: Genome Sequence Database
+    - url: http://web.up.ac.za/default.asp?ipkCategoryID=50/depts_vtd.htm
+      text: University of Pretoria Department of Veterinary Tropical Diseases
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15637156
 
   Elizabethkingia:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Enterobacter:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23857503
 
@@ -1058,10 +1597,24 @@ species:
       _Enterococcus faecium_ and _Enterococcus faecalis_ are emerging, multi resistant nosocomial pathogens. 
       
       This data is from bacterial isolates collected in the BSAC Resistance Surveillance Project. Please see [bsacsurv.org](//www.bsacsurv.org) for details and availability.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23857503
 
-  Enterorhabdus mucosicola: {}
+  Enterorhabdus mucosicola:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Erwinia carotovora:
     description: |
@@ -1077,10 +1630,22 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_carotovora
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/erc/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_carotovora
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: erwinia-amylovora.html
+      text: Erwinia amylovora
+    - url: http://www.genedb.org/Homepage/Ecarotovora
+      text: GeneDB
+    - url: http://www.scri.ac.uk/
+      text: Scottish Crop Research Institute
+    - url: http://www.bio.cam.ac.uk/~salmond/
+      text: Prof. George Salmond group
+    - url: http://www.scotland.gov.uk/
+      text: The Scottish Executive Environment and Rural Affairs Department
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15263089
 
@@ -1120,10 +1685,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: escherichia-coli.html
+      text: Escherichia coli
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20802035
     - 20098708
@@ -1165,46 +1734,146 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia/coli/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: escherichia.html
+      text: Escherichia
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20802035
     - 20098708
     - 18952797
 
-  Eubacterium: {}
+  Eubacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Ewingella americana:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Faecalibacterium: {}
+  Faecalibacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Finegoldia: {}
+  Finegoldia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Flavonifractor plautii: {}
+  Flavonifractor plautii:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Fluoribacter dumoffii: {}
+  Fluoribacter dumoffii:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Fructobacillus fructosus: {}
+  Fructobacillus fructosus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Fusobacterium:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: fusobacterium-nucleatum.html
+      text: Fusobacterium nucleatum
+    - url: fusobacterium-ulcerans.html
+      text: Fusobacterium ulcerans
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Fusobacterium nucleatum:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: fusobacterium.html
+      text: Fusobacterium
+    - url: fusobacterium-ulcerans.html
+      text: Fusobacterium ulcerans
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Fusobacterium ulcerans:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: fusobacterium.html
+      text: Fusobacterium
+    - url: fusobacterium-nucleatum.html
+      text: Fusobacterium nucleatum
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Gardnerella: {}
+  Gardnerella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Gemella: {}
+  Gemella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Haemophilus:
     description: |
@@ -1265,16 +1934,29 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_influenzae
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/hib/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_influenzae
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.paediatrics.ox.ac.uk/
+      text: University Department of Paediatrics, Oxford
+    - url: http://www.ndcls.ox.ac.uk/
+      text: Nuffield Department of Clinical Laboratory Sciences
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 22377449
 
   Hafnia alvei:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Helicobacter:
     description: |
@@ -1300,17 +1982,35 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_mustelae
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/hm/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_mustelae
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.ucc.ie/ucc/depts/microbio/
+      text: UCC Department of Microbiology
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 21402865
     - 20219135
 
-  Holdemania filiformis: {}
+  Holdemania filiformis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Kiloniellales: {}
+  Kiloniellales:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Klebsiella:
     description: |
@@ -1331,6 +2031,15 @@ species:
       Ruth N. Zadoks, DVM, PhD Moredun Chair of Veterinary Epidemiology, Moredun Research Institute and Royal (Dick) School of Veterinary Studies, University of Edinburgh
     published_data_description: |
       The Sanger Institute has sequenced the genome of _Klebsiella pneumoniae_ subsp. pneumoniae Ecl8. The chromosomal genome is available from EMBL/GenBank with accession number [HF536482](http://www.ebi.ac.uk/ena/data/view/HF536482&display=text). Similarly, the plasmid is available with accession number [HF536483](http://www.ebi.ac.uk/ena/data/view/HF536483&display=text).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: klebsiella-pneumoniae.html
+      text: Klebsiella pneumoniae
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Klebsiella pneumoniae:
     description: |
@@ -1349,22 +2058,73 @@ species:
       Ruth N. Zadoks, DVM, PhD Moredun Chair of Veterinary Epidemiology, Moredun Research Institute and Royal (Dick) School of Veterinary Studies, University of Edinburgh
     published_data_description: |
       The Sanger Institute has sequenced the genome of _Klebsiella pneumoniae_ subsp. pneumoniae Ecl8. The chromosomal genome is available from EMBL/GenBank with accession number [HF536482](http://www.ebi.ac.uk/ena/data/view/HF536482&display=text). Similarly, the plasmid is available with accession number [HF536483](http://www.ebi.ac.uk/ena/data/view/HF536483&display=text).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: klebsiella.html
+      text: Klebsiella
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Kluyvera:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Kocuria: {}
+  Kocuria:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Lactobacillus: {}
+  Lactobacillus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Lactococcus lactis: {}
+  Lactococcus lactis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Lactonifactor longoviformis: {}
+  Lactonifactor longoviformis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Leclercia adecarboxylata:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Legionella:
     published_data_description: |
@@ -1374,48 +2134,149 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Legionella/
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Legionella/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.ebi.ac.uk/ena/data/view/display=html&ERA011231
+      text: L. pneumophila 454 reads @ EBI
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20833813
 
-  Lelliottia amnigena: {}
+  Lelliottia amnigena:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Leminorella:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Leptospira: {}
+  Leptospira:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: leptospira-interrogans.html
+      text: Leptospira interrogans
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Leptospira interrogans:
     description: |
       Leptospirosis is a zoonotic infection caused by pathogenic members of the genus, primarily _L. interrogans_. Human disease usually occurs through environmental exposure to soil or water contaminated with _Leptospira_ shed in the urine of an infected animal. Clinical manifestations are broad with symptoms including chills, headache, myalgia, conjunctival suffusion, and abdominal symptoms which can include nausea, vomiting and diarrhea. The disease has a worldwide distribution but is most common in tropical regions where incidence peaks during the rainy season. 
       
       The Sanger Institute has been funded by the Wellcome Trust to sequence the genomes from a collection of _Leptospira interrogans_ isolates representing much of the diversity within the species.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: leptospira.html
+      text: Leptospira
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Leuconostoc: {}
+  Leuconostoc:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Listeria: {}
+  Listeria:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Mannheimia:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Melissococcus plutonius: {}
+  Melissococcus plutonius:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Microbacterium: {}
+  Microbacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Micrococcus: {}
+  Micrococcus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Moellerella wisconsensis:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Moraxella: {}
+  Moraxella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Morganella morganii:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Moritella viscosa:
     description: |
@@ -1428,6 +2289,13 @@ species:
       Nils Peder Willassen and Erik Hjerde – Department of Molecular Biotechnology, University of Tromsø, N-9037 Tromsø, Norway 
       
       Henning Sørum – Norwegian School of Veterinary Science, P.O. Box 8146 Dep, N-0033 Oslo, Norway
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Mycobacterium:
     description: |
@@ -1508,10 +2376,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/mycobacterium
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Mycobacterium/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/mycobacterium
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.tbdb.org/
+      text: Tuberculosis Database
+    - url: http://tuberculist.epfl.ch/
+      text: Tuberculist
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23995134
     - 23863072
@@ -1524,7 +2398,16 @@ species:
     - 11234002
     - 9634230
 
-  Mycoplasma: {}
+  Mycoplasma:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: mycoplasma-amphoriforme.html
+      text: Mycoplasma amphoriforme
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Mycoplasma amphoriforme:
     description: |
@@ -1533,6 +2416,17 @@ species:
       The Sanger Institute has been funded by The Wellcome Trust to sequence the genome of _Mycoplasma amphoriforme_ strain A39, in collaboration with Prof. Stephen H. Gillespie of the Centre for Medical Microbiology, Royal Free &amp; University College Medical School, London.
     published_data_description: |
       Sequence data will be available from this page as soon as the project begins.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: mycoplasma.html
+      text: Mycoplasma
+    - url: http://www.ucl.ac.uk/medicalschool/index.shtml
+      text: Royal Free & University College Medical School
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Neisseria:
     description: |
@@ -1556,10 +2450,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neisseria/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 21092259
     - 17305430
@@ -1568,30 +2464,104 @@ species:
   Nocardia farcinica:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Ochrobactrum:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Oligella: {}
+  Oligella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Olsenella uli: {}
+  Olsenella uli:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Paenibacillus: {}
+  Paenibacillus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: paenibacillus-larvae.html
+      text: Paenibacillus larvae
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Paenibacillus larvae: {}
+  Paenibacillus larvae:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: paenibacillus.html
+      text: Paenibacillus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Pantoea:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Parabacteroides: {}
+  Parabacteroides:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Paralactobacillus selangorensis: {}
+  Paralactobacillus selangorensis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Pasteurella:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Peptoclostridium:
     aliases:
@@ -1661,10 +2631,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Peptoclostridium/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: peptoclostridium-difficile.html
+      text: Peptoclostridium difficile
+    - url: http://www.lshtm.ac.uk/
+      text: London School of Hygiene & Tropical Medicine
+    - url: http://www3.imperial.ac.uk/cmmi
+      text: CMMI
+    - url: http://www.eastman.ucl.ac.uk/
+      text: UCL EASTMAN DENTAL INSTITUTE
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 24076318
     - 23866975
@@ -1750,10 +2730,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/cd/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/c_difficile
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: peptoclostridium.html
+      text: Peptoclostridium
+    - url: http://www.lshtm.ac.uk/
+      text: London School of Hygiene & Tropical Medicine
+    - url: http://www3.imperial.ac.uk/cmmi
+      text: CMMI
+    - url: http://www.eastman.ucl.ac.uk/
+      text: UCL EASTMAN DENTAL INSTITUTE
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 24076318
     - 23866975
@@ -1773,7 +2763,14 @@ species:
     - 19781061
     - 16804543
 
-  Peptoniphilus: {}
+  Peptoniphilus:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Photorhabdus asymbiotica:
     description: |
@@ -1793,24 +2790,58 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_asymbiotica
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pa/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_asymbiotica
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.bbsrc.ac.uk/
+      text: BBSRC
+    - url: http://www.bath.ac.uk/bio-sci//
+      text: Dept. of Biology and Biochemistry, University of Bath
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19583835
 
   Plesiomonas:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Pluralibacter gergoviae:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Prevotella: {}
+  Prevotella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Propionibacterium: {}
+  Propionibacterium:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Proteus:
     description: |
@@ -1830,10 +2861,16 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_mirabilis
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: proteus-mirabilis.html
+      text: Proteus mirabilis
+    - url: http://www.med.umich.edu/microbio/
+      text: Dept. of Microbiology and Immunology, University of Michigan Medical School
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18375554
 
@@ -1853,16 +2890,29 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_mirabilis
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/pm/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: proteus.html
+      text: Proteus
+    - url: http://www.med.umich.edu/microbio/
+      text: Dept. of Microbiology and Immunology, University of Michigan Medical School
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18375554
 
   Providencia:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Pseudomonas:
     description: |
@@ -1906,10 +2956,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/pseudomonas
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Pseudomonas
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/pseudomonas
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19047519
     - 19432983
@@ -1918,6 +2970,13 @@ species:
   Raoultella:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Rhizobium leguminosarum:
     description: |
@@ -1935,10 +2994,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_leguminosarum
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/rl/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_leguminosarum
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.genedb.org/Homepage/Rleguminosarum
+      text: GeneDB
+    - url: http://www.bbsrc.ac.uk/
+      text: BBSRC
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 16640791
 
@@ -1958,17 +3023,35 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_equi
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/re/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/r_equi
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.hblb.org.uk/
+      text: Horserace Betting Levy Board
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20941392
     - 18606735
 
-  Roseburia: {}
+  Roseburia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Rothia: {}
+  Rothia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Ruminococcus:
     description: |
@@ -1980,8 +3063,14 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: ruminococcus-flavefaciens.html
+      text: Ruminococcus flavefaciens
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20373916
     - 19107866
@@ -1995,8 +3084,14 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/flavefaciens/007c/
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Ruminococcus/flavefaciens/007c/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: ruminococcus.html
+      text: Ruminococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20373916
     - 19107866
@@ -2159,10 +3254,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/salmonella
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Salmonella/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/salmonella
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: http://www.genedb.org/Homepage/Styphi
+      text: GeneDB (S. enterica Typhi)
+    - url: http://www.genedb.org/Homepage/Styphimurium
+      text: GeneDB (S. enterica Typhimurium)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 24030491
     - 23470992
@@ -2194,10 +3295,14 @@ species:
       text: Serratia marcescens FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
       text: Serratia marcescens BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sm/
-      text: Serratia marcescens FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
-      text: Serratia marcescens BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: serratia-marcescens.html
+      text: Serratia marcescens
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Serratia marcescens:
     description: |
@@ -2215,10 +3320,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sm/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_marcescens
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: serratia.html
+      text: Serratia
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Shigella:
     description: |
@@ -2236,10 +3345,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia_Shigella/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: shigella-dysenteriae.html
+      text: Shigella dysenteriae
+    - url: shigella-sonnei.html
+      text: Shigella sonnei
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Shigella dysenteriae:
     description: |
@@ -2251,26 +3366,71 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Escherichia_Shigella/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/escherichia_shigella
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: shigella-sonnei.html
+      text: Shigella sonnei
+    - url: shigella.html
+      text: Shigella
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Shigella sonnei:
     published_data_description: |
       The fully sequenced genome of _Shigella sonnei_ 53G is available from EMBL/GenBank. The chromosome has accession number [HE616528](http://www.ebi.ac.uk/ena/data/view/HE616528&display=text), plasmid A has [HE616529](http://www.ebi.ac.uk/ena/data/view/HE616529&display=text), plasmid B: [HE616530](http://www.ebi.ac.uk/ena/data/view/HE616530&display=text), plasmid C: [HE616531](http://www.ebi.ac.uk/ena/data/view/HE616531&display=text) and plasmid E has [HE616532](http://www.ebi.ac.uk/ena/data/view/HE616532&display=text).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: shigella-dysenteriae.html
+      text: Shigella dysenteriae
+    - url: shigella.html
+      text: Shigella
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Shimwellia:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Slackia: {}
+  Slackia:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Sphingobacterium:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Sphingomonas: {}
+  Sphingomonas:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Staphylococcus:
     description: |
@@ -2349,10 +3509,20 @@ species:
       text: Staphylococcus aureus FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
       text: Staphylococcus aureus BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sa/
-      text: Staphylococcus aureus FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
-      text: Staphylococcus aureus BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: staphylococcus-aureus.html
+      text: Staphylococcus aureus
+    - url: staphylococcus-lugdunensis.html
+      text: Staphylococcus lugdunensis
+    - url: http://www.genedb.org/Homepage/Saureus_MRSA252
+      text: GeneDB (S. aureus MRSA252)
+    - url: http://www.genedb.org/Homepage/Saureus_MSSA476
+      text: GeneDB (S. aureus MSSA476)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23299977
     - 23158674
@@ -2448,10 +3618,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sa/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_aureus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: staphylococcus-lugdunensis.html
+      text: Staphylococcus lugdunensis
+    - url: staphylococcus.html
+      text: Staphylococcus
+    - url: http://www.genedb.org/Homepage/Saureus_MRSA252
+      text: GeneDB (MRSA252)
+    - url: http://www.genedb.org/Homepage/Saureus_MSSA476
+      text: GeneDB (MSSA476)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23299977
     - 23158674
@@ -2467,6 +3647,17 @@ species:
       _Staphylococcus lugdunensis_ is a commensal of man and can cause serious invasive infections. This Gram-positive bacterium accounts for 5-10% of cases of invasive endocarditis 
       
       We are sequencing the genome of a _Staphylococcus lugdenensis_ strain N920143, a breast abscess isolate, in collaboration with Tim Foster, Trinity College, Ireland.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: staphylococcus-aureus.html
+      text: Staphylococcus aureus
+    - url: staphylococcus.html
+      text: Staphylococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Stenotrophomonas maltophilia:
     description: |
@@ -2482,10 +3673,14 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_maltophilia
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: stenotrophomonas.html
+      text: Stenotrophomonas
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18419807
 
@@ -2503,10 +3698,14 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_maltophilia
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sma/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: stenotrophomonas-maltophilia.html
+      text: Stenotrophomonas maltophilia
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18419807
 
@@ -2682,6 +3881,33 @@ species:
       The fully annotated genome has been deposited in the EMBL/GenBank databases with accession number [FM204884](http://www.ebi.ac.uk/cgi-bin/dbfetch?db=embl&id=FM204884&style=raw). 
       
       Shotgun and assembly data from this project are available from [our FTP site](ftp://ftp.sanger.ac.uk/pub/pathogens/sz/).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: http://www.genedb.org/Homepage/Spyogenes
+      text: S. pyogenes GeneDB
+    - url: http://www.genome.ou.edu/strep.html
+      text: S. pyogenes strain SF370 (M1) sequencing project
+    - url: http://genome.gen-info.osaka-u.ac.jp/bacteria/spyo/index.html
+      text: S. pyogenes strain SSI-1 (M3) sequencing project
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23644493
     - 21034474
@@ -2697,7 +3923,28 @@ species:
     - 17012393
     - 16532061
 
-  Streptococcus dysgalactiae: {}
+  Streptococcus dysgalactiae:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Streptococcus equi:
     description: |
@@ -2713,10 +3960,26 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_equi
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/se
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_equi
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19325880
 
@@ -2847,10 +4110,32 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sp/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_pyogenes
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sp/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: http://www.genedb.org/Homepage/Spyogenes
+      text: GeneDB
+    - url: http://www.genome.ou.edu/strep.html
+      text: S. pyogenes strain SF370 (M1) sequencing project
+    - url: http://genome.gen-info.osaka-u.ac.jp/bacteria/spyo/index.html
+      text: S. pyogenes strain SSI-1 (M3) sequencing project
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17012393
 
@@ -2882,10 +4167,26 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ss/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_suis
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ss/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19603075
 
@@ -2903,10 +4204,26 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/su/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_uberis
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/su/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-zooepidemicus.html
+      text: Streptococcus zooepidemicus
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19175920
 
@@ -2924,10 +4241,26 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sz/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_zooepidemicus
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/sz/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptococcus-dysgalactiae.html
+      text: Streptococcus dysgalactiae
+    - url: streptococcus-equi.html
+      text: Streptococcus equi
+    - url: streptococcus-pneumoniae.html
+      text: Streptococcus pneumoniae
+    - url: streptococcus-pyogenes.html
+      text: Streptococcus pyogenes
+    - url: streptococcus-suis.html
+      text: Streptococcus suis
+    - url: streptococcus-uberis.html
+      text: Streptococcus uberis
+    - url: streptococcus.html
+      text: Streptococcus
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 19325880
 
@@ -2945,10 +4278,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_coelicolor
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/S_coelicolor/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_coelicolor
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptomyces-scabies.html
+      text: Streptomyces scabies
+    - url: http://www.genedb.org/Homepage/Scoelicolor
+      text: GeneDB
+    - url: http://strepdb.streptomyces.org.uk/
+      text: StrepDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 12000953
 
@@ -2966,18 +4307,36 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ssc/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_scabies
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/ssc/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: streptomyces-coelicolor.html
+      text: Streptomyces coelicolor
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20064060
 
-  Taylorella equigenitalis: {}
+  Taylorella equigenitalis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Tatumella:
     description: |
       This genome is being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Tropheryma whipplei:
     description: |
@@ -2993,16 +4352,32 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/tw/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_whipplei
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/tw/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 12606174
 
-  Trueperella: {}
+  Trueperella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Turicibacter sanguinis: {}
+  Turicibacter sanguinis:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Vibrio cholerae:
     description: |
@@ -3017,6 +4392,15 @@ species:
       Ranjan K. Nandy (National Institute of Cholera and Enteric Diseases) 
       
       Sam Kariuki (Centre for Microbiology Research, Kenya)
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: vibrio.html
+      text: Vibrio
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 21866102
 
@@ -3033,10 +4417,26 @@ species:
       Ranjan K. Nandy (National Institute of Cholera and Enteric Diseases) 
       
       Sam Kariuki (Centre for Microbiology Research, Kenya)
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: vibrio-cholerae.html
+      text: Vibrio cholerae
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 21866102
 
-  Weissella: {}
+  Weissella:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Wolbachia:
     description: |
@@ -3058,10 +4458,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/wolbachia
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Wolbachia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/wolbachia
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18550617
 
@@ -3107,10 +4509,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/yersinia
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17173484
     - 11586360
@@ -3118,4 +4522,11 @@ species:
   Yokenella regensburgei:
     description: |
       These genomes are being sequenced as part of the Public Health England NCTC reference collection. Please see the Wellcome Trust Sanger Institute's [NCTC page](http://www.sanger.ac.uk/resources/downloads/bacteria/nctc/) for more details.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/bacteria/
+      text: Bacteria
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 

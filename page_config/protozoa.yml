@@ -28,10 +28,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bigemina
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Babesia/bigemina/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bigemina
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: babesia-bovis.html
+      text: Babesia bovis
+    - url: http://www.ars.usda.gov/research/projects/projects.htm?ACCN_NO=405726
+      text: Washington State University
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Babesia bovis:
     description: |
@@ -43,10 +49,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bovis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/babesia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_bovis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: babesia-bigemina.html
+      text: Babesia bigemina
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Bodo saltans:
     description: |
@@ -76,10 +86,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_saltans
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Bodo/saltans/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/b_saltans
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://www.genedb.org/Homepage/Bsaltans
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Crithidia:
     description: |
@@ -93,14 +107,27 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/crithidia
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Crithidia/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/crithidia
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Dictyostelium discoideum:
     description: |
       An international consortium which includes the Sanger Institute completed the sequencing of the _Dictyostelium discoideum_ genome (strain AX4). _D.discoideum_ has a 34 Mb haploid genome with a base composition of 77% [A+T]. It consists of 6 chromosomes encoding approximately 12,500 proteins.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://dictybase.org/
+      text: DictyBase
+    - url: http://dictygenome.bcm.tmc.edu/
+      text: Functional Genomics of Dictyostelium
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15875012
 
@@ -118,10 +145,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_tenella/omni
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Eimeria/tenella/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_tenella/omni
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://www.genedb.org/Homepage/Etenella
+      text: GeneDB
+    - url: http://www.iah.bbsrc.ac.uk/eimeria/linkage.htm
+      text: Genetic Linkage Map
+    - url: http://www.lbm.fmvz.usp.br/eimeria/
+      text: Transcript Database
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 25015382
     - 17284678
@@ -146,16 +181,14 @@ species:
       text: BLAST server (Sanger E. histolytica)
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/comp_entamoeba
       text: BLAST server (Sanger comparative Entamoeba)
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Entamoeba/
-      text: FTP site (Sanger)
-    - url: http://amoebadb.org/common/downloads/
-      text: FTP site (AmoebaDB - latest assemblies)
-    - url: http://amoebadb.org/amoeba/showQuestion.do?questionFullName=UniversalQuestions.UnifiedBlast
-      text: BLAST server (AmoebaDB)
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_histolytica
-      text: BLAST server (Sanger E. histolytica)
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/comp_entamoeba
-      text: BLAST server (Sanger comparative Entamoeba)
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://amoebadb.org/amoeba/
+      text: AmoebaDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15729342
 
@@ -171,8 +204,26 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/L_braziliensis/
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/L_braziliensis/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: leishmania-donovani.html
+      text: Leishmania donovani
+    - url: leishmania-infantum.html
+      text: Leishmania infantum
+    - url: leishmania-major.html
+      text: Leishmania major
+    - url: leishmania-mexicana.html
+      text: Leishmania mexicana
+    - url: http://www.who.int/topics/leishmaniasis/en/
+      text: World Health Organisation
+    - url: http://www.genedb.org/Homepage/Lbraziliensis
+      text: GeneDB
+    - url: http://tritrypdb.org/tritrypdb/
+      text: TriTrypDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17572675
 
@@ -183,6 +234,23 @@ species:
       Work exploring the genome-level variablility in _Leishmania donovani_ at the Sanger is funded under European Framework Project 7 through two consortia, Kaladrug-r and Gemini, created to evaluate the biology of the parasite. More information on [Kaladrug-r](http://www.leishrisk.net/leishrisk/Default.aspx?Menu=MenuMain&MIID=35&WPID=41&L=E) and on [Gemini](http://www.leishrisk.net/leishrisk/Default.aspx?Menu=MenuMain&MIID=37&WPID=42&L=E) is available.
     published_data_description: |
       The genome sequence of _Leishmania donovani_ has not yet been published.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: leishmania-braziliensis.html
+      text: Leishmania braziliensis
+    - url: leishmania-infantum.html
+      text: Leishmania infantum
+    - url: leishmania-major.html
+      text: Leishmania major
+    - url: leishmania-mexicana.html
+      text: Leishmania mexicana
+    - url: http://www.leishrisk.net/leishrisk/Default.aspx
+      text: Leishrisk
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20109253
     - 20113552
@@ -199,8 +267,26 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/infantum
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/infantum
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: leishmania-braziliensis.html
+      text: Leishmania braziliensis
+    - url: leishmania-donovani.html
+      text: Leishmania donovani
+    - url: leishmania-major.html
+      text: Leishmania major
+    - url: leishmania-mexicana.html
+      text: Leishmania mexicana
+    - url: http://www.who.int/topics/leishmaniasis/en/
+      text: World Health Organisation
+    - url: http://www.genedb.org/Homepage/Linfantum
+      text: GeneDB
+    - url: http://tritrypdb.org/tritrypdb/
+      text: TriTrypDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 17572675
 
@@ -220,10 +306,26 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_major
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/major
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_major
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: leishmania-braziliensis.html
+      text: Leishmania braziliensis
+    - url: leishmania-donovani.html
+      text: Leishmania donovani
+    - url: leishmania-infantum.html
+      text: Leishmania infantum
+    - url: leishmania-mexicana.html
+      text: Leishmania mexicana
+    - url: http://www.who.int/topics/leishmaniasis/en/
+      text: World Health Organisation
+    - url: http://www.genedb.org/Homepage/Lmajor
+      text: GeneDB
+    - url: http://tritrypdb.org/tritrypdb/
+      text: TriTrypDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 16020728
 
@@ -237,8 +339,26 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/mexicana
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leishmania/mexicana
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: leishmania-braziliensis.html
+      text: Leishmania braziliensis
+    - url: leishmania-donovani.html
+      text: Leishmania donovani
+    - url: leishmania-infantum.html
+      text: Leishmania infantum
+    - url: leishmania-major.html
+      text: Leishmania major
+    - url: http://www.who.int/topics/leishmaniasis/en/
+      text: World Health Organisation
+    - url: http://www.genedb.org/Homepage/Lmexicana
+      text: GeneDB
+    - url: http://tritrypdb.org/tritrypdb/
+      text: TriTrypDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Leptomonas seymouri:
     description: |
@@ -250,10 +370,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_seymouri
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Leptomonas/seymouri
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/l_seymouri
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Neospora caninum:
     description: |
@@ -267,10 +389,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/n_caninum
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Neospora/caninum/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/n_caninum
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://www.genedb.org/Homepage/Ncaninum
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 22458863
 
@@ -286,10 +412,36 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_berghei
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/berghei/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_berghei
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: http://www.genedb.org/Homepage/Pberghei
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 25359557
 
@@ -305,10 +457,36 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_chabaudi
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/chabaudi/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_chabaudi
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: http://www.genedb.org/Homepage/Pchabaudi
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 25359557
 
@@ -317,6 +495,33 @@ species:
       _Plasmodium cynomolgi_ is a non-human primate malaria parasite that naturally infects various macaque. This species is used as a model for human _P. vivax_ infections. It is phylogenetically close to _P. vivax_ and shares important biological features including the dormant liver form (hypnozoite) with this parasite. 
       
       In collaboration with Dr. Clemens Kocken, Prof. Alan Thomas and Dr. Erica Pasini (BPRC, Rijswijk), we have produced a draft genome from the M strain of _P. cynomolgi_ using Illumina Sequence-by-synthesis technology.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Plasmodium falciparum:
     description: |
@@ -338,10 +543,40 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_falciparum
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/falciparum/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_falciparum
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: http://www.genedb.org/Homepage/Pfalciparum
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: http://www.sanger.ac.uk/research/areas/malariaprogramme/
+      text: Malaria Programme
+    - url: http://www.sanger.ac.uk/resources/software/reapr/
+      text: REAPR
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 12368864
     - 12368867
@@ -357,10 +592,32 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_gallinaceum
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/gallinaceum/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_gallinaceum
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 10875925
 
@@ -376,10 +633,36 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_knowlesi
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/knowlesi
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_knowlesi
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: http://www.genedb.org/Homepage/Pknowlesi
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18843368
 
@@ -388,6 +671,33 @@ species:
       _P. malariae_ is considered as one of the minor parasites of the five human malaria species along with _P. ovale_ because of low prevalence rates in most endemic areas and its relatively mild and chronic nature. The parasite has an unusually chronic blood stage infection with an individual known to have been infected for 40 years. 
       
       Sequencing has been attempted using DNA provided by Jetsumonn Prachumsri (Mahidol, Thailand). Further sequencing and full annotation is planned. We would welcome any source of high quality DNA.
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Plasmodium ovale:
     description: |
@@ -401,10 +711,36 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_ovale
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/ovale/
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: ftp://ftp.sanger.ac.uk/pub/pathogens/Plasmodium/ovale/
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_ovale
       text: BLAST server
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Plasmodium reichenowi:
     description: |
@@ -416,10 +752,32 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_reichenowi
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/reichenowi/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/p_reichenowi
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 25203297
 
@@ -435,8 +793,38 @@ species:
     links:
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vivax/
       text: FTP site
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/vivax/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-yoelii.html
+      text: Plasmodium yoelii
+    - url: http://vivaxmalaria.com/
+      text: Plasmodium vivax
+    - url: http://www.genedb.org/Homepage/Pvivax
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 18843361
 
@@ -449,6 +837,37 @@ species:
       An initial analysis of a draft genome produced at The Institute for Genome Research by Sanger-sequencing and published by [Carlton _et al._, 2002](http://www.ncbi.nlm.nih.gov/pubmed/12368865). From these data _P. yoelii_ has an estimated genome size of 23.1 Mb distributed across 14 chromosomes, but with &gt; 5000 gaps. DNA for this sequencing project was obtained from _P. yoelii yoelii_ 17XNL strain. 
       
       Further sequencing of _P. yoelii yoelii_ and several other strains and subspecies has been completed using Illumina Sequence-by-synthesis technology. The re-assembly and annotation of _P. yoelii yoelii_ YM and _P. yoelii yoelii_ 17X has been published (PMID:25359557).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: plasmodium-berghei.html
+      text: Plasmodium berghei
+    - url: plasmodium-chabaudi.html
+      text: Plasmodium chabaudi
+    - url: plasmodium-cynomolgi.html
+      text: Plasmodium cynomolgi
+    - url: plasmodium-falciparum.html
+      text: Plasmodium falciparum
+    - url: plasmodium-gallinaceum.html
+      text: Plasmodium gallinaceum
+    - url: plasmodium-knowlesi.html
+      text: Plasmodium knowlesi
+    - url: plasmodium-malariae.html
+      text: Plasmodium malariae
+    - url: plasmodium-ovale.html
+      text: Plasmodium ovale
+    - url: plasmodium-reichenowi.html
+      text: Plasmodium reichenowi
+    - url: plasmodium-vivax.html
+      text: Plasmodium vivax
+    - url: http://www.genedb.org/Homepage/Pberghei
+      text: GeneDB
+    - url: http://plasmodb.org/plasmo/
+      text: PlasmoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 25359557
 
@@ -470,10 +889,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_annulata
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/T_annulata/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_annulata
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://www.genedb.org/Homepage/Tannulata
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 15994557
 
@@ -484,6 +907,15 @@ species:
       The Sanger Insitute has used high-throughput transcriptome sequencing (mRNA-seq) to determine the transcriptome of _T. gondii_ VEG strain tachyzoites. The goal of this project is to determine differences between _T. gondii_ and the similar parasite _Neospora caninum_. 
       
       The _T. gondii_ genome was sequenced by the J Craig Venter Insitute and is available from [ToxoDB](http://toxodb.org/toxo/).
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: http://toxodb.org/toxo/
+      text: ToxoDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 16902086
 
@@ -501,10 +933,12 @@ species:
       text: BLAST server
     - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanoplasma/borreli/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_borreli
-      text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanoplasma/borreli/
-      text: FTP site
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Trypanosoma brucei:
     description: |
@@ -582,10 +1016,26 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_brucei/
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/brucei
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_brucei/
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: trypanosoma-congolense.html
+      text: Trypanosoma congolense
+    - url: trypanosoma-evansi.html
+      text: Trypanosoma evansi
+    - url: trypanosoma-vivax.html
+      text: Trypanosoma vivax
+    - url: http://www.who.int/trypanosomiasis_african/en/
+      text: World Health Organization
+    - url: http://www.genedb.org/Homepage/Tbruceibrucei927
+      text: GeneDB (Strain 927)
+    - url: http://www.genedb.org/Homepage/Tbruceibrucei427
+      text: GeneDB (Strain 427)
+    - url: http://www.genedb.org/Homepage/Tbruceigambiense
+      text: GeneDB (T. b. gambiense)
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 20404998
     - 16020726
@@ -618,12 +1068,35 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_congolense
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/congolense
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_congolense
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: trypanosoma-brucei.html
+      text: Trypanosoma brucei
+    - url: trypanosoma-evansi.html
+      text: Trypanosoma evansi
+    - url: trypanosoma-vivax.html
+      text: Trypanosoma vivax
+    - url: http://www.genedb.org/Homepage/Tcongolense
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
-  Trypanosoma evansi: {}
+  Trypanosoma evansi:
+    links:
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: trypanosoma-brucei.html
+      text: Trypanosoma brucei
+    - url: trypanosoma-congolense.html
+      text: Trypanosoma congolense
+    - url: trypanosoma-vivax.html
+      text: Trypanosoma vivax
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Trypanosoma vivax:
     description: |
@@ -637,8 +1110,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_vivax
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trypanosoma/vivax
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_vivax
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/protozoa/
+      text: Protozoa
+    - url: trypanosoma-brucei.html
+      text: Trypanosoma brucei
+    - url: trypanosoma-congolense.html
+      text: Trypanosoma congolense
+    - url: trypanosoma-evansi.html
+      text: Trypanosoma evansi
+    - url: http://www.genedb.org/Homepage/Tvivax
+      text: GeneDB
+    - url: http://tritrypdb.org/tritrypdb/
+      text: TriTrypDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 

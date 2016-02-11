@@ -28,9 +28,25 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_morsitans
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Glossina/morsitans/
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/vectors/
+      text: Vectors
+    - url: ftp://ftp.sanger.ac.uk/pub/pathogens/Glossina/morsitans/
       text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_morsitans
-      text: BLAST server
+    - url: http://info.med.yale.edu/eph/faculty/labs/aksoy/index.html
+      text: Askoy Lab
+    - url: http://www.osc.riken.jp/
+      text: RIKEN
+    - url: http://www.genoscope.cns.fr/spip/spip.php?lang=en
+      text: Genoscope
+    - url: http://apps.who.int/tdr/
+      text: WHO/TDR
+    - url: http://info.med.yale.edu/eph/faculty/aksoy.html
+      text: Yale School of Public Health
+    - url: http://www.sanbi.ac.za/iggisite/index.php/Main_Page
+      text: IGGI
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 14519198

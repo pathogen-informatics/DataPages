@@ -31,10 +31,16 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_granulosus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_granulosus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: echinococcus-multilocularis.html
+      text: Echinococcus multilocularis
+    - url: http://www.genedb.org/Homepage/Egranulosus
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23485966
 
@@ -48,10 +54,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_multilocularis
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Echinococcus
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/e_multilocularis
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: echinococcus-granulosus.html
+      text: Echinococcus granulosus
+    - url: http://www.hygiene.uni-wuerzburg.de/forschung/ag_brehm/prof_dr_klaus_brehm
+      text: Prof Dr Klaus Brehm
+    - url: http://www.genedb.org/Homepage/Emultilocularis
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23485966
 
@@ -67,10 +81,20 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_pallida
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Globodera/pallida/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/g_pallida
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://www.bbsrc.ac.uk/
+      text: BBSRC
+    - url: http://www.hutton.ac.uk
+      text: The James Hutton Institute
+    - url: http://www.rothamsted.ac.uk/
+      text: Rothamstead
+    - url: http://www.leeds.ac.uk/
+      text: University of Leeds
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Haemonchus contortus:
     description: |
@@ -84,10 +108,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_contortus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Haemonchus/contortus/genome/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_contortus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://vet.ucalgary.ca/profiles/john-gilleard
+      text: Prof John Gilleard
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Hymenolepis microstoma:
     description: |
@@ -103,12 +131,16 @@ species:
       text: FTP site (large NGS files)
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_microstoma
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Hymenolepis/microstoma/
-      text: FTP site
-    - url: ftp://ngs.sanger.ac.uk/scratch/project/pathogens/Hymenolepis/microstoma/BAM/
-      text: FTP site (large NGS files)
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/h_microstoma
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://www.olsonlab.com/
+      text: Dr Peter Olson
+    - url: http://www.genedb.org/Homepage/Hmicrostoma
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 23485966
 
@@ -129,10 +161,14 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/o_volvulus
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Onchocerca/volvulus/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/o_volvulus
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://nybloodcenter.org/research/research-pillars/infectious-diseases/molecular-parasitology/
+      text: Dr Sara Lustigman
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Schistosoma mansoni:
     description: |
@@ -152,10 +188,18 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_mansoni
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Schistosoma/mansoni/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/s_mansoni
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://www.jcvi.org/
+      text: The Institute for Genome Research
+    - url: http://www.sanger.ac.uk/resources/software/
+      text: Phusion
+    - url: http://www.genedb.org/Homepage/Smansoni
+      text: GeneDB
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
     pubmed_ids:
     - 22253936
     - 19606141
@@ -174,10 +218,22 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/strongyloides
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Strongyloides/ratti/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/strongyloides
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://www.wormbook.org/chapters/www_genomesStrongyloides/genomesStrongyloides.html
+      text: Strongyloides spp further reading
+    - url: http://www.ebi.ac.uk/ebisearch/search.ebi?db=emblrelease_wgs&t=strongyloides+ratti&requestFrom=page1
+      text: EMBL download of assembly
+    - url: http://linkinghub.elsevier.com/retrieve/pii/S0166685109002485
+      text: Genetic map
+    - url: http://www.bio.bris.ac.uk/people/staff.cfm?key=180
+      text: Prof Mark Viney
+    - url: http://www.eb.tuebingen.mpg.de/departments/4-evolutionary-biology/adrian-streit/nematode-development
+      text: Adrian Streit
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
   Teladorsagia circumcincta:
     show: false
@@ -194,8 +250,12 @@ species:
       text: FTP site
     - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_muris
       text: BLAST server
-    - url: ftp://ftp.sanger.ac.uk/pub/project/pathogens/Trichuris/muris/
-      text: FTP site
-    - url: http://www.sanger.ac.uk/cgi-bin/blast/submitblast/t_muris
-      text: BLAST server
+    - url: /science/tools/artemis
+      text: Artemis
+    - url: /resources/downloads/helminths/
+      text: Helminths
+    - url: http://www.manchester.ac.uk/
+      text: University of Manchester
+    - url: /science/dna-pipelines
+      text: WTSI Sequencing
 
