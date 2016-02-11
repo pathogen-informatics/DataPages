@@ -299,7 +299,7 @@ def generate_nctc_data(global_config, nctc_config):
             'ss_studies': studies,
             'all_paths': all_paths
         }
-        cache_data(cache_path, domain_config.domain_name, data)
+        cache_data(cache_path, nctc_config.nctc_name, data)
 
     automatic_gffs, manual_embls, manual_gffs = file_mappings(all_paths, nctc_config)
     database_data = merge_data(lane_details, ena_run_details, studies)
