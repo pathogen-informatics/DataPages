@@ -181,13 +181,13 @@ def merge_nctc_data(database_data, automatic_gffs, manual_embls, manual_gffs):
                           how='left')
     joint_data = pd.merge(joint_data, manual_embls,
                           left_on='sample_accession_v', right_on='sample_accession',
-                          how=left, suffixes=('_auto_gff', '_man_embl'))
+                          how='left', suffixes=('_auto_gff', '_man_embl'))
     manual_gffs.rename(columns={'url': 'url_man_gff', 'path': 'path_man_gff',
                                 'chromosomes': 'chromosomes_man_gff',
                                 'plasmids': 'plasmids_man_gff'}, inplace=True)
     joint_data = pd.merge(joint_data, manual_gffs,
                           left_on='sample_accession_v', right_on='sample_accession',
-                          how=left)
+                          how='left')
     add_canonical_nctc_data(joint_data)
     return joint_data
 
