@@ -13,7 +13,7 @@ from .common import cache_data, reload_cache_data, \
                     get_config
 from .update_projects_html import get_template
 from .regenerate_data import get_vrtrack_db_details_list, get_sequencescape_db_details, \
-                             get_all_data, _get_default_columns
+                             get_all_data, _get_default_columns, merge_data
 
 logger = logging.getLogger('datapages')
 
@@ -306,7 +306,7 @@ def generate_nctc_data(global_config, nctc_config):
     joint_data = merge_nctc_data(database_data, automatic_gffs, manual_embls,
                                  manual_gffs)
 
-    relevant_data = build_relevant_data(joint_data, nctc_config)
+    relevant_data = build_relevant_nctc_data(joint_data, nctc_config)
     return relevant_data
 
 def write_nctc_index(relevant_data, output_dir_root, nctc_config):
