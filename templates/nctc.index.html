@@ -12,16 +12,50 @@
                 </div>
                 <table id="data-table" class="display">
                     <thead>
-                          <tr>
-                              <th>Species</th>
-                              <th>Study Name</th>
-                              <th>Study Accession</th>
-                              <th>Sample Name</th>
-                              <th>Strain</th>
-                              <th>Run Accession</th>
-                              <th>Sample Accession</th>
-                          </tr>
-                      </thead>
+			    <tr>
+				    <th>Species</th>
+				    <th>Strain</th>
+				    <th>Sample</th>
+				    <!--	    <th>Runs</th>  -->
+				    <th>Automated Assembly</th>
+				    <th>Manual Assembly</th>
+				    <th>Manual Assembly Chromosome Contig Number</th>
+				    <th>Manual Assembly Plasmid Contig Number</th>
+			    </tr>
+                    </thead>
+	    </tbody>
+	    {% for row in data %}
+	    <tr>
+		<td>{{ row['Species'] }}<td>
+		<td>{{ row['Strain'] }}<td>
+		<td>{{ row['Sample Accession'] }}<td>
+	        {% if row['Automatic GFF URL'] %}
+		<td><a href="{{ row['Automatic GFF URL'] }}">GFF</a><td>
+		{% else %}
+		<td>Pending<td>
+		{% endif %}
+	        {% if row['Manual EMBL URL'] and row['Manual GFF URL'] %}
+		<td><a href="{{ row['Manual EMBL URL'] }}">EMBL</a><br><a href="{{ row['Manual GFF URL'] }}">GFF</a><td>
+		{% elif row['Manual EMBL URL'] %}
+		<td><a href="{{ row['Manual EMBL URL'] }}">EMBL</a><td>
+		{% elif row['Manual GFF URL'] %}
+		<td><a href="{{ row['Manual GFF URL'] }}">GFF</a><td>
+		{% else %}
+		<td>Pending<td>
+		{% endif %}
+	        {% if row['Manual Assembly Chromosome Contig Number'] %}
+		<td>{{ row['Manual Assembly Chromosome Contig Number'] }}<td>
+		{% else %}
+		<td>Pending<td>
+		{% endif %}
+	        {% if row['Manual Assembly Plasmid Contig Number'] %}
+		<td>{{ row['Manual Assembly Plasmid Contig Number'] }}<td>
+		{% else %}
+		<td>Pending<td>
+		{% endif %}
+	</tr>
+	{% endfor %}
+</tbody>
                 </table>
                 <div id='data-updated'></div>
             </div>

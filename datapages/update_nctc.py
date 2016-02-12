@@ -1,5 +1,8 @@
 import argparse
+import collections
+import json
 import logging
+import numpy as np
 import os
 import pandas as pd
 import pickle
@@ -7,6 +10,7 @@ import re
 import yaml
 
 from argparse import ArgumentTypeError, FileType
+from datetime import datetime
 
 from .common import cache_data, reload_cache_data, \
                     _is_dir, _could_write, _could_read, \
@@ -37,7 +41,8 @@ def parse():
 
 def _file_to_ftp_url(path, ftp_root_dir, ftp_root_url):
     root_dir = os.path.abspath(ftp_root_dir)
-    root_dir = root_dir if ftp_root_url[-1] == '/' else root_dir + '/'
+    root_dir = root_dir if root_dir[-1] == '/' else root_dir + '/'
+    root_url = ftp_root_url if ftp_root_url[-1] == '/' else ftp_root_url + '/'
     abspath = os.path.abspath(path)
     return re.sub(root_dir, ftp_root_url, abspath)
 
@@ -67,6 +72,10 @@ def _parse_automatic_gffs(all_paths, root_dir, root_url):
     return lookup
 
 def _gff_stats(gff_path):
+    return {
+        'chromosomes': 0,
+        'plasmids': 0
+    }
     def _is_chromosome(line):
         if ('sequence-region' in line and 'chromosome' in line):
             return True
@@ -110,6 +119,10 @@ def _parse_manual_gffs(all_paths, root_dir, root_url):
 
 
 def _embl_stats(embl_path):
+    return {
+        'chromosomes': 0,
+        'plasmids': 0
+    }
     def _is_chromosome(line):
         if 'label=chrom' in line:
             return True
@@ -177,7 +190,8 @@ def add_canonical_nctc_data(joint_data):
 
 def merge_nctc_data(database_data, automatic_gffs, manual_embls, manual_gffs):
     logger.info("Merger in assembly details")
-    automatic_gffs.rename(columns={'url': 'url_auto_gff', 'path': 'path_auto_gff'})
+    automatic_gffs.rename(columns={'url': 'url_auto_gff', 'path': 'path_auto_gff'},
+                          inplace=True)
     joint_data = pd.merge(database_data, automatic_gffs,
                           left_on='sample_accession_v', right_on='sample_accession',
                           how='left')
@@ -199,14 +213,13 @@ def merge_nctc_data(database_data, automatic_gffs, manual_embls, manual_gffs):
 
 def _list_run_accessions(group):
     return pd.Series({
-        'Run Accessions': group.unique().tolist()
+        'run_accession': group['run_accession'].unique().tolist()
     })
 
 def _group_run_accessions(data):
+    pickle.dump(data, open('data.tmp.pkl', 'wb'))
     logging.info("Group runs on the same data together")
-    data.columns = prefered_column_names
-    columns_except_run = list(data.columns.values)
-    columns_except_run = columns_except_run.remove('Run Accession')
+    columns_except_run = [c for c in data.columns.values if c != 'run_accession']
     data = data.groupby(columns_except_run).apply(_list_run_accessions)
     data.reset_index(inplace=True)
     return data
@@ -218,10 +231,10 @@ def build_relevant_nctc_data(joint_data, nctc_config):
         ('species_name', 'Species'),
         ('canonical_strain', 'Strain'),
         ('sample_accession_v', 'Sample Accession'),
-        ('run_accession', 'Run Accession'),
-        ('url_man_gff', 'Manual GFF URL'),
+        ('run_accession', 'Run Accessions'),
         ('url_auto_gff', 'Automatic GFF URL'),
-        ('url_auto_embl', 'Automatic EMBL URL'),
+        ('url_man_gff', 'Manual GFF URL'),
+        ('url_man_embl', 'Manual EMBL URL'),
         ('chromosomes', 'Manual Assembly Chromosome Contig Number'),
         ('plasmids', 'Manual Assembly Plasmid Contig Number'),
     ])
@@ -229,23 +242,18 @@ def build_relevant_nctc_data(joint_data, nctc_config):
     prefered_column_names = [column_name_map[key] for key in
                              original_column_names]
 
-    # Don't include data not in ENA
-    data = joint_data[(joint_data['withdrawn'] == False) &
-                     joint_data['run_in_ena'] &
-                     joint_data['study_in_ena']]
-
     # Keep only the relevant project IDs
-    data = data[data['project_ssid'].isin(ntct_config.project_ssids)]
+    data = joint_data[joint_data['project_ssid'].isin(nctc_config.project_ssids)]
 
     # Only include the columns we like
     data = data[original_column_names]
-
-    # Group run accessions
-    data = _group_run_accessions(data)
+    data.rename(columns=column_name_map, inplace=True)
 
     # Deal with aliases
-    for alias, original_names in nctc_config.aliases:
-        data.loc[df['Species'].isin(original_names), 'Species'] = alias
+    for alias, original_names in nctc_config.aliases.items():
+        data.loc[data['Species'].isin(original_names), 'Species'] = alias
+
+    data.where((pd.notnull(data)), None, inplace=True)
 
     return {
         'columns': prefered_column_names,
@@ -276,7 +284,7 @@ class NctcConfig(object):
 def generate_nctc_data(global_config, nctc_config):
     if global_config.get('DATAPAGES_LOAD_CACHE_PATH'):
         cache_path = global_config.get('DATAPAGES_LOAD_CACHE_PATH')
-        logging.warn("Loading cached data from %s" % cache_path)
+        logger.warn("Loading cached data from %s" % cache_path)
         data = reload_cache_data(cache_path, nctc_config.nctc_name)
         project_ssids = data['project_ssids']
         ena_run_details = data['ena_run_details']
@@ -285,7 +293,7 @@ def generate_nctc_data(global_config, nctc_config):
         all_paths = data['all_paths']
 
     else:
-        logging.info("Loading data from databases")
+        logger.info("Loading data from databases")
         vrtrack_db_details_list = get_vrtrack_db_details_list(global_config,
                                                          nctc_config.databases)
         sequencescape_db_details = get_sequencescape_db_details(global_config)
@@ -295,7 +303,7 @@ def generate_nctc_data(global_config, nctc_config):
 
     if global_config.get('DATAPAGES_SAVE_CACHE_PATH'):
         cache_path = global_config.get('DATAPAGES_SAVE_CACHE_PATH')
-        logging.warn("Saving data to cache in %s" % cache_path)
+        logger.warn("Saving data to cache in %s" % cache_path)
         project_ssids = list({lane['project_ssid'] for lane in lane_details})
         data = {
             'project_ssids': project_ssids,
@@ -308,27 +316,44 @@ def generate_nctc_data(global_config, nctc_config):
 
     automatic_gffs, manual_embls, manual_gffs = file_mappings(all_paths, nctc_config)
     database_data = merge_data(lane_details, ena_run_details, studies)
-    joint_data = merge_nctc_data(database_data, automatic_gffs, manual_embls,
+
+    # Don't include data not in ENA
+    database_data = database_data[(database_data['withdrawn'] == False) &
+                                   database_data['run_in_ena'] &
+                                   database_data['study_in_ena']]
+
+    # Throw away irrelevant data
+    database_data = database_data[['species_name',
+                                   'canonical_strain',
+                                   'sample_accession_v',
+                                   'run_accession',
+                                   'project_ssid']]
+    grouped_reads = _group_run_accessions(database_data)
+    joint_data = merge_nctc_data(grouped_reads, automatic_gffs, manual_embls,
                                  manual_gffs)
 
     relevant_data = build_relevant_nctc_data(joint_data, nctc_config)
     return relevant_data
 
+def _row_to_dict(row, columns):
+    return dict(zip(columns, row))
+
 def write_nctc_index(relevant_data, output_dir_root, nctc_config):
     logger.info("Writing results to %s" % output_dir_root)
     now = datetime.now()
     timestamp = now.strftime("%Y%m%d%H%M%S")
-    output_dir = os.path,join(output_dir_root, nctc_config.nctc_name)
+    output_dir = os.path.join(output_dir_root, nctc_config.nctc_name)
     output_dir_temp = os.path.join(output_dir_root, "%s_%s_temp" %
                                    (nctc_config.nctc_name, timestamp))
     os.makedirs(output_dir_temp, mode=0o755)
     output_file_path = os.path.join(output_dir_temp, 'index.html')
     output_dir_backup = "%s_backup" % os.path.abspath(output_dir_root)
     template = get_template('nctc.index.html')
+    data = [_row_to_dict(row, relevant_data['columns']) for row in relevant_data['data']]
     content = template.render(
         title="Awesom NCTC page",
         description="A page about the awesome NCTC project",
-        data=json.dumps(relevant_data, sort_keys=True, indent=4,
+        data=json.dumps(data, sort_keys=True, indent=4,
                         separators=(',', ': '))
     )
     with open(output_file_path, 'w') as output_file:
@@ -349,6 +374,7 @@ def main():
         logger.setLevel(logging.WARNING)
     else:
         logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     if args.global_config:
         config_file = args.global_config
@@ -392,7 +418,7 @@ def main():
         raise ValueError(message)
 
     data = generate_nctc_data(config, nctc_config)
-    write_nctc_index(relevant_data, site_dir, nctc_config)
+    write_nctc_index(data, site_dir, nctc_config)
 
 if __name__ == '__main__':
     main()
