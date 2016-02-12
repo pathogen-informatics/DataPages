@@ -45,7 +45,7 @@ def get_all_paths(root_dir):
     logger.info("Finding all the files in %s" % root_dir)
     all_files = []
     abs_root_dir = os.path.abspath(root_dir)
-    for root, dirnames, filenames in os.walk(abs_root_dir):
+    for root, dirnames, filenames in os.walk(abs_root_dir, followlinks=True):
         all_files += [os.path.join(root, fn) for fn in filenames]
     logger.info("Found %s files in %s" % (len(all_files), root_dir))
     return all_files
@@ -176,13 +176,17 @@ def add_canonical_nctc_data(joint_data):
                          'Pending')
 
 def merge_nctc_data(database_data, automatic_gffs, manual_embls, manual_gffs):
-    logging.info("Merging in assembly details")
+    logger.info("Merger in assembly details")
+    automatic_gffs.rename(columns={'url': 'url_auto_gff', 'path': 'path_auto_gff'})
     joint_data = pd.merge(database_data, automatic_gffs,
                           left_on='sample_accession_v', right_on='sample_accession',
                           how='left')
+    manual_embls.rename(columns={'url': 'url_man_embl', 'path': 'path_man_embl',
+                                'chromosomes': 'chromosomes_man_embl',
+                                'plasmids': 'plasmids_man_embl'}, inplace=True)
     joint_data = pd.merge(joint_data, manual_embls,
                           left_on='sample_accession_v', right_on='sample_accession',
-                          how='left', suffixes=('_auto_gff', '_man_embl'))
+                          how='left')
     manual_gffs.rename(columns={'url': 'url_man_gff', 'path': 'path_man_gff',
                                 'chromosomes': 'chromosomes_man_gff',
                                 'plasmids': 'plasmids_man_gff'}, inplace=True)

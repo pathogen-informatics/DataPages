@@ -87,10 +87,10 @@ def join_vrtrack_sequencescape(vrtrack, sequencescape):
 
 def _get_default_columns(joint_data, column, default_columns, otherwise='Unknown'):
     default_column = default_columns[0]
-    mask = joint_data[default_column].notnull() & (joint_data[default_column] != '')
+    mask = joint_data[default_column].notnull() & (str(joint_data[default_column]) != '')
     joint_data.loc[mask, column] = joint_data.loc[mask, default_column].values
     for default_column in default_columns[1:]:
-        done = joint_data[column].notnull() & (joint_data[column] != '')
+        done = joint_data[column].notnull() & (str(joint_data[column]) != '')
         mask = (done != True) & joint_data[default_column].notnull() & (joint_data[default_column] != '')
         joint_data.loc[mask, column] = joint_data.loc[mask, default_column].values
     done = joint_data[column].notnull() & (joint_data[column] != '')
